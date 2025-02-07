@@ -1,0 +1,177 @@
+div { /*"Main Content" div*/
+    background-color: #181A1B;
+    padding-top: 20px;
+}
+
+.mycontainer {
+    left:0;
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+.mycontainer > div {
+    width:25%;
+}
+
+body{
+    z-index: -1;
+    margin: 0; 
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #181A1B;
+}
+.footercontainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.footercontainer > div {
+    width:33%;
+}
+
+header { /*"House Design" h1*/
+    top: 0;
+    left:0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: #181A1B;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position:fixed;
+    color: white;
+}
+
+h3{ /*"Sub Header" h3*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    text-align: center;   
+}
+
+h3 > a{
+    color: gray;
+}
+
+figcaption > a{
+    color: white;
+}
+
+h2{
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.btn{
+    background-color: #6f5eff;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+    width: 100px;
+    height: 33px;
+}
+
+.btn:hover{
+    background-color: darkgray;
+}
+
+
+a{
+    text-decoration:none;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.footertext{
+    text-decoration:none;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+figure{
+    display:inline-block;
+    width: 38%;
+    height: 38%;
+    margin: 0 auto 0.55em;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    border-width: 2px;
+    border-spacing: 100px;
+    padding: 15px 15px ;
+}
+
+figcaption{
+    padding-top: 20px;
+    text-align: center;
+    background-color: #181A1B;
+    color :white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+    
+p{ /*"House Styling" p*/
+    color: #6f5eff;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    padding-inline-start:75px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+dt{ /*"Footer List" ul*/
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    color: white;
+}
+
+.center-image {
+    padding-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+}
+
+.footerbold{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.leagueStyling{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #181A1B;
+}
+
+.leagueStyling > div {
+    width:16.67%;
+}
