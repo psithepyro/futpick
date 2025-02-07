@@ -1,0 +1,104 @@
+/* General Page Styles*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+
+/*Main Container*/
+.container {
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 10px;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff); 
+    border-radius: 10px; 
+}
+
+/*Header Styles*/
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px;
+    background-color: black; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header h1 {
+    font-size: 20px; 
+}
+
+/*Icon Styles*/
+.icons i {
+    color: white;
+    margin: 0 10px;
+    cursor: pointer; /* Makes icons clickable */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the navigation buttons */
+    padding: 10px;
+    background-color: black; 
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Highlights the active navigation tab */
+nav button.active {
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px; 
+}
+
+/*Main Content Styling*/
+main {
+    padding: 20px;
+}
+
+/* Fixtures Section */
+.fixtures {
+    text-align: center; 
+}
+
+/* Previous/Next navigation inside fixtures */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Box that contains fixture details */
+.fixtures-box {
+    background: rgba(255, 255, 255, 0.2); 
+    padding: 15px;
+    border-radius: 10px; 
+}
+
+/* Fixtures section title */
+.fixtures-box h2 {
+    margin-bottom: 10px;
+}
+
+/* Fixture list styles */
+.fixtures-box ul {
+    list-style: none; 
+    padding: 0;
+}
+
+/* Individual fixture item */
+.fixtures-box li {
+    margin: 5px 0; 
+}
