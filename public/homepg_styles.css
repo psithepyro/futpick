@@ -5,7 +5,7 @@ div { /*"Main Content" div*/
 
 .mycontainer {
     left:0;
-    z-index: 0;
+    z-index: 1;
     display: flex;
     width: 100%;
     height: auto;
@@ -16,6 +16,31 @@ div { /*"Main Content" div*/
     width:25%;
 }
 
+nav{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: #181A1B;
+}
+
+nav button{
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer; 
+}
+
+nav button.active {
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px; 
+}
 body{
     z-index: -1;
     margin: 0; 
@@ -34,13 +59,13 @@ body{
     width:33%;
 }
 
-header { /*"House Design" h1*/
+header { /* Header*/
     top: 0;
     left:0;
     margin: 0;
     padding: 0;
     z-index: 1;
-    background-color: #181A1B;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 1.5rem;

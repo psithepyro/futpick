@@ -1,0 +1,45 @@
+nav{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+}
+
+nav button{
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer; 
+}
+
+nav button.active {
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px; 
+}
+
+header { /* Header*/
+    top: 0;
+    left:0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position:fixed;
+    color: white;
+}
+
