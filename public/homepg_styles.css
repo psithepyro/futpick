@@ -16,6 +16,36 @@ div { /*"Main Content" div*/
     width:25%;
 }
 
+#navlist{
+    position: fixed;
+    z-index: 99;
+}
+
+#navlist li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a{
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+#profile{
+    left: 1400px;
+    bottom: 5px;
+    background:   url('images/profileicon.PNG') no-repeat;
+}
+
+#calendar{
+    left: 1450px;
+    background:  url('images/calendaricon.PNG') no-repeat;
+}
+
 nav{
     z-index: 0;
     display: flex;
@@ -137,15 +167,14 @@ a{
 
 
 figure{
-    display:inline-block;
-    width: 38%;
-    height: 38%;
+    position: center;
+    width: 300px;
+    height: 175px;
     margin: 0 auto 0.55em;
     border: 1px solid #cccccc;
     border-radius: 10px;
     border-width: 2px;
-    border-spacing: 100px;
-    padding: 15px 15px ;
+    padding: 15px 15px;
 }
 
 figcaption{
@@ -192,11 +221,23 @@ dt{ /*"Footer List" ul*/
 
 .leagueStyling{
     display: flex;
-    width: 100%;
-    height: auto;
-    background-color: #181A1B;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.leagueStyling figure{
+    text-align: center;
+    margin: 10px;
 }
 
 .leagueStyling > div {
-    width:16.67%;
+    width:10%;
+}
+
+.leagueStyling img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: #181A1B;
 }
