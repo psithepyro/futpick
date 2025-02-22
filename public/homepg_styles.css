@@ -3,18 +3,6 @@ div { /*"Main Content" div*/
     padding-top: 20px;
 }
 
-.mycontainer {
-    left:0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: auto;
-    position: fixed;
-}
-
-.mycontainer > div {
-    width:25%;
-}
 
 #navlist{
     position: fixed;
@@ -37,13 +25,16 @@ div { /*"Main Content" div*/
 
 #profile{
     left: 1400px;
-    bottom: 5px;
     background:   url('images/profileicon.PNG') no-repeat;
+    background-size: 32px 32px;
+    background-position-y: 12px;
 }
 
 #calendar{
     left: 1450px;
     background:  url('images/calendaricon.PNG') no-repeat;
+    background-size: 32px 32px;
+    background-position-y: 10px;
 }
 
 nav{
@@ -187,15 +178,6 @@ figcaption{
     font-family: Arial, sans-serif;
 }
     
-p{ /*"House Styling" p*/
-    color: #6f5eff;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    padding-inline-start:75px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-
 dt{ /*"Footer List" ul*/
     font-weight: bold;
     font-size: 18px;
@@ -209,8 +191,8 @@ dt{ /*"Footer List" ul*/
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
 }
 
 .footerbold{
