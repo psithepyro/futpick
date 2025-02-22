@@ -1,1 +1,19 @@
+#pointHeader {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: #181A1B;
+}
 
+div {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}

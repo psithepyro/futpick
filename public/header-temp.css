@@ -36,7 +36,7 @@ div { /*"Main Content" div*/
     background-position-y: 10px;
 }
 
-nav{
+#subHeader{
     z-index: 0;
     display: flex;
     justify-content: center;
