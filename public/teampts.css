@@ -2,11 +2,39 @@
     z-index: 0;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
     width: 100%;
-    height: auto;
-    position: fixed;
+    height: 100px;
+    position: static;    
     background: #181A1B;
+}
+
+#pointStyling {
+    background-color: #181A1B;
+    padding-top: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+#pointCount p {
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#pointText p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 div {
