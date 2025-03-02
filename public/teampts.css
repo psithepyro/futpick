@@ -11,12 +11,13 @@
 
 #pointStyling {
     background-color: #181A1B;
-    padding-top: 20px;
     border: 2px solid white;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
-    margin: 0 auto;
+    margin: 0 20px;
+    align-items: center;
+    text-align: center;
 }
 
 #pointCount p {
@@ -25,16 +26,12 @@
     color: white;
     font-size: 40px;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
 }
 
 #pointText p {
     text-align: center;
     color: white;
     font-size: 20px;
-    margin: 0;
-    padding: 0;
 }
 
 div {
@@ -43,5 +40,51 @@ div {
     color: white;
     padding: 10px;
     margin: 5px;
-    cursor: pointer;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.gk_column {
+    float: left;
+    padding: 0 5px;
+}
+
+.def_column {
+    float: left;
+    width: 12.5%;
+    padding: 0 5px;
+}
+
+.mid_column {
+    float: left;
+    width: 12.5%;
+    padding: 0 5px;
+}
+
+.fwd_column {
+    float: left;
+    width: 33%;
+    padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.player_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #0f8a5f;
+    color: white;
+}
+
+.fa {font-size:50px;}
+
