@@ -1,3 +1,4 @@
+/* team points css file - Francisco Godoy */
 #pointHeader {
     z-index: 0;
     display: flex;
@@ -46,30 +47,54 @@ div {
     box-sizing: border-box;
 }
 
-.gk_column {
-    float: left;
-    padding: 0 5px;
+.team_container{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background: url("images/soccerpitch.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
 }
 
-.def_column {
-    float: left;
-    width: 12.5%;
+.gk_column, .fwd_column {
     padding: 0 5px;
+    flex: .40;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
 }
 
-.mid_column {
-    float: left;
-    width: 12.5%;
+.def_column, .mid_column{
     padding: 0 5px;
+    flex: .65;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
 }
 
-.fwd_column {
-    float: left;
-    width: 33%;
+.res_column {
     padding: 0 5px;
+    flex: .65;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
 }
 
-.row {margin: 0 -5px;}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    justify-content: center;
+    background: none;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -80,10 +105,28 @@ div {
 
 .player_card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10px;
     padding: 16px;
     text-align: center;
     background-color: #0f8a5f;
     color: white;
+}
+
+.player_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.player_card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.player_container {
+    padding: 2px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #0c583e;
 }
 
 .fa {font-size:50px;}
