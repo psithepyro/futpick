@@ -1,4 +1,42 @@
-nav{
+div { /*"Main Content" div*/
+    background-color: #181A1B;
+    padding-top: 20px;
+}
+
+#navlist{
+    position: fixed;
+    z-index: 99;
+}
+
+#navlist li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a{
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+#profile{
+    left: 1400px;
+    background: url('images/profileicon.PNG') no-repeat;
+    background-size: 32px 32px;
+    background-position-y: 12px;
+}
+
+#calendar{
+    left: 1450px;
+    background: url('images/calendaricon.PNG') no-repeat;
+    background-size: 32px 32px;
+    background-position-y: 10px;
+}
+
+#subHeader{
     z-index: 0;
     display: flex;
     justify-content: center;
@@ -6,7 +44,7 @@ nav{
     width: 100%;
     height: auto;
     position: fixed;
-    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    background: #181A1B;
 }
 
 nav button{
@@ -43,3 +81,69 @@ header { /* Header*/
     color: white;
 }
 
+body{
+    z-index: -1;
+    margin: 0; 
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #181A1B;
+}
+
+.center-image {
+    padding-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.footercontainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.footercontainer > div {
+    width:33%;
+}
+
+.footerbold{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+dt{ /*"Footer List" ul*/
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    color: white;
+}
+
+.footertext{
+    text-decoration:none;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
