@@ -1,54 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FütiPicks LigaMx Fantasy</title>
-    <link rel="stylesheet" href="fixture.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="fixture.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>FütPicks LigaMx Fantasy</h1>
-            <div class="icons">
-                <i class="fas fa-cog"></i>
-                <i class="fas fa-ellipsis-v"></i>
+      <header>
+        <h1>FütPicks LigaMx Fantasy</h1>
+        <div class="icons">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div id="user-info"></div>
+      </header>
+      <nav>
+        <button class="active">Fixtures</button>
+        <button>Joined Leagues</button>
+        <button>Points</button>
+        <button>Pick Team</button>
+        <button>Transfers</button>
+        <button>Player Stats</button>
+      </nav>
+      <main>
+        <div class="fixtures">
+          <div class="nav-buttons">
+            <span>&lt; Previous</span>
+            <span>Next &gt;</span>
+          </div>
+          <div class="fixtures-box">
+            <h2>LigaMX Fixtures</h2>
+            <p>Gameweek 11: Tue March 10 10:30</p>
+            <div id="fixtures-container">
+              <p>Loading fixtures...</p>
+              <!-- Placeholder before data loads -->
             </div>
-        </header>
-        <nav>
-            <button class="active">Fixtures</button>
-            <button>Joined Leagues</button>
-            <button>Points</button>
-            <button>Pick Team</button>
-            <button>Transfers</button>
-            <button>Player Stats</button>
-        </nav>
-        <main>
-            <div class="fixtures">
-                <div class="nav-buttons">
-                    <span>&lt; Previous</span>
-                    <span>Next &gt;</span>
-                </div>
-                <div class="fixtures-box">
-                    <h2>LigaMX Fixtures</h2>
-                    <p>Gameweek 11: Tue March 10 10:30</p>
-                    <ul>
-                        <li>Monterrey 3:00 Tigres</li>
-                        <li>Puebla 5:00 Chivas</li>
-                        <li>Cruz Azul 7:00 América</li>
-                        <li>Tuesday, March 11 2025</li>
-                        <li>Runero 10:00 Necaxa</li>
-                        <li>Santos 3:00 Atl. San Luis</li>
-                        <li>Pachuca 5:00 Toluca</li>
-                        <li>Thursday, March 12 2025</li>
-                        <li>Mazatlán FC 3:00 Tijuana</li>
-                        <li>Querétaro FC 5:00 FC Juárez</li>
-                        <li>León 7:00 Atlas</li>
-                    </ul>
-                </div>
-            </div>
-        </main>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
+    <script src="token.js"></script>
+    <script>
+      async function fetchFixtures() {
+        const token = getToken(); //get jwt token from storage
+        if (!token) return;
+
+        // cache keys to store API response and timestamp in local storage
+        const cacheKey = "cachedFixtures";
+        const cacheTimestampKey = "fixtureTimestamp";
+        const CACHE_DURATION = 60 * 60 * 1000;
+
+        //check if cached data exists in local storage
+        const cachedData = localStorage.getItem(cacheKey);
+        const cachedTimestamp = localStorage.getItem(cacheTimestampKey);
+
+        //if cache exists and is still valid, use cached data
+        if (cachedData && cachedTimestamp) {
+          const now = new Date().getTime();
+          if (now - cachedTimestamp < CACHE_DURATION) {
+            console.log("Using cached fixtures data"); //display cached fixtures
+            displayFixtures(JSON.parse(cachedData));
+            return;
+          }
+        }
+        try {
+          console.log("Fetching new fixtures from API...");
+          //api request to fetch fixtures
+          const response = await fetch("http://localhost:3000/api/fixtures", {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          });
+          const data = await response.json();
+          console.log("Fetched Fixtures: ", data);
+
+          //if response is valid, store data in local storage and display it
+          if (response.ok && data.response && data.response.length > 0) {
+            // Store in localStorage
+            localStorage.setItem(cacheKey, JSON.stringify(data.response));
+            localStorage.setItem(cacheTimestampKey, new Date().getTime());
+            displayFixtures(data.response);
+          } else {
+            document.getElementById("fixtures-container").innerHTML =
+              "<p>No fixtures available or unauthorized</p>";
+          }
+        } catch (error) {
+          console.error("error fetching fixtures: ", error);
+          document.getElementById("fixtures-container").innnerHTML =
+            "<p>Error loading fixtures</p>";
+        }
+      }
+      function displayFixtures(fixtures) {
+        const container = document.getElementById("fixtures-container");
+        container.innerHTML = ""; // Clear previous content
+
+        fixtures.forEach((match) => {
+          console.log("Processing match: ", match); // Debugging API structure
+
+          // Ensure fixture data exists before accessing properties
+          if (
+            !match.fixture ||
+            !match.fixture.venue ||
+            !match.fixture.status ||
+            !match.teams
+          ) {
+            console.warn("Skipping match due to missing data:", match);
+            return;
+          }
+
+          // Correcting Property Access
+          const date = match.fixture.date
+            ? new Date(match.fixture.date).toLocaleString()
+            : "Date Not Available";
+
+          const venueName = match.fixture.venue?.name || "Unknown Venue";
+          const venueCity = match.fixture.venue?.city || "Unknown City";
+          const status = match.fixture.status?.long || "Status Unavailable";
+
+          const homeTeam = match.teams.home?.name || "Unknown Team";
+          const awayTeam = match.teams.away?.name || "Unknown Team";
+          const homeLogo = match.teams.home?.logo || "";
+          const awayLogo = match.teams.away?.logo || "";
+
+          // ✅ Create fixture display
+          const fixtureElement = document.createElement("div");
+          fixtureElement.classList.add("fixture-item");
+
+          fixtureElement.innerHTML = `
+            <h3>📅 ${date}</h3>
+            <p>📍 Venue: ${venueName}, ${venueCity}</p>
+            <p>📌 Status: ${status}</p>
+            <div class="teams">
+                <img src="${homeLogo}" alt="${homeTeam}" width="30" height="30"/> ${homeTeam} vs 
+                <img src="${awayLogo}" alt="${awayTeam}" width="30" height="30"/> ${awayTeam}
+            </div>
+        `;
+
+          container.appendChild(fixtureElement);
+        });
+
+        console.log("Fixtures displayed successfully!");
+      }
+
+      fetchFixtures();
+    </script>
+  </body>
 </html>
