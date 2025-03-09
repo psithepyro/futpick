@@ -5,15 +5,86 @@ body {
     color: white; 
     margin: 0;
     padding: 0;
+    display: flex;
+
+
+    min-height: 100vh;
 }
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 80px;
+    background: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sidebar Buttons */
+.league-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Active Sidebar Button */
+.league-btn.active {
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    border-radius: 5px;
+}
+
+
+/*Title Container*/
+.header_container {
+    max-width: 900px;
+    height: 80px; /* height of the colored container */
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Keep it fixed at the top */
+    top: 30px; /* Space above the container to the top of the page */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ensure Header Buttons Stay Just Below the Header */
+.header_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed; /* Fix below header */
+    top: 150px; /* Space from top of the sheet to the buttons */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /*Main Container*/
 .container {
-    max-width: 900px; 
+    max-width: 900px;
+    max-height: 200px;
     margin: 20px auto; 
-    padding: 10px;
+    padding: 20px;
     background: linear-gradient(to right, #0f8a5f, #66b2ff); 
     border-radius: 10px; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Header Styles*/
@@ -22,7 +93,7 @@ header {
     justify-content: space-between; 
     align-items: center;
     padding: 15px;
-    background-color: black; 
+    background-color: transparent; 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -43,7 +114,9 @@ nav {
     display: flex;
     justify-content: center; /* Centers the navigation buttons */
     padding: 10px;
-    background-color: black; 
+    background-color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 nav button {
@@ -101,4 +174,41 @@ main {
 /* Individual fixture item */
 .fixtures-box li {
     margin: 5px 0; 
+}
+
+
+/* Player List Container */
+.player-stats-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 250px auto 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Player Table */
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Table Headers */
+.player-table th {
+    background: #0f8a5f;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table Rows */
+.player-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Alternating Row Colors */
+.player-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
 }
