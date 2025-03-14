@@ -6,7 +6,7 @@ const passport = require("passport");
 const axios = require("axios");
 require("dotenv").config();
 const path = require("path");
-const authenticateJWT = require("./middlewares/jwtMiddleware");
+const authenticateUser = require("./middlewares/jwtMiddleware");
 const logger = require("./middlewares/logger");
 
 // Initialize Express App
@@ -47,7 +47,7 @@ app.use("/auth", authRoutes); // General auth (handles login, register)
 app.use("/auth/jwt", jwtAuthRoutes); // JWT authentication
 app.use("/auth/", googleAuthRoutes); // Google OAuth authentication
 
-app.get("/api/fixtures", authenticateJWT, async (req, res) => {
+app.get("/api/fixtures", authenticateUser, async (req, res) => {
   try {
     const response = await axios.get(
       "https://v3.football.api-sports.io/fixtures",
