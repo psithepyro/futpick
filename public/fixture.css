@@ -6,42 +6,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-
-
     min-height: 100vh;
 }
 
-
-/* Sidebar Styles */
-.sidebar {
-    width: 80px;
-    background: #1a1a1a;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+div.fixtures{
+    padding-top: 150px;
 }
-
-/* Sidebar Buttons */
-.league-btn {
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Active Sidebar Button */
-.league-btn.active {
-    background: linear-gradient(to right, #0f8a5f, #66b2ff);
-    border-radius: 5px;
-}
-
 
 /*Title Container*/
 .header_container {
@@ -87,62 +57,24 @@ body {
     flex-direction: column;
 }
 
-/*Header Styles*/
-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 15px;
-    background-color: transparent; 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-header h1 {
-    font-size: 20px; 
-}
-
-/*Icon Styles*/
-.icons i {
-    color: white;
-    margin: 0 10px;
-    cursor: pointer; /* Makes icons clickable */
-}
-
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: center; /* Centers the navigation buttons */
-    padding: 10px;
-    background-color: transparent;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-nav button {
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer; /* Changes cursor to pointer on hover */
-}
-
-/* Highlights the active navigation tab */
-nav button.active {
-    background-color: lightblue;
-    color: black;
-    border-radius: 5px; 
-}
-
 /*Main Content Styling*/
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    min-height: 100vh; /* Ensure it takes the full height of the viewport */
 }
 
 /* Fixtures Section */
 .fixtures {
     text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust as needed */ /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
 }
 
 /* Previous/Next navigation inside fixtures */
@@ -151,6 +83,8 @@ main {
     justify-content: space-between; 
     font-size: 14px;
     margin-bottom: 10px;
+    width: 100%; /* Ensure buttons take full width */
+    max-width: 900px; /* Adjust as needed */
 }
 
 /* Box that contains fixture details */
@@ -158,6 +92,9 @@ main {
     background: rgba(255, 255, 255, 0.2); 
     padding: 15px;
     border-radius: 10px; 
+    width: 100%; /* Ensure it takes full width */
+    max-width: 900px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
 }
 
 /* Fixtures section title */

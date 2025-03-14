@@ -23,18 +23,12 @@ div { /*"Main Content" div*/
 }
 
 #profile{
-    left: 1400px;
+    left: 1450px;
     background: url('images/profileicon.PNG') no-repeat;
     background-size: 32px 32px;
     background-position-y: 12px;
 }
 
-#calendar{
-    left: 1450px;
-    background: url('images/calendaricon.PNG') no-repeat;
-    background-size: 32px 32px;
-    background-position-y: 10px;
-}
 
 #subHeader{
     z-index: 0;
@@ -46,6 +40,44 @@ div { /*"Main Content" div*/
     position: fixed;
     background: #181A1B;
 }
+
+/* Sidebar Styles */
+
+div.sidebar {
+    padding-top: 100px;
+    z-index: 1;
+    position: fixed;
+    height: fit-content;
+}
+.sidebar {
+    width: 80px;
+    background: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sidebar Buttons */
+.league-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Active Sidebar Button */
+.league-btn.active {
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    border-radius: 5px;
+}
+
 
 nav button{
     background: none;
@@ -62,12 +94,30 @@ nav button.active {
     border-radius: 5px; 
 }
 
+nav{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: fixed;
+    background: #181A1B;
+}
+
 header { /* Header*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left:0;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    z-index: 1;
+    z-index: 99;
     background: linear-gradient(to right, #0f8a5f, #66b2ff);
     padding-top: 30px;
     padding-bottom: 30px;

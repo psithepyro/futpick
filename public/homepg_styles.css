@@ -24,17 +24,10 @@ div { /*"Main Content" div*/
 }
 
 #profile{
-    left: 1400px;
+    left: 1450px;
     background:   url('images/profileicon.PNG') no-repeat;
     background-size: 32px 32px;
     background-position-y: 12px;
-}
-
-#calendar{
-    left: 1450px;
-    background:  url('images/calendaricon.PNG') no-repeat;
-    background-size: 32px 32px;
-    background-position-y: 10px;
 }
 
 nav{
