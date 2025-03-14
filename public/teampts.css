@@ -19,6 +19,7 @@
     margin: 0 20px;
     align-items: center;
     text-align: center;
+    font-family: Arial;
 }
 
 #pointCount p {
@@ -127,7 +128,52 @@ div {
     font-size: 20px;
     border-radius: 5px;
     background-color: #0c583e;
+    font-family: Arial;
 }
 
 .fa {font-size:50px;}
+
+div.user-points {
+    margin-top: 550px;
+    display: block;
+    border-radius: 20px;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    width: fit-content;
+    height: fit-content; 
+    align-items: right;
+    position: fixed;
+}
+
+div.user-points h1 {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial;
+}
+
+div.user-points h2 {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    font-family: Arial;
+}
+
+div.user-points p {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    font-family: Arial;
+}
+
+nav#user-nav {
+    display: flex;
+    justify-content: flex-end; 
+    background: none;
+    width: 100%; 
+    position: fixed; 
+    right: 0; 
+    top: 0; 
+    padding: 10px; 
+}
+
 
