@@ -48,75 +48,78 @@
     <script src="token.js"></script>
     <script>
       async function fetchFixtures() {
-        const token = getToken(); //get jwt token from storage
-        if (!token) return;
+        const token = localStorage.getItem("token"); // Get JWT token if available
 
-        // cache keys to store API response and timestamp in local storage
-        const cacheKey = "cachedFixtures";
-        const cacheTimestampKey = "fixtureTimestamp";
-        const CACHE_DURATION = 60 * 60 * 1000;
+        let headers = { "Content-Type": "application/json" };
+        let isAuthenticated = false;
 
-        //check if cached data exists in local storage
-        const cachedData = localStorage.getItem(cacheKey);
-        const cachedTimestamp = localStorage.getItem(cacheTimestampKey);
+        try {
+          if (token) {
+            console.log("User logged in via JWT.");
+            headers["Authorization"] = `Bearer ${token}`;
+            isAuthenticated = true;
+          } else {
+            console.log("Checking Google OAuth session...");
+            const sessionCheck = await fetch(
+              "http://localhost:3000/auth/success",
+              {
+                credentials: "include",
+              }
+            );
 
-        //if cache exists and is still valid, use cached data
-        if (cachedData && cachedTimestamp) {
-          const now = new Date().getTime();
-          if (now - cachedTimestamp < CACHE_DURATION) {
-            console.log("Using cached fixtures data"); //display cached fixtures
-            displayFixtures(JSON.parse(cachedData));
+            const sessionData = await sessionCheck.json();
+            console.log("Google OAuth session response:", sessionData);
+
+            if (sessionData.success) {
+              console.log("User authenticated via Google OAuth.");
+              isAuthenticated = true;
+            } else {
+              console.warn("User not authenticated. Redirecting to login.");
+              window.location.href = "login.html";
+              return;
+            }
+          }
+
+          if (!isAuthenticated) {
+            console.warn("User is not authenticated. Redirecting...");
+            window.location.href = "login.html";
             return;
           }
-        }
-        try {
+
           console.log("Fetching new fixtures from API...");
-          //api request to fetch fixtures
           const response = await fetch("http://localhost:3000/api/fixtures", {
             method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token}`,
-            },
+            headers: headers,
           });
-          const data = await response.json();
-          console.log("Fetched Fixtures: ", data);
 
-          //if response is valid, store data in local storage and display it
+          const data = await response.json();
+          console.log("Fetched Fixtures:", data);
+
           if (response.ok && data.response && data.response.length > 0) {
-            // Store in localStorage
-            localStorage.setItem(cacheKey, JSON.stringify(data.response));
-            localStorage.setItem(cacheTimestampKey, new Date().getTime());
             displayFixtures(data.response);
           } else {
             document.getElementById("fixtures-container").innerHTML =
               "<p>No fixtures available or unauthorized</p>";
           }
         } catch (error) {
-          console.error("error fetching fixtures: ", error);
-          document.getElementById("fixtures-container").innnerHTML =
+          console.error("Error fetching fixtures:", error);
+          document.getElementById("fixtures-container").innerHTML =
             "<p>Error loading fixtures</p>";
         }
       }
+
       function displayFixtures(fixtures) {
         const container = document.getElementById("fixtures-container");
         container.innerHTML = ""; // Clear previous content
 
         fixtures.forEach((match) => {
-          console.log("Processing match: ", match); // Debugging API structure
+          console.log("Processing match:", match); // Debugging API structure
 
-          // Ensure fixture data exists before accessing properties
-          if (
-            !match.fixture ||
-            !match.fixture.venue ||
-            !match.fixture.status ||
-            !match.teams
-          ) {
+          if (!match.fixture || !match.teams) {
             console.warn("Skipping match due to missing data:", match);
             return;
           }
 
-          // Correcting Property Access
           const date = match.fixture.date
             ? new Date(match.fixture.date).toLocaleString()
             : "Date Not Available";
@@ -130,7 +133,6 @@
           const homeLogo = match.teams.home?.logo || "";
           const awayLogo = match.teams.away?.logo || "";
 
-          // ✅ Create fixture display
           const fixtureElement = document.createElement("div");
           fixtureElement.classList.add("fixture-item");
 
