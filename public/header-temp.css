@@ -147,3 +147,11 @@ dt{ /*"Footer List" ul*/
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
+
+a{
+    text-decoration:none;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
