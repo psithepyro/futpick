@@ -1,0 +1,29 @@
+div.createleague_container, div.joinleague_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+div.joinleague_container {
+    margin-top: 300px;
+}
+
+div.createleague_container p, div.joinleague_container p {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+div.createleague_container button, div.joinleague_container button {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+    padding: 5px;
+    border-radius: 5px;
+}
