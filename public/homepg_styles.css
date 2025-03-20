@@ -153,7 +153,8 @@ a{
 figure{
     position: center;
     width: 300px;
-    height: 175px;
+    min-height: fit-content;
+    height: 220px;
     margin: 0 auto 0.55em;
     border: 1px solid #cccccc;
     border-radius: 10px;
@@ -162,7 +163,7 @@ figure{
 }
 
 figcaption{
-    padding-top: 20px;
+    padding-top: 6vh;;
     text-align: center;
     background-color: #181A1B;
     color :white;
@@ -216,3 +217,4 @@ dt{ /*"Footer List" ul*/
     height: auto;
     background-color: #181A1B;
 }
+

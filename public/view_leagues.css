@@ -1,0 +1,40 @@
+div.fantasy_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+div.fantasy_league{
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+div.fantasy_league h1 {
+    width: 100%;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+}
+
+div.league-table, div.league-table table {
+    width: 100%;
+}
+
+div.league-table table tr th, div.league-table table tr td {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    font-size: 14px;
+}

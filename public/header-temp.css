@@ -51,12 +51,13 @@ div.sidebar {
 }
 .sidebar {
     width: 80px;
-    background: #1a1a1a;
+    background: #313131;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    border-radius: 5px;
 }
 
 /* Sidebar Buttons */
