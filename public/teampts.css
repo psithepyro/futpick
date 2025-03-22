@@ -176,4 +176,8 @@ nav#user-nav {
     padding: 10px; 
 }
 
-
+div.player_card button{
+    background: none;
+    cursor: pointer;
+    border: none;
+}
