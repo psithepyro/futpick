@@ -12,6 +12,10 @@ router.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
+    cookie: {
+      sameSite: "none",
+      secure: false,
+    },
   })
 );
 //Initilaizes Passport.js

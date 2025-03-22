@@ -3,25 +3,31 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const passport = require("passport");
-const axios = require("axios");
 require("dotenv").config();
-const path = require("path");
-const authenticateUser = require("./middlewares/jwtMiddleware");
-const logger = require("./middlewares/logger");
+//const path = require("path");
+//const authenticateUser = require("./middlewares/jwtMiddleware");
 
-// Initialize Express App
+// Import routes
+const authRoutes = require("./routes/auth");
+const jwtAuthRoutes = require("./routes/jwtAuth");
+const googleAuthRoutes = require("./routes/googleAuth");
+const footballRoutes = require("./routes/football");
+
+//create express application
 const app = express();
-
+//static files from public directory
 app.use(express.static(__dirname + "/../public"));
 
-// Middleware
+// Middlewares
 app.use(express.json());
 app.use(cookieParser());
+
+//CORS to allow requests from frontend
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5500", "http://localhost:5500"], //allow all orgins for dev only
+    origin: ["http://127.0.0.1:5500", "http://localhost:5500"],
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"], // Allow Authorization
+    allowedHeaders: ["Content-Type", "Authorization"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
@@ -33,45 +39,20 @@ app.use(
   })
 );
 
-// ✅ Initialize Passport for OAuth
+// Passport OAuth for Google OAuth
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Import Routes
-const authRoutes = require("./routes/auth"); // General authentication routes
-const jwtAuthRoutes = require("./routes/jwtAuth"); // ✅ JWT-based auth
-const googleAuthRoutes = require("./routes/googleAuth"); // ✅ Google OAuth auth
+// authentication routes
+app.use("/auth", authRoutes);
+app.use("/auth/jwt", jwtAuthRoutes);
+app.use("/auth", googleAuthRoutes);
 
-// Routes
-app.use("/auth", authRoutes); // General auth (handles login, register)
-app.use("/auth/jwt", jwtAuthRoutes); // JWT authentication
-app.use("/auth/", googleAuthRoutes); // Google OAuth authentication
-
-app.get("/api/fixtures", authenticateUser, async (req, res) => {
-  try {
-    const response = await axios.get(
-      "https://v3.football.api-sports.io/fixtures",
-      {
-        params: {
-          league: 262, //liga MX
-          season: 2023,
-        },
-        headers: {
-          "x-apisports-key": process.env.API_FOOTBALL_KEY,
-          "x-apisports-host": process.env.API_FOOTBALL_HOST,
-        },
-      }
-    );
-    res.json(response.data);
-  } catch (error) {
-    console.error("Error fetching fixtures:", error);
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-});
-//app.use(logger);
+// route for football API
+app.use("/api/football", footballRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });
