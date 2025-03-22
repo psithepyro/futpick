@@ -47,7 +47,7 @@
             <th>Percent Selected</th>
             <th>Points</th>-->
             <th>Nationality</th>
-            <th>League</th>
+            <th>Team</th>
           </tr>
         </thead>
         <tbody id="player-table-body"></tbody>
@@ -150,7 +150,7 @@
           const position = p.statistics?.[0]?.games?.position || "Unknown";
           const nationality = p.player?.nationality || "Unknown";
           const photo = p.player?.photo || "";
-          const league = p.statistics?.[0]?.league?.country || "Unknown";
+          const league = p.statistics?.[0]?.team?.name || "Unknown";
 
           // Build row with photo + name, position, nationality
           const row = document.createElement("tr");
