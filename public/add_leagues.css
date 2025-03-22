@@ -6,6 +6,7 @@ div.createleague_container, div.joinleague_container {
     width: 100%;
     height: auto;
     position: fixed;
+    background: none;
 }
 
 div.joinleague_container {
