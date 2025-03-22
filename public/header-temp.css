@@ -90,7 +90,7 @@ nav button{
 }
 
 nav button.active {
-    background-color: lightblue;
+    background-color: #0f8a5f;
     color: black;
     border-radius: 5px; 
 }
