@@ -1,151 +1,150 @@
 /* General Page Styles*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; 
-    color: white; 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
 }
 
-div.fixtures{
-    padding-top: 150px;
+div.fixtures {
+  padding-top: 150px;
 }
 
 /*Title Container*/
 .header_container {
-    max-width: 900px;
-    height: 80px; /* height of the colored container */
-    margin: 0 auto;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #0f8a5f, #66b2ff);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    position: fixed; /* Keep it fixed at the top */
-    top: 30px; /* Space above the container to the top of the page */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: 1000;
+  max-width: 900px;
+  height: 80px; /* height of the colored container */
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #0f8a5f, #66b2ff);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Keep it fixed at the top */
+  top: 30px; /* Space above the container to the top of the page */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Ensure Header Buttons Stay Just Below the Header */
 .header_buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: fixed; /* Fix below header */
-    top: 150px; /* Space from top of the sheet to the buttons */
-    left: 50%;
-    transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Fix below header */
+  top: 150px; /* Space from top of the sheet to the buttons */
+  left: 50%;
+  transform: translateX(-50%);
 }
-
 
 /*Main Container*/
 .container {
-    max-width: 900px;
-    max-height: 200px;
-    margin: 20px auto; 
-    padding: 20px;
-    background: linear-gradient(to right, #0f8a5f, #66b2ff); 
-    border-radius: 10px; 
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  max-width: 900px;
+  max-height: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #0f8a5f, #66b2ff);
+  border-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Main Content Styling*/
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    min-height: 100vh; /* Ensure it takes the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensure it takes the full height of the viewport */
 }
 
 /* Fixtures Section */
 .fixtures {
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Adjust as needed */ /* Adjust as needed */
-    margin: 0 auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust as needed */ /* Adjust as needed */
+  margin: 0 auto; /* Center horizontally */
 }
 
 /* Previous/Next navigation inside fixtures */
 .nav-buttons {
-    display: flex;
-    justify-content: space-between; 
-    font-size: 14px;
-    margin-bottom: 10px;
-    width: 100%; /* Ensure buttons take full width */
-    max-width: 900px; /* Adjust as needed */
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure buttons take full width */
+  max-width: 900px; /* Adjust as needed */
 }
 
 /* Box that contains fixture details */
 .fixtures-box {
-    background: rgba(255, 255, 255, 0.2); 
-    padding: 15px;
-    border-radius: 10px; 
-    width: 100%; /* Ensure it takes full width */
-    max-width: 900px; /* Adjust as needed */
-    margin: 0 auto; /* Center horizontally */
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%; /* Ensure it takes full width */
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto; /* Center horizontally */
 }
 
 /* Fixtures section title */
 .fixtures-box h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Fixture list styles */
 .fixtures-box ul {
-    list-style: none; 
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 /* Individual fixture item */
 .fixtures-box li {
-    margin: 5px 0; 
+  margin: 5px 0;
 }
-
 
 /* Player List Container */
 .player-stats-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 250px auto 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  margin: 250px auto 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 /* Player Table */
 .player-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed;
 }
 
 /* Table Headers */
 .player-table th {
-    background: #0f8a5f;
-    color: white;
-    padding: 10px;
-    text-align: left;
+  background: #0f8a5f;
+  color: white;
+  padding: 10px;
+  text-align: left;
 }
 
 /* Table Rows */
 .player-table td {
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Alternating Row Colors */
 .player-table tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 }

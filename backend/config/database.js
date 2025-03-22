@@ -6,7 +6,7 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false, sslmode: "require" },
 });
-
+//attemot to connect to verify the database is online
 pool
   .connect()
   .then(() => console.log("✅ Connected to Tembo PostgreSQL"))

@@ -39,60 +39,41 @@
       </div>
       <div class="fixtures-box">
         <h2>LigaMX Fixtures</h2>
-        <p>Gameweek 11: Tue March 10 10:30</p>
         <div id="fixtures-container">
           <p>Loading fixtures...</p>
           <!-- Placeholder before data loads -->
         </div>
       </div>
     </div>
-    
+
     <script src="token.js"></script>
     <script>
+      //store fixtures grouped by date here
+      let groupedByDay = {};
+      let sortedDays = [];
+      let currentDayIndex = 0; //date block
+      const DAYS_PER_LOAD = 4; //load 4 dates worth of fixtures
+
+      //fetches fixtures data from server
       async function fetchFixtures() {
-        const token = localStorage.getItem("token"); // Get JWT token if available
-
+        //token.js handles authentication
+        const token = localStorage.getItem("token");
         let headers = { "Content-Type": "application/json" };
-        let isAuthenticated = false;
 
+        // If we do have a token, set the Authorization header
+        if (token) {
+          headers["Authorization"] = `Bearer ${token}`;
+        }
+
+        console.log("Fetching new fixtures from API...");
         try {
-          if (token) {
-            console.log("User logged in via JWT.");
-            headers["Authorization"] = `Bearer ${token}`;
-            isAuthenticated = true;
-          } else {
-            console.log("Checking Google OAuth session...");
-            const sessionCheck = await fetch(
-              "http://localhost:3000/auth/success",
-              {
-                credentials: "include",
-              }
-            );
-
-            const sessionData = await sessionCheck.json();
-            console.log("Google OAuth session response:", sessionData);
-
-            if (sessionData.success) {
-              console.log("User authenticated via Google OAuth.");
-              isAuthenticated = true;
-            } else {
-              console.warn("User not authenticated. Redirecting to login.");
-              window.location.href = "login.html";
-              return;
+          const response = await fetch(
+            "http://localhost:3000/api/football/fixtures",
+            {
+              method: "GET",
+              headers: headers,
             }
-          }
-
-          if (!isAuthenticated) {
-            console.warn("User is not authenticated. Redirecting...");
-            window.location.href = "login.html";
-            return;
-          }
-
-          console.log("Fetching new fixtures from API...");
-          const response = await fetch("http://localhost:3000/api/fixtures", {
-            method: "GET",
-            headers: headers,
-          });
+          );
 
           const data = await response.json();
           console.log("Fetched Fixtures:", data);
@@ -110,51 +91,119 @@
         }
       }
 
-      function displayFixtures(fixtures) {
-        const container = document.getElementById("fixtures-container");
-        container.innerHTML = ""; // Clear previous content
-
-        fixtures.forEach((match) => {
-          console.log("Processing match:", match); // Debugging API structure
-
-          if (!match.fixture || !match.teams) {
+      // Group fixtures by their YYYY-MM-DD date
+      function groupFixturesByDay(fixturesArray) {
+        const grouped = {};
+        fixturesArray.forEach((match) => {
+          // Basic checks
+          if (!match.fixture || !match.fixture.date || !match.teams) {
             console.warn("Skipping match due to missing data:", match);
             return;
           }
 
-          const date = match.fixture.date
-            ? new Date(match.fixture.date).toLocaleString()
-            : "Date Not Available";
+          // Convert fixture date to 'YYYY-MM-DD'
+          const dateObj = new Date(match.fixture.date);
+          const dayKey = dateObj.toISOString().split("T")[0]; // e.x: "2023-03-20"
 
-          const venueName = match.fixture.venue?.name || "Unknown Venue";
-          const venueCity = match.fixture.venue?.city || "Unknown City";
-          const status = match.fixture.status?.long || "Status Unavailable";
-
-          const homeTeam = match.teams.home?.name || "Unknown Team";
-          const awayTeam = match.teams.away?.name || "Unknown Team";
-          const homeLogo = match.teams.home?.logo || "";
-          const awayLogo = match.teams.away?.logo || "";
-
-          const fixtureElement = document.createElement("div");
-          fixtureElement.classList.add("fixture-item");
-
-          fixtureElement.innerHTML = `
-            <h3>📅 ${date}</h3>
-            <p>📍 Venue: ${venueName}, ${venueCity}</p>
-            <p>📌 Status: ${status}</p>
-            <div class="teams">
-                <img src="${homeLogo}" alt="${homeTeam}" width="30" height="30"/> ${homeTeam} vs 
-                <img src="${awayLogo}" alt="${awayTeam}" width="30" height="30"/> ${awayTeam}
-            </div>
-        `;
-
-          container.appendChild(fixtureElement);
+          if (!grouped[dayKey]) {
+            grouped[dayKey] = [];
+          }
+          grouped[dayKey].push(match);
         });
-
-        console.log("Fixtures displayed successfully!");
+        return grouped;
       }
 
-      fetchFixtures();
+      //after fetching fixtures, display them in DOM
+      function displayFixtures(allFixtures) {
+        // 1) Group fixtures by day
+        groupedByDay = groupFixturesByDay(allFixtures);
+
+        // 2) Sort the days
+        sortedDays = Object.keys(groupedByDay).sort(
+          (a, b) => new Date(a) - new Date(b)
+        );
+
+        // 3) Reset position
+        currentDayIndex = 0;
+
+        // 4) Clear the container and load the first chunk of days
+        const container = document.getElementById("fixtures-container");
+        container.innerHTML = "";
+        loadNextDays();
+
+        // 5) Attach scroll listener for “load more”
+        window.addEventListener("scroll", handleScroll);
+      }
+
+      //load the next chunk of days of fixtures
+      function loadNextDays() {
+        const container = document.getElementById("fixtures-container");
+        //load up to 4 day-keys at a time
+        const endIndex = Math.min(
+          currentDayIndex + DAYS_PER_LOAD,
+          sortedDays.length
+        );
+
+        //for each day, display its fixtures
+        for (let i = currentDayIndex; i < endIndex; i++) {
+          const dayKey = sortedDays[i];
+          const fixturesForDay = groupedByDay[dayKey];
+
+          // Create a heading for the date
+          const dayHeading = document.createElement("h3");
+          dayHeading.textContent = new Date(dayKey).toDateString();
+          // Example: "Tue Mar 10 2023"
+          container.appendChild(dayHeading);
+
+          // for each fixture, render its details
+          fixturesForDay.forEach((match) => {
+            const date = match.fixture.date
+              ? new Date(match.fixture.date).toLocaleString()
+              : "Date Not Available";
+            const venueName = match.fixture.venue?.name || "Unknown Venue";
+            const venueCity = match.fixture.venue?.city || "Unknown City";
+            const status = match.fixture.status?.long || "Status Unavailable";
+
+            const homeTeam = match.teams.home?.name || "Unknown Team";
+            const awayTeam = match.teams.away?.name || "Unknown Team";
+            const homeLogo = match.teams.home?.logo || "";
+            const awayLogo = match.teams.away?.logo || "";
+
+            //build element with fixture info
+            const fixtureElement = document.createElement("div");
+            fixtureElement.classList.add("fixture-item");
+            fixtureElement.innerHTML = `
+              <h3>📅 ${date}</h3>
+              <p>📍 Venue: ${venueName}, ${venueCity}</p>
+              <p>📌 Status: ${status}</p>
+              <div class="teams">
+                  <img src="${homeLogo}" alt="${homeTeam}" width="30" height="30"/> ${homeTeam} vs
+                  <img src="${awayLogo}" alt="${awayTeam}" width="30" height="30"/> ${awayTeam}
+              </div>
+            `;
+            container.appendChild(fixtureElement);
+          });
+        }
+
+        // Move our day index forward
+        currentDayIndex = endIndex;
+      }
+
+      // Infinite scroll: if near the bottom and days remain, load more
+      function handleScroll() {
+        if (
+          window.innerHeight + window.scrollY >=
+            document.body.offsetHeight - 100 &&
+          currentDayIndex < sortedDays.length
+        ) {
+          loadNextDays();
+        }
+      }
+
+      // Fetch the fixtures once page loads
+      window.addEventListener("DOMContentLoaded", () => {
+        fetchFixtures();
+      });
     </script>
   </body>
 </html>
