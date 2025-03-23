@@ -31,7 +31,7 @@ div { /*"Main Content" div*/
 
 
 #subHeader{
-    z-index: 0;
+    z-index: 98;
     display: flex;
     justify-content: center;
     padding-top: 100px;
@@ -44,8 +44,9 @@ div { /*"Main Content" div*/
 /* Sidebar Styles */
 
 div.sidebar {
-    padding-top: 100px;
-    z-index: 1;
+    margin-top: 85px;
+    padding-top: 10px;
+    z-index: 98;
     position: fixed;
     height: fit-content;
 }
@@ -61,7 +62,7 @@ div.sidebar {
 }
 
 /* Sidebar Buttons */
-.league-btn {
+button.league-btn {
     background: none;
     border: none;
     color: white;

@@ -36,17 +36,7 @@
     font-size: 20px;
 }
 
-div {
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-}
 
-* {
-    box-sizing: border-box;
-}
 
 .team_container{
     margin-top: 100px;
@@ -113,6 +103,7 @@ div {
     text-align: center;
     background-color: #0f8a5f;
     color: white;
+    margin: 10px;
 }
 
 .player_card:hover {
@@ -169,15 +160,32 @@ nav#user-nav {
     display: flex;
     justify-content: flex-end; 
     background: none;
+    margin-top: 10px;
     width: 100%; 
     position: fixed; 
     right: 0; 
     top: 0; 
     padding: 10px; 
+    border: none;
+    color: white;
 }
 
 div.player_card button{
     background: none;
     cursor: pointer;
     border: none;
+    opacity: 0.8;
+}
+
+div.player_card button:hover{
+    opacity: 1;
+}
+
+nav#user-nav div#user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    font-family: Arial;
+    font-weight: bold;
 }
