@@ -206,3 +206,25 @@ a{
     text-align: center;
     color: white;
 }
+
+#search {
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: gray;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: Arial;;
+}
+
+.player-stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}

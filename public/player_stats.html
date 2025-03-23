@@ -37,7 +37,10 @@
     </div>
 
     <div class="player-stats-container">
-      <h2>Player List</h2>
+      <div class="player-stats-header">
+        <h2>Player List</h2>
+        <input type="text" id="search" placeholder="Search for players..." />
+      </div>
       <table class="player-table">
         <thead>
           <tr>
@@ -60,14 +63,16 @@
       let currentIndex = 0; //index of the next player to display
       let currentPage = 1; // current page from API-football
       let totalPages = 1; // total pages
+      let currentQuery = ""; // current search query
       const PLAYERS_PER_LOAD = 20; // 20 players per load
+
 
       //fetch players from API endpoint
       async function fetchPlayers() {
         const token = localStorage.getItem("token");
         let headers = { "Content-Type": "application/json" };
 
-        //If token exits, attach to request
+        //If token exists, attach to request
         if (token) {
           headers["Authorization"] = `Bearer ${token}`;
         }
@@ -202,6 +207,11 @@
         currentPage = 1;
         fetchPlayers();
       });
+
+      // Search input handler
+      function handleSearchInput() {
+        
+      }
     </script>
   </body>
 </html>

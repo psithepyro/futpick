@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header-temp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+<body>
     <header>FütPick's Liga MX Fantasy Football</header>
     <ul id="navlist">
         <li id="profile"><a href="account.html"></a></li>
@@ -31,11 +32,81 @@
 
     <div class="joinleague_container">
         <p> Or join an already existing league by entering its invite code</p>
-        <button><a href="join_leagues.html">Join an Existing League</a></button>
+        <button onclick="openJoinPopup(), closeCreatePopup()">Join an Existing League</button>
     </div>
 
     <div class="createleague_container">
         <p>Create a new league and invite your friends to join</p>
-        <button><a href="create_leagues.html">Create a new League</a></button>
+        <button onclick="openCreatePopup(), closeJoinPopup()">Create a new League</button>
     </div>
+
+    <div class="form-popup" id="joinPopup">
+        <form action="/join_league.php" class="form-container"> <!--change to database path-->
+            <h2>Join a League</h2>
+            <label for="invite_code">Invite Code:</label>
+            <input type="text" placeholder="Enter Invite Code..." id="invite_code" name="invite_code" required>
+            <div class="form-btns">
+                <button type="submit" class="btn">Join</button>
+                <button type="button" class="btn cancel" onclick="closeJoinPopup()">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-popup" id="createPopup">
+        <form action="/create_league.php" class="form-container"> <!--change to database path-->
+            <h2>Create a League</h2>
+            <label for="league_name">League Name:</label>
+            <input type="text" placeholder="Enter League Name..." id="league_name" name="league_name" required>
+            <label for="invite_code">Invite Code:</label>
+            <button type="button" class="btn gen" onclick="generateCode()">Generate Invite Code</button>
+            <div class="form-btns">
+                <button type="submit" class="btn">Create</button>
+                <button type="button" class="btn cancel" onclick="closeCreatePopup()">Cancel</button>
+            </div>
+        </form>
+
+
+
+    <script>
+        function openJoinPopup() {
+            document.getElementById("joinPopup").style.display = "block";
+        }
+
+        function closeJoinPopup() {
+            document.getElementById("joinPopup").style.display = "none";
+        }
+
+        function openCreatePopup() {
+            document.getElementById("createPopup").style.display = "block";
+        }
+
+        function closeCreatePopup() {
+            document.getElementById("createPopup").style.display = "none";
+        }
+
+        function generateCode() {
+            const popupContainer = document.querySelector('#createPopup');
+            popupContainer.innerHTML = ``;
+
+            var code = Math.random().toString(36).substring(2, 8);
+            popupContainer.innerHTML = `
+                <form action="/create_league.php" class="form-container">
+                    <h2>Create a League</h2>
+                    <label for="league_name">League Name:</label>
+                    <input type="text" placeholder="Enter League Name..." id="league_name" name="league_name" required>
+                    <label for="invite_code">Invite Code:</label>
+                    <button type="button" class="btn gen" onclick="generateCode()">${code}</button>
+                    <div class="form-btns">
+                        <button type="submit" class="btn">Create</button>
+                        <button type="button" class="btn cancel" onclick="closeCreatePopup()">Cancel</button>
+                    </div>
+                </form>
+            `;
+        }
+
+
+    </script>
+
+
+</body>
 </html>
