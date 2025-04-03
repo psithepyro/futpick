@@ -2,19 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Account</title>
+    <title>FütPicks - My Account</title>
     <link rel="stylesheet" href="account_styles.css" />
+    <link rel="stylesheet" href="header-temp.css">
+    <link rel="stylesheet" href="dev-story.css">
+    <script src="https://kit.fontawesome.com/d1f065b276.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/futpicks-logo.png" />
   </head>
   <body>
-    <header>
-      <h1>My Account</h1>
-      <button onclick="logout()">Logout</button>
-    </header>
+    <header>FütPick Account Info</header>
     <div class="account-info">
+      <h2>Account Information</h2>
       <img id="profile-pic" src="" alt="Profile Picture" />
       <p><strong>Name:</strong> <span id="name"></span></p>
       <p><strong>Email:</strong> <span id="email"></span></p>
+      <button onclick="window.location.href='homepage.html'">Go To Home</button>
+      <button onclick="logout()">Logout</button>
     </div>
 
     <script>

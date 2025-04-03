@@ -267,3 +267,26 @@ a{
 .hudtip:hover .hudtext {
     visibility: visible;
 }
+
+.account-info {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-info button {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
+}
