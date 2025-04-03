@@ -1,0 +1,50 @@
+h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+input[type=submit] {
+    background: linear-gradient(to right, #2f8f63, #4db8ff);
+    font-family: Arial, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type=text], input[type=email], textarea {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.contact-container h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
