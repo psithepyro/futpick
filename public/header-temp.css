@@ -149,6 +149,11 @@ body{
     margin-right: auto;
     width: 20%;
     height: 20%;
+    animation: logo-spin 4s linear infinite;
+}
+
+@keyframes logo-spin{
+    50%{rotate: y 180deg;}
 }
 
 .footercontainer {
