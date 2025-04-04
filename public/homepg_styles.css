@@ -4,39 +4,49 @@ div { /*"Main Content" div*/
 }
 
 
-#navlist{
+#navlist {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 99;
 }
 
-#navlist li{
-    margin: 0;
-    padding: 0;
+#navlist li {
     list-style: none;
-    position: absolute;
-    top: 0;
+    margin: 0 10px; 
 }
 
-#navlist li, #navlist a{
+#navlist li a {
+    display: block;
     height: 50px;
     width: 50px;
-    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#profile{
-    left: 1450px;
-    background:   url('images/profileicon.PNG') no-repeat;
-    background-size: 32px 32px;
-    background-position-y: 12px;
+#profile {
+    background: url('images/profileicon.PNG') no-repeat center;
+    background-size: 35px 35px;
+}
+
+#home {
+    background: url('images/house-solid.png') no-repeat center;
+    background-size: 28px 28px;
 }
 
 nav{
-    z-index: 0;
+    z-index: 1;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
     padding-top: 100px;
     width: 100%;
     height: auto;
+    margin: 0 auto;
     position: fixed;
     background: #181A1B;
 }
@@ -51,10 +61,11 @@ nav button{
 }
 
 nav button.active {
-    background-color: lightblue;
+    background-color: #0f8a5f;
     color: black;
     border-radius: 5px; 
 }
+
 body{
     z-index: -1;
     margin: 0; 
