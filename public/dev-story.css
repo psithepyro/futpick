@@ -29,3 +29,9 @@ div.social-links {
     background: none;
 }
 
+div.card-container {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+}
+
