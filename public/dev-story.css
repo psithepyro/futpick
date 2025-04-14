@@ -4,11 +4,13 @@ div.developer-cards {
     border-radius: 5px;
     transition: 0.3s;
     max-width: 300px;
-    margin: auto;
+    margin: 20px;
     margin-top: 100px;
     text-align: center;
     font-family: arial;
     padding: 15px 15px 15px 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 p.title {
@@ -31,7 +33,24 @@ div.social-links {
 
 div.card-container {
     display: flex;
-    justify-content: row;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
+}
+
+div.developer-cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+div.developer-cards img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 15px;
 }
 

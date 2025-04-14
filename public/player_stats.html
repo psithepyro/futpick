@@ -41,7 +41,6 @@
     <div class="player-stats-container">
       <div class="player-stats-header">
         <h2>Player List</h2>
-        <input type="text" id="search" placeholder="Search for players..." />
       </div>
       <table class="player-table">
         <thead>
@@ -58,6 +57,18 @@
         <tbody id="player-table-body"></tbody>
       </table>
     </div>
+    <div class="hidden-player-stats-container">
+      <div class="player-cards">
+        <img src="images/fup.png" alt="developer-francisco" style="width: 100%;" />
+        <h1>Player Name</h1>
+        <p>Goals: 0</p>
+        <p>Assists: 0</p>
+        <p>Saves: 0</p>
+        <p>Yellow Cards: 0</p>
+        <p>Red Cards: 0</p>
+      </div>
+    </div>
+
 
     <script src="token.js"></script>
     <script>
@@ -211,7 +222,7 @@
       });
 
       // Search input handler
-      function handleSearchInput() {
+      function playerClick() {
         
       }
     </script>
