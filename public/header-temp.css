@@ -3,32 +3,38 @@ div { /*"Main Content" div*/
     padding-top: 20px;
 }
 
-#navlist{
+#navlist {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 99;
 }
 
-#navlist li{
-    margin: 0;
-    padding: 0;
+#navlist li {
     list-style: none;
-    position: absolute;
-    top: 0;
+    margin: 0 10px; 
 }
 
-#navlist li, #navlist a{
+#navlist li a {
+    display: block;
     height: 50px;
     width: 50px;
-    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#profile{
-    left: 1450px;
-    background: url('images/profileicon.PNG') no-repeat;
-    background-size: 32px 32px;
-    background-position-y: 12px;
+#profile {
+    background: url('images/profileicon.PNG') no-repeat center;
+    background-size: 35px 35px;
 }
 
+#home {
+    background: url('images/house-solid.png') no-repeat center;
+    background-size: 28px 28px;
+}
 
 #subHeader{
     z-index: 98;
@@ -111,13 +117,13 @@ nav{
 }
 
 header { /* Header*/
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     top: 0;
     left:0;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     z-index: 99;
     background: linear-gradient(to right, #0f8a5f, #66b2ff);
@@ -163,7 +169,7 @@ body{
 }
 
 .footercontainer > div {
-    width:33%;
+    width:20%;
 }
 
 .footerbold{

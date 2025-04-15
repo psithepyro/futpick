@@ -114,9 +114,9 @@ main {
 
 /* Player List Container */
 .player-stats-container {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
-  margin: 250px auto 20px;
+  margin: 250px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -147,4 +147,22 @@ main {
 /* Alternating Row Colors */
 .player-table tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.05);
+}
+
+.player-table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+div.hidden-player-stats-container {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #66b2ff;
+  border-radius: 10px;
 }
