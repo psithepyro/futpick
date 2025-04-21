@@ -4,6 +4,8 @@ const router = express.Router();
 //import controller functions
 const { getFixtures } = require("../controllers/fixturesController");
 const { getPlayers } = require("../controllers/playersController");
+const { getTopScorers } = require("../controllers/topscorerController");
+const { getTopAssisters } = require("../controllers/topassisterController");
 
 const {
   createFantasyTeam,
@@ -18,6 +20,8 @@ const authenticateUser = require("../middlewares/jwtMiddleware");
 //defined routes
 router.get("/fixtures", authenticateUser, getFixtures);
 router.get("/players", authenticateUser, getPlayers);
+router.get("/topassists", authenticateUser, getPlayers);
+router.get("/topscorers", authenticateUser, getPlayers);
 
 router.post("/create-team", authenticateUser, createFantasyTeam);
 router.get("/my-team", authenticateUser, getUserTeam);

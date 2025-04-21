@@ -3,35 +3,41 @@ div { /*"Main Content" div*/
     padding-top: 20px;
 }
 
-#navlist{
+#navlist {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 99;
 }
 
-#navlist li{
-    margin: 0;
-    padding: 0;
+#navlist li {
     list-style: none;
-    position: absolute;
-    top: 0;
+    margin: 0 10px; 
 }
 
-#navlist li, #navlist a{
+#navlist li a {
+    display: block;
     height: 50px;
     width: 50px;
-    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#profile{
-    left: 1450px;
-    background: url('images/profileicon.PNG') no-repeat;
-    background-size: 32px 32px;
-    background-position-y: 12px;
+#profile {
+    background: url('images/profileicon.PNG') no-repeat center;
+    background-size: 35px 35px;
 }
 
+#home {
+    background: url('images/house-solid.png') no-repeat center;
+    background-size: 28px 28px;
+}
 
 #subHeader{
-    z-index: 0;
+    z-index: 98;
     display: flex;
     justify-content: center;
     padding-top: 100px;
@@ -44,8 +50,9 @@ div { /*"Main Content" div*/
 /* Sidebar Styles */
 
 div.sidebar {
-    padding-top: 100px;
-    z-index: 1;
+    margin-top: 85px;
+    padding-top: 10px;
+    z-index: 98;
     position: fixed;
     height: fit-content;
 }
@@ -61,7 +68,7 @@ div.sidebar {
 }
 
 /* Sidebar Buttons */
-.league-btn {
+button.league-btn {
     background: none;
     border: none;
     color: white;
@@ -110,13 +117,13 @@ nav{
 }
 
 header { /* Header*/
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     top: 0;
     left:0;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     z-index: 99;
     background: linear-gradient(to right, #0f8a5f, #66b2ff);
@@ -142,12 +149,17 @@ body{
 }
 
 .center-image {
-    padding-top: 10%;
+    padding-top: 20vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     height: 20%;
+    animation: logo-spin 4s linear infinite;
+}
+
+@keyframes logo-spin{
+    50%{rotate: y 180deg;}
 }
 
 .footercontainer {
@@ -157,7 +169,7 @@ body{
 }
 
 .footercontainer > div {
-    width:33%;
+    width:20%;
 }
 
 .footerbold{
@@ -205,4 +217,82 @@ a{
     font-family: Arial, sans-serif;
     text-align: center;
     color: white;
+}
+
+#search {
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: gray;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: Arial;;
+}
+
+.player-stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hudtip {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    background: none;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hudtip .hudtext {
+    visibility: hidden;
+    width: 90px;
+    height: fit-content;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.hudtip:hover .hudtext {
+    visibility: visible;
+}
+
+.account-info {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-info button {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    background: linear-gradient(to right, #0f8a5f, #66b2ff);
 }
