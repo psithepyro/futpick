@@ -145,6 +145,7 @@
 
         for (let i = currentIndex; i < endIndex; i++) {
           const p = allPlayers[i];
+          const playerId = p.player?.id || "Unknown";
           const firstname = p.player?.firstname || "Unknown";
           const lastname = p.player?.lastname || "Unknown";
           const position = p.statistics?.[0]?.games?.position || "Unknown";
@@ -163,7 +164,7 @@
             height="40"
             style="border-radius: 50%; object-fit: cover; margin-right: 10px;"
           />
-          <span>${firstname} ${lastname}</span>
+          <span>${firstname} ${lastname} ${playerId}</span>
         </td>
         <td>${position}</td>
         <td>${nationality}</td>
