@@ -11,7 +11,7 @@ const authenticateUser = require("../middlewares/jwtMiddleware");
 //defined routes
 router.get("/fixtures", authenticateUser, getFixtures);
 router.get("/players", authenticateUser, getPlayers);
-`router.get("/topscorers", authenticateUser, getTopScorers);
-router.get("/topassisters", authenticateUser, getTopAssisters);`
+router.get("/topassists", authenticateUser, getPlayers);
+router.get("/topscorers", authenticateUser, getPlayers);
 
 module.exports = router;

@@ -115,7 +115,7 @@ main {
 /* Player List Container */
 .player-stats-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 250px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -127,7 +127,7 @@ main {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 /* Table Headers */
@@ -141,6 +141,7 @@ main {
 /* Table Rows */
 .player-table td {
   padding: 10px;
+  padding-right: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 

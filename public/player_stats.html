@@ -47,11 +47,11 @@
           <tr>
             <th>Player</th>
             <th>Position</th>
-            <!--<th>Cost</th>
-            <th>Percent Selected</th>
-            <th>Points</th>-->
             <th>Nationality</th>
             <th>Team</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Saves</th>
           </tr>
         </thead>
         <tbody id="player-table-body"></tbody>
@@ -168,7 +168,10 @@
           const position = p.statistics?.[0]?.games?.position || "Unknown";
           const nationality = p.player?.nationality || "Unknown";
           const photo = p.player?.photo || "";
-          const league = p.statistics?.[0]?.team?.name || "Unknown";
+          const team = p.statistics?.[0]?.team?.name || "Unknown";
+          const goals = p.statistics?.[0]?.goals?.total || 0;
+          const assists = p.statistics?.[0]?.goals?.assists || 0;
+          const saves = p.statistics?.[0]?.goals?.saves || 0;
 
           // Build row with photo + name, position, nationality
           const row = document.createElement("tr");
@@ -185,7 +188,10 @@
         </td>
         <td>${position}</td>
         <td>${nationality}</td>
-        <td>${league}</td>
+        <td>${team}</td>
+        <td>${goals}</td>
+        <td>${assists}</td>
+        <td>${saves}</td>
       `;
           tbody.appendChild(row);
         }
