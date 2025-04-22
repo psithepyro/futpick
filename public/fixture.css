@@ -167,3 +167,14 @@ div.hidden-player-stats-container {
   background: #66b2ff;
   border-radius: 10px;
 }
+
+#player-list-dropdown {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #0f8a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
