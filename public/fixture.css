@@ -187,7 +187,7 @@ div#api-container {
   align-items: center;
   display: flex;
   margin: 20px auto;
-  padding: 20px;
+  padding-top: 50px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
