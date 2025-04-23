@@ -178,3 +178,16 @@ div.hidden-player-stats-container {
   border: none;
   cursor: pointer;
 }
+
+div#api-container {
+  width: 100%;
+  max-width: 1400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}

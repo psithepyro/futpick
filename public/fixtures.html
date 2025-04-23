@@ -34,200 +34,27 @@
       <div class="hudtip">Bundesliga <span class="hudtext">Coming Soon</span></div>
     </div>
 
-    <div id="wg-api-football-games"
-      data-host="v3.football.api-sports.io"
-      data-key="6faaa8866cd0bff2ff529e95c1090cc4"
-      data-date=""
-      data-league="262"
-      data-season="2023"
-      data-theme=""
-      data-refresh="15"
-      data-show-toolbar="true"
-      data-show-errors="false"
-      data-show-logos="true"
-      data-modal-game="true"
-      data-modal-standings="true"
-      data-modal-show-logos="true">
-    </div>
+    <div id="api-container">
+      <div id="wg-api-football-games"
+        data-host="v3.football.api-sports.io"
+        data-key="6faaa8866cd0bff2ff529e95c1090cc4"
+        data-date=""
+        data-league="262"
+        data-season="2023"
+        data-theme=""
+        data-refresh="15"
+        data-show-toolbar="true"
+        data-show-errors="false"
+        data-show-logos="true"
+        data-modal-game="true"
+        data-modal-standings="true"
+        data-modal-show-logos="true">
+      </div>
+    </div>>
+    
     <script
         type="module"
         src="https://widgets.api-sports.io/2.0.3/widgets.js">
-    </script>
-    
-    <div class="fixtures">
-      <div id="user-info"></div>
-      <div class="nav-buttons">
-        <span>&lt; Previous</span>
-        <span>Next &gt;</span>
-      </div>
-      <div class="fixtures-box">
-        <h2>LigaMX Fixtures</h2>
-        <div id="fixtures-container">
-          <p>Loading fixtures...</p>
-          <!-- Placeholder before data loads -->
-        </div>
-      </div>
-    </div>
-
-    
-    <script src="token.js"></script>
-    <script>
-      //store fixtures grouped by date here
-      let groupedByDay = {};
-      let sortedDays = [];
-      let currentDayIndex = 0; //date block
-      const DAYS_PER_LOAD = 4; //load 4 dates worth of fixtures
-
-      //fetches fixtures data from server
-      async function fetchFixtures() {
-        //token.js handles authentication
-        const token = localStorage.getItem("token");
-        let headers = { "Content-Type": "application/json" };
-
-        // If we do have a token, set the Authorization header
-        if (token) {
-          headers["Authorization"] = `Bearer ${token}`;
-        }
-
-        console.log("Fetching new fixtures from API...");
-        try {
-          const response = await fetch(
-            "http://localhost:3000/api/football/fixtures",
-            {
-              method: "GET",
-              headers: headers,
-            }
-          );
-
-          const data = await response.json();
-          console.log("Fetched Fixtures:", data);
-
-          if (response.ok && data.response && data.response.length > 0) {
-            displayFixtures(data.response);
-          } else {
-            document.getElementById("fixtures-container").innerHTML =
-              "<p>No fixtures available or unauthorized</p>";
-          }
-        } catch (error) {
-          console.error("Error fetching fixtures:", error);
-          document.getElementById("fixtures-container").innerHTML =
-            "<p>Error loading fixtures</p>";
-        }
-      }
-
-      // Group fixtures by their YYYY-MM-DD date
-      function groupFixturesByDay(fixturesArray) {
-        const grouped = {};
-        fixturesArray.forEach((match) => {
-          // Basic checks
-          if (!match.fixture || !match.fixture.date || !match.teams) {
-            console.warn("Skipping match due to missing data:", match);
-            return;
-          }
-
-          // Convert fixture date to 'YYYY-MM-DD'
-          const dateObj = new Date(match.fixture.date);
-          const dayKey = dateObj.toISOString().split("T")[0]; // e.x: "2023-03-20"
-
-          if (!grouped[dayKey]) {
-            grouped[dayKey] = [];
-          }
-          grouped[dayKey].push(match);
-        });
-        return grouped;
-      }
-
-      //after fetching fixtures, display them in DOM
-      function displayFixtures(allFixtures) {
-        // 1) Group fixtures by day
-        groupedByDay = groupFixturesByDay(allFixtures);
-
-        // 2) Sort the days
-        sortedDays = Object.keys(groupedByDay).sort(
-          (a, b) => new Date(a) - new Date(b)
-        );
-
-        // 3) Reset position
-        currentDayIndex = 0;
-
-        // 4) Clear the container and load the first chunk of days
-        const container = document.getElementById("fixtures-container");
-        container.innerHTML = "";
-        loadNextDays();
-
-        // 5) Attach scroll listener for “load more”
-        window.addEventListener("scroll", handleScroll);
-      }
-
-      //load the next chunk of days of fixtures
-      function loadNextDays() {
-        const container = document.getElementById("fixtures-container");
-        //load up to 4 day-keys at a time
-        const endIndex = Math.min(
-          currentDayIndex + DAYS_PER_LOAD,
-          sortedDays.length
-        );
-
-        //for each day, display its fixtures
-        for (let i = currentDayIndex; i < endIndex; i++) {
-          const dayKey = sortedDays[i];
-          const fixturesForDay = groupedByDay[dayKey];
-
-          // Create a heading for the date
-          const dayHeading = document.createElement("h3");
-          dayHeading.textContent = new Date(dayKey).toDateString();
-          // Example: "Tue Mar 10 2023"
-          container.appendChild(dayHeading);
-
-          // for each fixture, render its details
-          fixturesForDay.forEach((match) => {
-            const date = match.fixture.date
-              ? new Date(match.fixture.date).toLocaleString()
-              : "Date Not Available";
-            const venueName = match.fixture.venue?.name || "Unknown Venue";
-            const venueCity = match.fixture.venue?.city || "Unknown City";
-            const status = match.fixture.status?.long || "Status Unavailable";
-
-            const homeTeam = match.teams.home?.name || "Unknown Team";
-            const awayTeam = match.teams.away?.name || "Unknown Team";
-            const homeLogo = match.teams.home?.logo || "";
-            const awayLogo = match.teams.away?.logo || "";
-
-            //build element with fixture info
-            const fixtureElement = document.createElement("div");
-            fixtureElement.classList.add("fixture-item");
-            fixtureElement.innerHTML = `
-              <h3>📅 ${date}</h3>
-              <p>📍 Venue: ${venueName}, ${venueCity}</p>
-              <p>📌 Status: ${status}</p>
-              <div class="teams">
-                  <img src="${homeLogo}" alt="${homeTeam}" width="30" height="30"/> ${homeTeam} vs
-                  <img src="${awayLogo}" alt="${awayTeam}" width="30" height="30"/> ${awayTeam}
-              </div>
-            `;
-            container.appendChild(fixtureElement);
-          });
-        }
-
-        // Move our day index forward
-        currentDayIndex = endIndex;
-      }
-
-      // Infinite scroll: if near the bottom and days remain, load more
-      function handleScroll() {
-        if (
-          window.innerHeight + window.scrollY >=
-            document.body.offsetHeight - 100 &&
-          currentDayIndex < sortedDays.length
-        ) {
-          loadNextDays();
-        }
-      }
-
-      // Fetch the fixtures once page loads
-      window.addEventListener("DOMContentLoaded", () => {
-        fetchFixtures();
-      });
     </script>
   </body>
 </html>
