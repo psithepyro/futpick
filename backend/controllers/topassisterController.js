@@ -2,7 +2,7 @@ const apiFootball = require("../services/apiService");
 
 //Controller function to fetch LigaMX players
 //this function is called when a user hits the route that retrives players data
-exports.getPlayers = async (req, res) => {
+exports.getTopAssister = async (req, res) => {
     try {
         //retrieve the page parameter to handle paginated data from API
         const page = req.query.page || 1; // default to page 1
