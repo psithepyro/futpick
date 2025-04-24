@@ -265,6 +265,12 @@
     </div>
     <script src="token.js"></script>
     <script>
+        const selectedPlayerIds = new Set();
+        let selectedCard = null;
+        let dataLookup = {};
+        let hasUnsavedChanges = false;
+        const saveButton = document.querySelector(".save-container button");
+        saveButton.disabled = true;
         // Fetch and display the saved team (read-only)
         function loadSavedTeam() {
             fetch("/api/football/my-team", { credentials: "include" })
@@ -273,39 +279,39 @@
                 if (!data.players) return;
 
                 data.players.forEach((p) => {
-                dataLookup[p.player_id] = {
-                    id: p.player_id,
-                    name: p.name,
-                    position: p.position,
-                    photo: p.photo,
-                    points: p.points,
-                    rating: p.rating,
-                    team: p.team || "Unknown",
-                };
+                    dataLookup[p.player_id] = {
+                        id: p.player_id,
+                        name: p.name,
+                        position: p.position,
+                        photo: p.photo,
+                        points: p.points,
+                        rating: p.rating,
+                        team: p.team || "Unknown",
+                    };
 
-                const slotId = getSlotId(p);
-                if (!slotId) {
-                    console.warn(
-                    "No slot found for:",
-                    p.name,
-                    "Position:",
-                    p.position
-                    );
-                    return;
-                }
+                    const slotId = getSlotId(p);
+                    if (!slotId) {
+                        console.warn(
+                            "No slot found for:",
+                            p.name,
+                            "Position:",
+                            p.position
+                        );
+                        return;
+                    }
 
-                const card = document.getElementById(slotId);
-                const img = card.querySelector("img");
-                const nameP = card.querySelector(".player-name");
-                const pointDisplay = card.querySelector("h2 b");
+                    const card = document.getElementById(slotId);
+                    const img = card.querySelector("img");
+                    const nameP = card.querySelector(".player-name");
+                    const pointDisplay = card.querySelector("h2 b");
 
-                if (img) img.src = p.photo || "images/temp_jersey.webp";
-                if (nameP) nameP.textContent = p.name;
-                if (pointDisplay)
-                    pointDisplay.textContent = `${p.points || 0} pts`;
+                    if (img) img.src = p.photo || "images/temp_jersey.webp";
+                    if (nameP) nameP.textContent = p.name;
+                    if (pointDisplay)
+                        pointDisplay.textContent = `${p.points || 0} pts`;
 
-                card.setAttribute("data-player-id", p.player_id);
-                selectedPlayerIds.add(p.player_id);
+                    card.setAttribute("data-player-id", p.player_id);
+                    selectedPlayerIds.add(p.player_id);
                 });
 
                 // Recalculate total points
@@ -316,38 +322,50 @@
             });
         }
         
-            // Calculate total points for header
-            function calculateTotalPoints() {
-                let totalPoints = 0;
+        // Calculate total points for header
+        function calculateTotalPoints() {
+            let totalPoints = 0;
 
-                const allCards = document.querySelectorAll(".player_card");
-                allCards.forEach((card) => {
+            const allCards = document.querySelectorAll(".player_card");
+            allCards.forEach((card) => {
                 const pointsText = card.querySelector("h2 b")?.textContent || "0 pts";
                 const numericPoints = parseInt(pointsText.replace(" pts", ""), 10) || 0;
                 totalPoints += numericPoints;
-                });
-
-                // Update the total points display
-                const totalPointsElement = document.getElementById("totalPointsCount");
-                if (totalPointsElement) {
-                totalPointsElement.textContent = totalPoints;
-                }
-
-                // Update the highest points if totalPoints exceed 100
-                const highestPointsElement = document.getElementById("highestPoints");
-                if (highestPointsElement && totalPoints > 100) {
-                highestPointsElement.textContent = totalPoints;
-                }
-            }
-        
-            // Disable click handlers
-            document.querySelectorAll(".player_card").forEach((card) => {
-                card.style.cursor = "default";
-                card.onclick = null; // Remove click functionality
             });
+
+            // Update the total points display
+            const totalPointsElement = document.getElementById("totalPointsCount");
+            if (totalPointsElement) {
+                totalPointsElement.textContent = totalPoints;
+            }
+
+            // Update the highest points if totalPoints exceed 100
+            const highestPointsElement = document.getElementById("highestPoints");
+            if (highestPointsElement && totalPoints > 100) {
+                highestPointsElement.textContent = totalPoints;
+            }
+        }
         
-            // Initialize on load
-            window.addEventListener("DOMContentLoaded", loadSavedTeam);
+        // Disable click handlers
+        document.querySelectorAll(".player_card").forEach((card) => {
+            card.style.cursor = "default";
+            card.onclick = null; // Remove click functionality
+        });
+    
+        // Initializes event listeners and loads saved team on page load
+        window.onload = () => {
+            const cards = document.querySelectorAll(".player_card");
+            cards.forEach((card) => {
+                const position = card.dataset.position || "Any";
+                card.onclick = () => openModal(position, card);
+                card.oncontextmenu = (e) => {
+                    e.preventDefault();
+                    clearPlayer(card);
+                };
+            });
+
+            loadSavedTeam();
+        };
     </script>
 </body>
 </html>
