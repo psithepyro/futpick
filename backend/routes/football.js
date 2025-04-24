@@ -20,8 +20,8 @@ const authenticateUser = require("../middlewares/jwtMiddleware");
 //defined routes
 router.get("/fixtures", authenticateUser, getFixtures);
 router.get("/players", authenticateUser, getPlayers);
-router.get("/topassists", authenticateUser, getPlayers);
-router.get("/topscorers", authenticateUser, getPlayers);
+router.get("/players/topassists", authenticateUser, getPlayers);
+router.get("/players/topscorers", authenticateUser, getPlayers);
 
 router.post("/create-team", authenticateUser, createFantasyTeam);
 router.get("/my-team", authenticateUser, getUserTeam);

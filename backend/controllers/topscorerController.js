@@ -7,7 +7,7 @@ exports.getTopScorers = async (req, res) => {
         //retrieve the page parameter to handle paginated data from API
         const page = req.query.page || 1; // default to page 1
         //send a get request to the API-Football endpoint
-        const response = await apiFootball.get("/players/topscorers", {
+        const response = await apiFootball.get("players/topscorers", {
             params: {
             league: 262, //Liga MX league ID
             season: 2023, //Season for players
