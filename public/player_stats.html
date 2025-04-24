@@ -45,6 +45,11 @@
     <div class="player-stats-container">
       <div class="player-stats-header">
         <h2>Player List</h2>
+        <select id="player-list-dropdown">
+          <option value="all">All Players</option>
+          <option value="top-scorers">Top Scorers</option>
+          <option value="top-assisters">Top Assisters</option>
+        </select>
       </div>
       <table class="player-table">
         <thead>
@@ -145,6 +150,148 @@
       `;
         }
       }
+
+      async function fetchTopScorers() {
+        const token = localStorage.getItem("token");
+        let headers = { "Content-Type": "application/json" };
+
+        //If token exists, attach to request
+        if (token) {
+          headers["Authorization"] = `Bearer ${token}`;
+        }
+
+        try {
+          const response = await fetch(
+            `http://localhost:3000/api/football/players/topscorers`,
+            {
+              method: "GET",
+              headers: headers,
+            }
+          );
+
+          const data = await response.json();
+          console.log("Fetched Top Scorers:", data);
+
+          const topscorerArray = data.response || [];
+          if (response.ok && topscorerArray.length > 0) {
+            allPlayers.push(...topscorerArray);
+
+            if (currentPage === 1) {
+              displayTopPlayers(topscorerArray, "goals"); // starts from index=0
+            } else {
+              loadNextPlayers();
+            }
+          } else {
+            // If no top scorers or an error
+            if (allPlayers.length === 0) {
+              document.getElementById("player-table-body").innerHTML = `
+            <tr><td colspan="5">No top scorers available or unauthorized</td></tr>
+          `;
+            }
+          }
+        } catch (error) {
+          alert("Error fetching top scorers");
+          console.error("Error fetching top scorers:", error);
+          document.getElementById("player-table-body").innerHTML = `
+        <tr><td colspan="5">Error loading top scorers</td></tr>
+      `;
+        }
+      }
+
+      async function fetchTopAssisters() {
+        const token = localStorage.getItem("token");
+        let headers = { "Content-Type": "application/json" };
+
+        //If token exists, attach to request
+        if (token) {
+          headers["Authorization"] = `Bearer ${token}`;
+        }
+
+        try {
+          const response = await fetch(
+            `http://localhost:3000/api/football/players/topassists`,
+            {
+              method: "GET",
+              headers: headers,
+            }
+          );
+
+          const data = await response.json();
+          console.log("Fetched Top Assisters:", data);
+
+          const topassisterArray = data.response || [];
+          if (response.ok && topassisterArray.length > 0) {
+            allPlayers.push(...topassisterArray);
+
+            if (currentPage === 1) {
+              displayTopPlayers(topassisterArray, "assists"); // starts from index=0
+            } else {
+              loadNextPlayers();
+            }
+          } else {
+            // If no top assisters or an error
+            if (allPlayers.length === 0) {
+              document.getElementById("player-table-body").innerHTML = `
+            <tr><td colspan="5">No top assisters available or unauthorized</td></tr>
+          `;
+            }
+          }
+        } catch (error) {
+          alert("Error fetching top assisters");
+          console.error("Error fetching top assisters:", error);
+          document.getElementById("player-table-body").innerHTML = `
+        <tr><td colspan="5">Error loading top assisters</td></tr>
+      `;
+        }
+      }
+
+      function displayTopPlayers(players, statKey) {
+        const tbody = document.getElementById("player-table-body");
+        tbody.innerHTML = ""; // Clear the table
+
+        players.forEach((p) => {
+          const firstname = p.player?.firstname || "Unknown";
+          const lastname = p.player?.lastname || "Unknown";
+          const position = p.statistics?.[0]?.games?.position || "Unknown";
+          const nationality = p.player?.nationality || "Unknown";
+          const photo = p.player?.photo || "";
+          const team = p.statistics?.[0]?.team?.name || "Unknown";
+          const statValue = p.statistics?.[0]?.goals?.[statKey] || 0;
+
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td style="display: flex; align-items: center;">
+              <img
+                src="${photo}"
+                alt="${firstname} ${lastname}"
+                width="40"
+                height="40"
+                style="border-radius: 50%; object-fit: cover; margin-right: 10px;"
+              />
+              <span>${firstname} ${lastname}</span>
+            </td>
+            <td>${position}</td>
+            <td>${nationality}</td>
+            <td>${team}</td>
+            <td>${statKey === "goals" ? statValue : 0}</td>
+            <td>${statKey === "assists" ? statValue : 0}</td>
+            <td>${statKey === "saves" ? statValue : 0}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      }
+
+      // Handle dropdown selection
+      document.getElementById("player-list-dropdown").addEventListener("change", (event) => {
+        const value = event.target.value;
+        if (value === "all") {
+          displayPlayers();
+        } else if (value === "top-scorers") {
+          fetchTopScorers();
+        } else if (value === "top-assisters") {
+          fetchTopAssisters();
+        }
+      });
 
       function displayPlayers() {
         // Reset the table and index
