@@ -265,59 +265,59 @@
     </div>
     <script src="token.js"></script>
     <script>
-    const selectedPlayerIds = new Set();
-    let dataLookup = {};
+        const selectedPlayerIds = new Set();
+        let dataLookup = {};
 
-    // Fetch and display the saved team (read-only)
-    function loadSavedTeam() {
-        fetch("/api/football/my-team", { credentials: "include" })
-            .then((res) => res.json())
-            .then((data) => {
-                if (!data.players) return;
+        // Fetch and display the saved team (read-only)
+        function loadSavedTeam() {
+            fetch("/api/football/my-team", { credentials: "include" })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (!data.players) return;
 
-                data.players.forEach((p) => {
-                    dataLookup[p.player_id] = {
-                        id: p.player_id,
-                        name: p.name,
-                        position: p.position,
-                        photo: p.photo,
-                        points: p.points,
-                        rating: p.rating,
-                        team: p.team || "Unknown",
-                    };
+                    data.players.forEach((p) => {
+                        dataLookup[p.player_id] = {
+                            id: p.player_id,
+                            name: p.name,
+                            position: p.position,
+                            photo: p.photo,
+                            points: p.points,
+                            rating: p.rating,
+                            team: p.team || "Unknown",
+                        };
 
-                    const slotId = getSlotId(p);
-                    if (!slotId) {
-                        console.warn(
-                            "No slot found for:",
-                            p.name,
-                            "Position:",
-                            p.position
-                        );
-                        return;
-                    }
+                        const slotId = getSlotId(p);
+                        if (!slotId) {
+                            console.warn(
+                                "No slot found for:",
+                                p.name,
+                                "Position:",
+                                p.position
+                            );
+                            return;
+                        }
 
-                    const card = document.getElementById(slotId);
-                    const img = card.querySelector("img");
-                    const nameP = card.querySelector(".player-name");
-                    const pointDisplay = card.querySelector("h2 b");
+                        const card = document.getElementById(slotId);
+                        const img = card.querySelector("img");
+                        const nameP = card.querySelector(".player-name");
+                        const pointDisplay = card.querySelector("h2 b");
 
-                    if (img) img.src = p.photo || "images/temp_jersey.webp";
-                    if (nameP) nameP.textContent = p.name;
-                    if (pointDisplay)
-                        pointDisplay.textContent = `${p.points || 0} pts`;
+                        if (img) img.src = p.photo || "images/temp_jersey.webp";
+                        if (nameP) nameP.textContent = p.name;
+                        if (pointDisplay)
+                            pointDisplay.textContent = `${p.points || 0} pts`;
 
-                    card.setAttribute("data-player-id", p.player_id);
-                    selectedPlayerIds.add(p.player_id);
+                        card.setAttribute("data-player-id", p.player_id);
+                        selectedPlayerIds.add(p.player_id);
+                    });
+
+                    // Recalculate total points
+                    calculateTotalPoints();
+                })
+                .catch((err) => {
+                    console.error("Failed to load team:", err);
                 });
-
-                // Recalculate total points
-                calculateTotalPoints();
-            })
-            .catch((err) => {
-                console.error("Failed to load team:", err);
-            });
-    }
+        }
 
     // Calculate total points for header
     function calculateTotalPoints() {
@@ -340,6 +340,11 @@
         const highestPointsElement = document.getElementById("highestPoints");
         if (highestPointsElement && totalPoints > 100) {
             highestPointsElement.textContent = totalPoints;
+        }
+
+        const gameweekPointsElement = document.querySelector(".user-points p:nth-child(5)");
+        if (gameweekPointsElement) {
+            gameweekPointsElement.textContent = `Gameweek Points: ${totalPoints}`;
         }
     }
 
