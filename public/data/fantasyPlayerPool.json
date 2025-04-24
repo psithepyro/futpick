@@ -1,0 +1,4969 @@
+{
+  "Goalkeeper": [
+    {
+      "id": 35704,
+      "name": "A. Talavera",
+      "photo": "https://media.api-sports.io/football/players/35704.png",
+      "team": "FC Juarez",
+      "rating": "6.841176",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35703,
+      "name": "R. Pasquel",
+      "photo": "https://media.api-sports.io/football/players/35703.png",
+      "team": "FC Juarez",
+      "rating": "6.900000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35674,
+      "name": "G. Lajud",
+      "photo": "https://media.api-sports.io/football/players/35674.png",
+      "team": "Santos Laguna",
+      "rating": "6.600000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 270190,
+      "name": "D. Urtiaga",
+      "photo": "https://media.api-sports.io/football/players/270190.png",
+      "team": "Atletico San Luis",
+      "rating": "7.150000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35582,
+      "name": "Ó. Jiménez",
+      "photo": "https://media.api-sports.io/football/players/35582.png",
+      "team": "Club America",
+      "rating": "7.250000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35646,
+      "name": "A. Blanco",
+      "photo": "https://media.api-sports.io/football/players/35646.png",
+      "team": "Leon",
+      "rating": "7.550000",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 5932,
+      "name": "E. Unsain",
+      "photo": "https://media.api-sports.io/football/players/5932.png",
+      "team": "Necaxa",
+      "rating": "6.940740",
+      "points": 4,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35507,
+      "name": "N. Guzmán",
+      "photo": "https://media.api-sports.io/football/players/35507.png",
+      "team": "Tigres UANL",
+      "rating": "7.246666",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 36031,
+      "name": "F. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/36031.png",
+      "team": "Tigres UANL",
+      "rating": "6.807692",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 13278,
+      "name": "K. Mier",
+      "photo": "https://media.api-sports.io/football/players/13278.png",
+      "team": "Cruz Azul",
+      "rating": "6.930434",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 92636,
+      "name": "A. Gudiño",
+      "photo": "https://media.api-sports.io/football/players/92636.png",
+      "team": "Cruz Azul",
+      "rating": "7.028571",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35473,
+      "name": "R. Cota",
+      "photo": "https://media.api-sports.io/football/players/35473.png",
+      "team": "Leon",
+      "rating": "6.927777",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35930,
+      "name": "L. Malagón",
+      "photo": "https://media.api-sports.io/football/players/35930.png",
+      "team": "Club America",
+      "rating": "7.063414",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35733,
+      "name": "J. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/35733.png",
+      "team": "Puebla",
+      "rating": "6.952777",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35865,
+      "name": "M. Jiménez",
+      "photo": "https://media.api-sports.io/football/players/35865.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.922222",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35993,
+      "name": "J. González",
+      "photo": "https://media.api-sports.io/football/players/35993.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "7.185365",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 2867,
+      "name": "H. González",
+      "photo": "https://media.api-sports.io/football/players/2867.png",
+      "team": "Mazatlán",
+      "rating": "7.183333",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35929,
+      "name": "R. Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/35929.png",
+      "team": "Mazatlán",
+      "rating": "6.957142",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 2482,
+      "name": "C. Vargas",
+      "photo": "https://media.api-sports.io/football/players/2482.png",
+      "team": "Atlas",
+      "rating": "6.811764",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 9944,
+      "name": "Tiago Volpi",
+      "photo": "https://media.api-sports.io/football/players/9944.png",
+      "team": "Toluca",
+      "rating": "7.152777",
+      "points": 52,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 95571,
+      "name": "Ó. Ustari",
+      "photo": "https://media.api-sports.io/football/players/95571.png",
+      "team": "Pachuca",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 182656,
+      "name": "A. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/182656.png",
+      "team": "Atletico San Luis",
+      "rating": "6.868965",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 270774,
+      "name": "J. Rangel",
+      "photo": "https://media.api-sports.io/football/players/270774.png",
+      "team": "Guadalajara Chivas",
+      "rating": "7.252173",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35557,
+      "name": "G. Allison",
+      "photo": "https://media.api-sports.io/football/players/35557.png",
+      "team": "Club Queretaro",
+      "rating": "7.371428",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 2868,
+      "name": "R. Gudiño",
+      "photo": "https://media.api-sports.io/football/players/2868.png",
+      "team": "Necaxa",
+      "rating": "6.910000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 11627,
+      "name": "C. Moreno",
+      "photo": "https://media.api-sports.io/football/players/11627.png",
+      "team": "Pachuca",
+      "rating": "6.942424",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 299949,
+      "name": "J. Eulogio",
+      "photo": "https://media.api-sports.io/football/players/299949.png",
+      "team": "Pachuca",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35769,
+      "name": "C. Acevedo",
+      "photo": "https://media.api-sports.io/football/players/35769.png",
+      "team": "Santos Laguna",
+      "rating": "6.948000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 195707,
+      "name": "H. Holguín",
+      "photo": "https://media.api-sports.io/football/players/195707.png",
+      "team": "Santos Laguna",
+      "rating": "6.950000",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35995,
+      "name": "S. Jurado",
+      "photo": "https://media.api-sports.io/football/players/35995.png",
+      "team": "FC Juarez",
+      "rating": "6.100000",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 2462,
+      "name": "E. Andrada",
+      "photo": "https://media.api-sports.io/football/players/2462.png",
+      "team": "Monterrey",
+      "rating": "7.302631",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35536,
+      "name": "L. Cárdenas",
+      "photo": "https://media.api-sports.io/football/players/35536.png",
+      "team": "Monterrey",
+      "rating": "7.550000",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35558,
+      "name": "J. Corona",
+      "photo": "https://media.api-sports.io/football/players/35558.png",
+      "team": "Club Tijuana",
+      "rating": "6.828571",
+      "points": 1,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 35797,
+      "name": "A. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/35797.png",
+      "team": "Club Tijuana",
+      "rating": "7.060714",
+      "points": 0,
+      "position": "Goalkeeper"
+    },
+    {
+      "id": 199401,
+      "name": "F. Tapia",
+      "photo": "https://media.api-sports.io/football/players/199401.png",
+      "team": "Club Queretaro",
+      "rating": "7.040000",
+      "points": 0,
+      "position": "Goalkeeper"
+    }
+  ],
+  "Defender": [
+    {
+      "id": 2872,
+      "name": "M. Layún",
+      "photo": "https://media.api-sports.io/football/players/2872.png",
+      "team": "Club America",
+      "rating": "6.930769",
+      "points": 2,
+      "position": "Defender"
+    },
+    {
+      "id": 35871,
+      "name": "H. Mier",
+      "photo": "https://media.api-sports.io/football/players/35871.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 424741,
+      "name": "A. Zubiri",
+      "photo": "https://media.api-sports.io/football/players/424741.png",
+      "team": "Cruz Azul",
+      "rating": "6.900000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35566,
+      "name": "J. Madueña",
+      "photo": "https://media.api-sports.io/football/players/35566.png",
+      "team": "Mazatlán",
+      "rating": "6.620833",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 36324,
+      "name": "R. Godínez",
+      "photo": "https://media.api-sports.io/football/players/36324.png",
+      "team": "Club Tijuana",
+      "rating": "6.571428",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35561,
+      "name": "A. Aldrete",
+      "photo": "https://media.api-sports.io/football/players/35561.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.881818",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35679,
+      "name": "L. Fuentes",
+      "photo": "https://media.api-sports.io/football/players/35679.png",
+      "team": "Club America",
+      "rating": "6.911538",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35896,
+      "name": "J. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/35896.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.814285",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 428060,
+      "name": "E. Mata",
+      "photo": "https://media.api-sports.io/football/players/428060.png",
+      "team": "Mazatlán",
+      "rating": "6.450000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 454336,
+      "name": "E. Torres",
+      "photo": "https://media.api-sports.io/football/players/454336.png",
+      "team": "Leon",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35966,
+      "name": "B. Hernández",
+      "photo": "https://media.api-sports.io/football/players/35966.png",
+      "team": "Club Tijuana",
+      "rating": "6.200000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 297716,
+      "name": "L. Iturbide",
+      "photo": "https://media.api-sports.io/football/players/297716.png",
+      "team": "Cruz Azul",
+      "rating": "6.700000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 304526,
+      "name": "R. Parra",
+      "photo": "https://media.api-sports.io/football/players/304526.png",
+      "team": "Club Tijuana",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 316511,
+      "name": "G. Pelúa",
+      "photo": "https://media.api-sports.io/football/players/316511.png",
+      "team": "FC Juarez",
+      "rating": "6.500000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 406056,
+      "name": "M. Cásares",
+      "photo": "https://media.api-sports.io/football/players/406056.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.050000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 417937,
+      "name": "J. Luna",
+      "photo": "https://media.api-sports.io/football/players/417937.png",
+      "team": "Tigres UANL",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35659,
+      "name": "R. López",
+      "photo": "https://media.api-sports.io/football/players/35659.png",
+      "team": "Santos Laguna",
+      "rating": "6.695652",
+      "points": 3,
+      "position": "Defender"
+    },
+    {
+      "id": 195226,
+      "name": "U. García",
+      "photo": "https://media.api-sports.io/football/players/195226.png",
+      "team": "Atletico San Luis",
+      "rating": "6.283333",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 371224,
+      "name": "A. Contreras",
+      "photo": "https://media.api-sports.io/football/players/371224.png",
+      "team": "Pachuca",
+      "rating": "6.250000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 362581,
+      "name": "I. Moreno",
+      "photo": "https://media.api-sports.io/football/players/362581.png",
+      "team": "Atletico San Luis",
+      "rating": "6.838461",
+      "points": 12,
+      "position": "Defender"
+    },
+    {
+      "id": 2439,
+      "name": "J. Chancellor",
+      "photo": "https://media.api-sports.io/football/players/2439.png",
+      "team": "Necaxa",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 63947,
+      "name": "B. Castillo",
+      "photo": "https://media.api-sports.io/football/players/63947.png",
+      "team": "Pachuca",
+      "rating": "6.860000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 36001,
+      "name": "C. González",
+      "photo": "https://media.api-sports.io/football/players/36001.png",
+      "team": "Necaxa",
+      "rating": "6.528571",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 287910,
+      "name": "Ó. Villa",
+      "photo": "https://media.api-sports.io/football/players/287910.png",
+      "team": "Leon",
+      "rating": "6.566666",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 6084,
+      "name": "G. Silva",
+      "photo": "https://media.api-sports.io/football/players/6084.png",
+      "team": "Puebla",
+      "rating": "6.858064",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 36359,
+      "name": "A. Ortíz",
+      "photo": "https://media.api-sports.io/football/players/36359.png",
+      "team": "FC Juarez",
+      "rating": "7.157142",
+      "points": 6,
+      "position": "Defender"
+    },
+    {
+      "id": 310199,
+      "name": "R. Huescas",
+      "photo": "https://media.api-sports.io/football/players/310199.png",
+      "team": "Cruz Azul",
+      "rating": "6.953846",
+      "points": 33,
+      "position": "Defender"
+    },
+    {
+      "id": 534,
+      "name": "L. Magallán",
+      "photo": "https://media.api-sports.io/football/players/534.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.977777",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 9697,
+      "name": "Nathan Silva",
+      "photo": "https://media.api-sports.io/football/players/9697.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.978378",
+      "points": 2,
+      "position": "Defender"
+    },
+    {
+      "id": 35676,
+      "name": "K. Balanta",
+      "photo": "https://media.api-sports.io/football/players/35676.png",
+      "team": "Club Tijuana",
+      "rating": "6.829032",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 51462,
+      "name": "R. Ergas",
+      "photo": "https://media.api-sports.io/football/players/51462.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.781818",
+      "points": 3,
+      "position": "Defender"
+    },
+    {
+      "id": 266815,
+      "name": "R. Galindo",
+      "photo": "https://media.api-sports.io/football/players/266815.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.500000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 346270,
+      "name": "S. Núñez",
+      "photo": "https://media.api-sports.io/football/players/346270.png",
+      "team": "Santos Laguna",
+      "rating": "6.878571",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 407675,
+      "name": "P. Monroy",
+      "photo": "https://media.api-sports.io/football/players/407675.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.557692",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 5872,
+      "name": "A. Frías",
+      "photo": "https://media.api-sports.io/football/players/5872.png",
+      "team": "Leon",
+      "rating": "6.942857",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35654,
+      "name": "S. Barreiro",
+      "photo": "https://media.api-sports.io/football/players/35654.png",
+      "team": "Leon",
+      "rating": "6.852173",
+      "points": 11,
+      "position": "Defender"
+    },
+    {
+      "id": 35904,
+      "name": "P. Bennevendo",
+      "photo": "https://media.api-sports.io/football/players/35904.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.742857",
+      "points": 7,
+      "position": "Defender"
+    },
+    {
+      "id": 135157,
+      "name": "P. Bellón",
+      "photo": "https://media.api-sports.io/football/players/135157.png",
+      "team": "Leon",
+      "rating": "7.063157",
+      "points": 10,
+      "position": "Defender"
+    },
+    {
+      "id": 158667,
+      "name": "Víctor Aarón Barajas García",
+      "photo": "https://media.api-sports.io/football/players/158667.png",
+      "team": "Leon",
+      "rating": "6.833333",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 196460,
+      "name": "M. Isaís",
+      "photo": "https://media.api-sports.io/football/players/196460.png",
+      "team": "Toluca",
+      "rating": "6.507142",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 355750,
+      "name": "L. Cervantes",
+      "photo": "https://media.api-sports.io/football/players/355750.png",
+      "team": "Leon",
+      "rating": "6.533333",
+      "points": 8,
+      "position": "Defender"
+    },
+    {
+      "id": 35617,
+      "name": "A. Peña",
+      "photo": "https://media.api-sports.io/football/players/35617.png",
+      "team": "Necaxa",
+      "rating": "6.841666",
+      "points": 9,
+      "position": "Defender"
+    },
+    {
+      "id": 35870,
+      "name": "A. Mayorga",
+      "photo": "https://media.api-sports.io/football/players/35870.png",
+      "team": "Necaxa",
+      "rating": "6.633333",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 36166,
+      "name": "R. Sandoval",
+      "photo": "https://media.api-sports.io/football/players/36166.png",
+      "team": "Club Queretaro",
+      "rating": "6.543750",
+      "points": 14,
+      "position": "Defender"
+    },
+    {
+      "id": 129931,
+      "name": "E. Lara",
+      "photo": "https://media.api-sports.io/football/players/129931.png",
+      "team": "Club America",
+      "rating": "6.871428",
+      "points": 3,
+      "position": "Defender"
+    },
+    {
+      "id": 266637,
+      "name": "J. Alcántar",
+      "photo": "https://media.api-sports.io/football/players/266637.png",
+      "team": "Necaxa",
+      "rating": "6.560000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 266638,
+      "name": "A. Montes",
+      "photo": "https://media.api-sports.io/football/players/266638.png",
+      "team": "Necaxa",
+      "rating": "6.988235",
+      "points": 8,
+      "position": "Defender"
+    },
+    {
+      "id": 303049,
+      "name": "A. Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/303049.png",
+      "team": "Necaxa",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 51689,
+      "name": "A. Oliveros",
+      "photo": "https://media.api-sports.io/football/players/51689.png",
+      "team": "Necaxa",
+      "rating": "6.588000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 292227,
+      "name": "E. Martínez",
+      "photo": "https://media.api-sports.io/football/players/292227.png",
+      "team": "Necaxa",
+      "rating": "6.720833",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 2875,
+      "name": "D. Reyes",
+      "photo": "https://media.api-sports.io/football/players/2875.png",
+      "team": "Tigres UANL",
+      "rating": "6.854166",
+      "points": 7,
+      "position": "Defender"
+    },
+    {
+      "id": 35485,
+      "name": "O. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/35485.png",
+      "team": "Leon",
+      "rating": "6.921875",
+      "points": 10,
+      "position": "Defender"
+    },
+    {
+      "id": 35514,
+      "name": "J. Purata",
+      "photo": "https://media.api-sports.io/football/players/35514.png",
+      "team": "Tigres UANL",
+      "rating": "6.740000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35515,
+      "name": "E. Tercero",
+      "photo": "https://media.api-sports.io/football/players/35515.png",
+      "team": "Tigres UANL",
+      "rating": "6.716666",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35738,
+      "name": "V. Loroña",
+      "photo": "https://media.api-sports.io/football/players/35738.png",
+      "team": "Santos Laguna",
+      "rating": "6.233333",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35773,
+      "name": "J. Angulo",
+      "photo": "https://media.api-sports.io/football/players/35773.png",
+      "team": "Tigres UANL",
+      "rating": "6.987179",
+      "points": 7,
+      "position": "Defender"
+    },
+    {
+      "id": 333857,
+      "name": "R. Guerrero",
+      "photo": "https://media.api-sports.io/football/players/333857.png",
+      "team": "Cruz Azul",
+      "rating": "6.561538",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 409891,
+      "name": "F. Ordóñez",
+      "photo": "https://media.api-sports.io/football/players/409891.png",
+      "team": "Tigres UANL",
+      "rating": "6.616666",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 6433,
+      "name": "G. Piovi",
+      "photo": "https://media.api-sports.io/football/players/6433.png",
+      "team": "Cruz Azul",
+      "rating": "7.413043",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 13571,
+      "name": "W. Ditta",
+      "photo": "https://media.api-sports.io/football/players/13571.png",
+      "team": "Cruz Azul",
+      "rating": "7.024242",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 35587,
+      "name": "C. Vargas",
+      "photo": "https://media.api-sports.io/football/players/35587.png",
+      "team": "Cruz Azul",
+      "rating": "6.666666",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 290059,
+      "name": "J. Orozco",
+      "photo": "https://media.api-sports.io/football/players/290059.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.782352",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 297268,
+      "name": "O. Campos",
+      "photo": "https://media.api-sports.io/football/players/297268.png",
+      "team": "Santos Laguna",
+      "rating": "6.704761",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 324685,
+      "name": "R. Rubio",
+      "photo": "https://media.api-sports.io/football/players/324685.png",
+      "team": "Cruz Azul",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 2552,
+      "name": "I. Lichnovsky",
+      "photo": "https://media.api-sports.io/football/players/2552.png",
+      "team": "Club America",
+      "rating": "7.094117",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 2870,
+      "name": "N. Araújo",
+      "photo": "https://media.api-sports.io/football/players/2870.png",
+      "team": "Club America",
+      "rating": "7.033333",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35613,
+      "name": "C. Calderón",
+      "photo": "https://media.api-sports.io/football/players/35613.png",
+      "team": "Club America",
+      "rating": "6.984210",
+      "points": 3,
+      "position": "Defender"
+    },
+    {
+      "id": 51535,
+      "name": "S. Cáceres",
+      "photo": "https://media.api-sports.io/football/players/51535.png",
+      "team": "Club America",
+      "rating": "6.973076",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 126751,
+      "name": "K. Álvarez",
+      "photo": "https://media.api-sports.io/football/players/126751.png",
+      "team": "Club America",
+      "rating": "6.987096",
+      "points": 14,
+      "position": "Defender"
+    },
+    {
+      "id": 127227,
+      "name": "I. Reyes",
+      "photo": "https://media.api-sports.io/football/players/127227.png",
+      "team": "Club America",
+      "rating": "6.960714",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 180734,
+      "name": "R. Juárez",
+      "photo": "https://media.api-sports.io/football/players/180734.png",
+      "team": "Club America",
+      "rating": "6.886666",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 407340,
+      "name": "P. Villa",
+      "photo": "https://media.api-sports.io/football/players/407340.png",
+      "team": "Puebla",
+      "rating": "7.000000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35735,
+      "name": "B. Angulo",
+      "photo": "https://media.api-sports.io/football/players/35735.png",
+      "team": "Puebla",
+      "rating": "6.908823",
+      "points": 28,
+      "position": "Defender"
+    },
+    {
+      "id": 51658,
+      "name": "E. Gularte",
+      "photo": "https://media.api-sports.io/football/players/51658.png",
+      "team": "Club Queretaro",
+      "rating": "6.794117",
+      "points": 15,
+      "position": "Defender"
+    },
+    {
+      "id": 154852,
+      "name": "J. Rivas",
+      "photo": "https://media.api-sports.io/football/players/154852.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.910526",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 297145,
+      "name": "J. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/297145.png",
+      "team": "Necaxa",
+      "rating": "6.721739",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 374039,
+      "name": "S. Olmedo",
+      "photo": "https://media.api-sports.io/football/players/374039.png",
+      "team": "Puebla",
+      "rating": "6.745454",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 6173,
+      "name": "L. Merolla",
+      "photo": "https://media.api-sports.io/football/players/6173.png",
+      "team": "Mazatlán",
+      "rating": "6.775000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 30795,
+      "name": "Samir",
+      "photo": "https://media.api-sports.io/football/players/30795.png",
+      "team": "Tigres UANL",
+      "rating": "6.922580",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35511,
+      "name": "J. Díaz",
+      "photo": "https://media.api-sports.io/football/players/35511.png",
+      "team": "Mazatlán",
+      "rating": "6.503846",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35542,
+      "name": "G. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/35542.png",
+      "team": "Mazatlán",
+      "rating": "6.550000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35611,
+      "name": "V. Alvarado",
+      "photo": "https://media.api-sports.io/football/players/35611.png",
+      "team": "Mazatlán",
+      "rating": "6.626666",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35800,
+      "name": "J. Esquivel",
+      "photo": "https://media.api-sports.io/football/players/35800.png",
+      "team": "Mazatlán",
+      "rating": "6.510526",
+      "points": 6,
+      "position": "Defender"
+    },
+    {
+      "id": 36195,
+      "name": "B. Colula",
+      "photo": "https://media.api-sports.io/football/players/36195.png",
+      "team": "Mazatlán",
+      "rating": "6.900000",
+      "points": 4,
+      "position": "Defender"
+    },
+    {
+      "id": 304886,
+      "name": "S. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/304886.png",
+      "team": "Mazatlán",
+      "rating": "6.757142",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35780,
+      "name": "C. Orrantía",
+      "photo": "https://media.api-sports.io/football/players/35780.png",
+      "team": "Toluca",
+      "rating": "6.737500",
+      "points": 11,
+      "position": "Defender"
+    },
+    {
+      "id": 35835,
+      "name": "C. Robles",
+      "photo": "https://media.api-sports.io/football/players/35835.png",
+      "team": "Atlas",
+      "rating": "6.973333",
+      "points": 11,
+      "position": "Defender"
+    },
+    {
+      "id": 127228,
+      "name": "J. Lozano",
+      "photo": "https://media.api-sports.io/football/players/127228.png",
+      "team": "Atlas",
+      "rating": "6.719230",
+      "points": 11,
+      "position": "Defender"
+    },
+    {
+      "id": 2501,
+      "name": "J. Escobar",
+      "photo": "https://media.api-sports.io/football/players/2501.png",
+      "team": "Toluca",
+      "rating": "6.850000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35569,
+      "name": "J. Silva",
+      "photo": "https://media.api-sports.io/football/players/35569.png",
+      "team": "Atletico San Luis",
+      "rating": "7.160000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35710,
+      "name": "A. Mora",
+      "photo": "https://media.api-sports.io/football/players/35710.png",
+      "team": "Toluca",
+      "rating": "6.683333",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35777,
+      "name": "Dória",
+      "photo": "https://media.api-sports.io/football/players/35777.png",
+      "team": "Santos Laguna",
+      "rating": "6.716666",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35779,
+      "name": "M. Nervo",
+      "photo": "https://media.api-sports.io/football/players/35779.png",
+      "team": "Atlas",
+      "rating": "6.921212",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35905,
+      "name": "I. Domínguez",
+      "photo": "https://media.api-sports.io/football/players/35905.png",
+      "team": "Atlas",
+      "rating": "6.461538",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 36496,
+      "name": "G. Aguirre",
+      "photo": "https://media.api-sports.io/football/players/36496.png",
+      "team": "Atlas",
+      "rating": "6.880000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 46023,
+      "name": "A. Vukčević",
+      "photo": "https://media.api-sports.io/football/players/46023.png",
+      "team": "FC Juarez",
+      "rating": "6.576190",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 63964,
+      "name": "F. Torres",
+      "photo": "https://media.api-sports.io/football/players/63964.png",
+      "team": "Santos Laguna",
+      "rating": "7.050000",
+      "points": 30,
+      "position": "Defender"
+    },
+    {
+      "id": 35562,
+      "name": "J. Domínguez",
+      "photo": "https://media.api-sports.io/football/players/35562.png",
+      "team": "Atletico San Luis",
+      "rating": "6.832432",
+      "points": 12,
+      "position": "Defender"
+    },
+    {
+      "id": 35809,
+      "name": "A. Cruz",
+      "photo": "https://media.api-sports.io/football/players/35809.png",
+      "team": "Atletico San Luis",
+      "rating": "6.610000",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 374360,
+      "name": "S. Martínez",
+      "photo": "https://media.api-sports.io/football/players/374360.png",
+      "team": "Club America",
+      "rating": "6.450000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 375586,
+      "name": "E.  Águila",
+      "photo": "https://media.api-sports.io/football/players/375586.png",
+      "team": "Atletico San Luis",
+      "rating": "6.500000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35874,
+      "name": "G. Sepúlveda",
+      "photo": "https://media.api-sports.io/football/players/35874.png",
+      "team": "Guadalajara Chivas",
+      "rating": "7.027586",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35908,
+      "name": "A. Mozo",
+      "photo": "https://media.api-sports.io/football/players/35908.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.927027",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 103335,
+      "name": "L. Sepúlveda",
+      "photo": "https://media.api-sports.io/football/players/103335.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.425000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 119193,
+      "name": "L. Olivas",
+      "photo": "https://media.api-sports.io/football/players/119193.png",
+      "team": "Mazatlán",
+      "rating": "6.838095",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 277189,
+      "name": "J. Castillo",
+      "photo": "https://media.api-sports.io/football/players/277189.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.941666",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 324699,
+      "name": "R. Martínez",
+      "photo": "https://media.api-sports.io/football/players/324699.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.675000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 390002,
+      "name": "M. Chávez",
+      "photo": "https://media.api-sports.io/football/players/390002.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.780000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35517,
+      "name": "F. Venegas",
+      "photo": "https://media.api-sports.io/football/players/35517.png",
+      "team": "Club Queretaro",
+      "rating": "6.872727",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35681,
+      "name": "O. Mendoza",
+      "photo": "https://media.api-sports.io/football/players/35681.png",
+      "team": "Club Queretaro",
+      "rating": "6.780769",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35917,
+      "name": "K. Escamilla",
+      "photo": "https://media.api-sports.io/football/players/35917.png",
+      "team": "Club Queretaro",
+      "rating": "6.762500",
+      "points": 7,
+      "position": "Defender"
+    },
+    {
+      "id": 35975,
+      "name": "J. Gómez",
+      "photo": "https://media.api-sports.io/football/players/35975.png",
+      "team": "Club Queretaro",
+      "rating": "6.596428",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 36501,
+      "name": "Ó. Manzanarez",
+      "photo": "https://media.api-sports.io/football/players/36501.png",
+      "team": "Club Queretaro",
+      "rating": "6.574074",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 297210,
+      "name": "J. Piñuelas",
+      "photo": "https://media.api-sports.io/football/players/297210.png",
+      "team": "Toluca",
+      "rating": "6.200000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 425583,
+      "name": "P. Ortíz",
+      "photo": "https://media.api-sports.io/football/players/425583.png",
+      "team": "Club Queretaro",
+      "rating": "6.633333",
+      "points": 7,
+      "position": "Defender"
+    },
+    {
+      "id": 35622,
+      "name": "J. Cortés",
+      "photo": "https://media.api-sports.io/football/players/35622.png",
+      "team": "Necaxa",
+      "rating": "6.500000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35745,
+      "name": "N. Vidrio",
+      "photo": "https://media.api-sports.io/football/players/35745.png",
+      "team": "Mazatlán",
+      "rating": "7.150000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 237241,
+      "name": "A. Flores",
+      "photo": "https://media.api-sports.io/football/players/237241.png",
+      "team": "Club Tijuana",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 2876,
+      "name": "L. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/2876.png",
+      "team": "Pachuca",
+      "rating": "6.818750",
+      "points": 4,
+      "position": "Defender"
+    },
+    {
+      "id": 6077,
+      "name": "S. Barreto",
+      "photo": "https://media.api-sports.io/football/players/6077.png",
+      "team": "Pachuca",
+      "rating": "6.939393",
+      "points": 4,
+      "position": "Defender"
+    },
+    {
+      "id": 47428,
+      "name": "G. Cabral",
+      "photo": "https://media.api-sports.io/football/players/47428.png",
+      "team": "Pachuca",
+      "rating": "6.942857",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 237060,
+      "name": "B. González",
+      "photo": "https://media.api-sports.io/football/players/237060.png",
+      "team": "Pachuca",
+      "rating": "6.843478",
+      "points": 27,
+      "position": "Defender"
+    },
+    {
+      "id": 270947,
+      "name": "C. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/270947.png",
+      "team": "Pachuca",
+      "rating": "6.800000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 290648,
+      "name": "A. Aceves",
+      "photo": "https://media.api-sports.io/football/players/290648.png",
+      "team": "Pachuca",
+      "rating": "6.600000",
+      "points": 7,
+      "position": "Defender"
+    },
+    {
+      "id": 310313,
+      "name": "A. Micolta",
+      "photo": "https://media.api-sports.io/football/players/310313.png",
+      "team": "Pachuca",
+      "rating": "6.777777",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 424397,
+      "name": "J. Berlanga",
+      "photo": "https://media.api-sports.io/football/players/424397.png",
+      "team": "Pachuca",
+      "rating": "6.600000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35540,
+      "name": "D. Parra",
+      "photo": "https://media.api-sports.io/football/players/35540.png",
+      "team": "Monterrey",
+      "rating": "6.900000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 35838,
+      "name": "B. Vázquez",
+      "photo": "https://media.api-sports.io/football/players/35838.png",
+      "team": "Club Queretaro",
+      "rating": "6.433333",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 290647,
+      "name": "R. López",
+      "photo": "https://media.api-sports.io/football/players/290647.png",
+      "team": "Pachuca",
+      "rating": "6.722222",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 2423,
+      "name": "A. Santamaría",
+      "photo": "https://media.api-sports.io/football/players/2423.png",
+      "team": "Atlas",
+      "rating": "6.900000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35548,
+      "name": "É. Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/35548.png",
+      "team": "Monterrey",
+      "rating": "6.750000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35772,
+      "name": "J. Abella",
+      "photo": "https://media.api-sports.io/football/players/35772.png",
+      "team": "FC Juarez",
+      "rating": "6.929411",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35781,
+      "name": "H. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/35781.png",
+      "team": "Santos Laguna",
+      "rating": "6.700000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35832,
+      "name": "I. Govea",
+      "photo": "https://media.api-sports.io/football/players/35832.png",
+      "team": "Santos Laguna",
+      "rating": "6.723076",
+      "points": 5,
+      "position": "Defender"
+    },
+    {
+      "id": 126741,
+      "name": "B. Amione",
+      "photo": "https://media.api-sports.io/football/players/126741.png",
+      "team": "Santos Laguna",
+      "rating": "6.790000",
+      "points": 4,
+      "position": "Defender"
+    },
+    {
+      "id": 428064,
+      "name": "E. EcheverrÃ­a",
+      "photo": "https://media.api-sports.io/football/players/428064.png",
+      "team": "Santos Laguna",
+      "rating": "6.658333",
+      "points": 6,
+      "position": "Defender"
+    },
+    {
+      "id": 35586,
+      "name": "H. Ortega",
+      "photo": "https://media.api-sports.io/football/players/35586.png",
+      "team": "FC Juarez",
+      "rating": "6.840000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 36478,
+      "name": "F. Nevárez",
+      "photo": "https://media.api-sports.io/football/players/36478.png",
+      "team": "FC Juarez",
+      "rating": "6.300000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 95777,
+      "name": "J. García",
+      "photo": "https://media.api-sports.io/football/players/95777.png",
+      "team": "FC Juarez",
+      "rating": "6.709523",
+      "points": 2,
+      "position": "Defender"
+    },
+    {
+      "id": 141155,
+      "name": "D. Campillo",
+      "photo": "https://media.api-sports.io/football/players/141155.png",
+      "team": "FC Juarez",
+      "rating": "6.960000",
+      "points": 13,
+      "position": "Defender"
+    },
+    {
+      "id": 279201,
+      "name": "M. Mosquera",
+      "photo": "https://media.api-sports.io/football/players/279201.png",
+      "team": "FC Juarez",
+      "rating": "6.748000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 2881,
+      "name": "J. Gallardo",
+      "photo": "https://media.api-sports.io/football/players/2881.png",
+      "team": "Monterrey",
+      "rating": "6.933333",
+      "points": 27,
+      "position": "Defender"
+    },
+    {
+      "id": 36160,
+      "name": "D. Barbosa",
+      "photo": "https://media.api-sports.io/football/players/36160.png",
+      "team": "Club Tijuana",
+      "rating": "6.884615",
+      "points": 2,
+      "position": "Defender"
+    },
+    {
+      "id": 41489,
+      "name": "A. Briseño",
+      "photo": "https://media.api-sports.io/football/players/41489.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.892000",
+      "points": 16,
+      "position": "Defender"
+    },
+    {
+      "id": 67884,
+      "name": "F. Pereira",
+      "photo": "https://media.api-sports.io/football/players/67884.png",
+      "team": "Toluca",
+      "rating": "7.205263",
+      "points": 21,
+      "position": "Defender"
+    },
+    {
+      "id": 269462,
+      "name": "B. García",
+      "photo": "https://media.api-sports.io/football/players/269462.png",
+      "team": "Toluca",
+      "rating": "7.065714",
+      "points": 26,
+      "position": "Defender"
+    },
+    {
+      "id": 362815,
+      "name": "E. López",
+      "photo": "https://media.api-sports.io/football/players/362815.png",
+      "team": "Toluca",
+      "rating": "6.800000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 2874,
+      "name": "H. Moreno",
+      "photo": "https://media.api-sports.io/football/players/2874.png",
+      "team": "Monterrey",
+      "rating": "6.843478",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 2877,
+      "name": "C. Salcedo",
+      "photo": "https://media.api-sports.io/football/players/2877.png",
+      "team": "Cruz Azul",
+      "rating": "6.896969",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35539,
+      "name": "S. Medina",
+      "photo": "https://media.api-sports.io/football/players/35539.png",
+      "team": "Monterrey",
+      "rating": "7.100000",
+      "points": 2,
+      "position": "Defender"
+    },
+    {
+      "id": 35597,
+      "name": "L. Reyes",
+      "photo": "https://media.api-sports.io/football/players/35597.png",
+      "team": "Atlas",
+      "rating": "7.069565",
+      "points": 19,
+      "position": "Defender"
+    },
+    {
+      "id": 35774,
+      "name": "G. Arteaga",
+      "photo": "https://media.api-sports.io/football/players/35774.png",
+      "team": "Monterrey",
+      "rating": "6.980000",
+      "points": 14,
+      "position": "Defender"
+    },
+    {
+      "id": 36471,
+      "name": "R. Chávez",
+      "photo": "https://media.api-sports.io/football/players/36471.png",
+      "team": "Atletico San Luis",
+      "rating": "6.975675",
+      "points": 13,
+      "position": "Defender"
+    },
+    {
+      "id": 129943,
+      "name": "V. Guzmán",
+      "photo": "https://media.api-sports.io/football/players/129943.png",
+      "team": "Monterrey",
+      "rating": "6.948484",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 333425,
+      "name": "C. Bustos",
+      "photo": "https://media.api-sports.io/football/players/333425.png",
+      "team": "Monterrey",
+      "rating": "6.940000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 36034,
+      "name": "Unai Bilbao",
+      "photo": "https://media.api-sports.io/football/players/36034.png",
+      "team": "Atletico San Luis",
+      "rating": "7.121875",
+      "points": 36,
+      "position": "Defender"
+    },
+    {
+      "id": 129941,
+      "name": "R. Fernández",
+      "photo": "https://media.api-sports.io/football/players/129941.png",
+      "team": "Club Tijuana",
+      "rating": "6.576190",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 277168,
+      "name": "A. Mejía",
+      "photo": "https://media.api-sports.io/football/players/277168.png",
+      "team": "Club Tijuana",
+      "rating": "6.590000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 428059,
+      "name": "R. Franco",
+      "photo": "https://media.api-sports.io/football/players/428059.png",
+      "team": "Mazatlán",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 2487,
+      "name": "W. Tesillo",
+      "photo": "https://media.api-sports.io/football/players/2487.png",
+      "team": "Leon",
+      "rating": "6.721428",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35564,
+      "name": "J. García",
+      "photo": "https://media.api-sports.io/football/players/35564.png",
+      "team": "Cruz Azul",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 51718,
+      "name": "C. Cándido",
+      "photo": "https://media.api-sports.io/football/players/51718.png",
+      "team": "Cruz Azul",
+      "rating": "6.586363",
+      "points": 8,
+      "position": "Defender"
+    },
+    {
+      "id": 2830,
+      "name": "F. Calvo",
+      "photo": "https://media.api-sports.io/football/players/2830.png",
+      "team": "FC Juarez",
+      "rating": "7.150000",
+      "points": 6,
+      "position": "Defender"
+    },
+    {
+      "id": 6494,
+      "name": "F. Almada",
+      "photo": "https://media.api-sports.io/football/players/6494.png",
+      "team": "Mazatlán",
+      "rating": "6.920000",
+      "points": 10,
+      "position": "Defender"
+    },
+    {
+      "id": 11352,
+      "name": "V. Huerta",
+      "photo": "https://media.api-sports.io/football/players/11352.png",
+      "team": "Toluca",
+      "rating": "7.082608",
+      "points": 1,
+      "position": "Defender"
+    },
+    {
+      "id": 51596,
+      "name": "F. Formiliano",
+      "photo": "https://media.api-sports.io/football/players/51596.png",
+      "team": "Necaxa",
+      "rating": "6.800000",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 2556,
+      "name": "S. Vegas",
+      "photo": "https://media.api-sports.io/football/players/2556.png",
+      "team": "Monterrey",
+      "rating": "6.906896",
+      "points": 4,
+      "position": "Defender"
+    },
+    {
+      "id": 11597,
+      "name": "N. Díaz",
+      "photo": "https://media.api-sports.io/football/players/11597.png",
+      "team": "Club Tijuana",
+      "rating": "6.920689",
+      "points": 0,
+      "position": "Defender"
+    },
+    {
+      "id": 35483,
+      "name": "A. Mosquera",
+      "photo": "https://media.api-sports.io/football/players/35483.png",
+      "team": "Toluca",
+      "rating": "7.075000",
+      "points": 2,
+      "position": "Defender"
+    }
+  ],
+  "Midfielder": [
+    {
+      "id": 35946,
+      "name": "M. Osuna",
+      "photo": "https://media.api-sports.io/football/players/35946.png",
+      "team": "FC Juarez",
+      "rating": "6.500000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 424700,
+      "name": "S. Tlaxcalteco",
+      "photo": "https://media.api-sports.io/football/players/424700.png",
+      "team": "Toluca",
+      "rating": "6.900000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 380126,
+      "name": "I. Suárez",
+      "photo": "https://media.api-sports.io/football/players/380126.png",
+      "team": "Monterrey",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35880,
+      "name": "J. Molina",
+      "photo": "https://media.api-sports.io/football/players/35880.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.827272",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35522,
+      "name": "J. Dueñas",
+      "photo": "https://media.api-sports.io/football/players/35522.png",
+      "team": "Cruz Azul",
+      "rating": "6.680000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 428073,
+      "name": "M. Hernández",
+      "photo": "https://media.api-sports.io/football/players/428073.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35484,
+      "name": "F. Navarro",
+      "photo": "https://media.api-sports.io/football/players/35484.png",
+      "team": "Puebla",
+      "rating": "6.485714",
+      "points": 5,
+      "position": "Midfielder"
+    },
+    {
+      "id": 59333,
+      "name": "F. Valenzuela",
+      "photo": "https://media.api-sports.io/football/players/59333.png",
+      "team": "Club Tijuana",
+      "rating": "6.250000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 350630,
+      "name": "M. Zaleta",
+      "photo": "https://media.api-sports.io/football/players/350630.png",
+      "team": "Cruz Azul",
+      "rating": "6.525000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35919,
+      "name": "C. Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/35919.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.516666",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36077,
+      "name": "S. Flores",
+      "photo": "https://media.api-sports.io/football/players/36077.png",
+      "team": "Mazatlán",
+      "rating": "6.764516",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 203413,
+      "name": "D. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/203413.png",
+      "team": "Atletico San Luis",
+      "rating": "6.440000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 237097,
+      "name": "B. El-mesmari",
+      "photo": "https://media.api-sports.io/football/players/237097.png",
+      "team": "Club America",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35525,
+      "name": "G. Pizarro",
+      "photo": "https://media.api-sports.io/football/players/35525.png",
+      "team": "Tigres UANL",
+      "rating": "6.897058",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36172,
+      "name": "A. Escoboza",
+      "photo": "https://media.api-sports.io/football/players/36172.png",
+      "team": "Mazatlán",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36334,
+      "name": "C. Baltazar",
+      "photo": "https://media.api-sports.io/football/players/36334.png",
+      "team": "Puebla",
+      "rating": "6.670588",
+      "points": 8,
+      "position": "Midfielder"
+    },
+    {
+      "id": 278859,
+      "name": "K. Ortega",
+      "photo": "https://media.api-sports.io/football/players/278859.png",
+      "team": "Atletico San Luis",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 297269,
+      "name": "J. Marchand",
+      "photo": "https://media.api-sports.io/football/players/297269.png",
+      "team": "Pachuca",
+      "rating": "6.700000",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 317280,
+      "name": "L. de los Santos",
+      "photo": "https://media.api-sports.io/football/players/317280.png",
+      "team": "Puebla",
+      "rating": "6.190909",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35920,
+      "name": "A. Iniestra",
+      "photo": "https://media.api-sports.io/football/players/35920.png",
+      "team": "Atletico San Luis",
+      "rating": "6.400000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 372099,
+      "name": "R. Rentería",
+      "photo": "https://media.api-sports.io/football/players/372099.png",
+      "team": "Monterrey",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35632,
+      "name": "D. Álvarez",
+      "photo": "https://media.api-sports.io/football/players/35632.png",
+      "team": "Puebla",
+      "rating": "6.826923",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36114,
+      "name": "Z. Muñoz",
+      "photo": "https://media.api-sports.io/football/players/36114.png",
+      "team": "FC Juarez",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 108542,
+      "name": "J. Venegas",
+      "photo": "https://media.api-sports.io/football/players/108542.png",
+      "team": "FC Juarez",
+      "rating": "6.930000",
+      "points": 10,
+      "position": "Midfielder"
+    },
+    {
+      "id": 194889,
+      "name": "D. Zago",
+      "photo": "https://media.api-sports.io/football/players/194889.png",
+      "team": "Puebla",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2509,
+      "name": "C. Ortiz",
+      "photo": "https://media.api-sports.io/football/players/2509.png",
+      "team": "Pachuca",
+      "rating": "6.533333",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 9891,
+      "name": "D. Terans",
+      "photo": "https://media.api-sports.io/football/players/9891.png",
+      "team": "Pachuca",
+      "rating": "6.772727",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 30568,
+      "name": "C. Oliva",
+      "photo": "https://media.api-sports.io/football/players/30568.png",
+      "team": "FC Juarez",
+      "rating": "7.100000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51465,
+      "name": "G. Nápoli",
+      "photo": "https://media.api-sports.io/football/players/51465.png",
+      "team": "Leon",
+      "rating": "6.591666",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 64032,
+      "name": "Edson Fernando",
+      "photo": "https://media.api-sports.io/football/players/64032.png",
+      "team": "FC Juarez",
+      "rating": "6.900000",
+      "points": 10,
+      "position": "Midfielder"
+    },
+    {
+      "id": 136097,
+      "name": "E. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/136097.png",
+      "team": "Santos Laguna",
+      "rating": "6.663157",
+      "points": 15,
+      "position": "Midfielder"
+    },
+    {
+      "id": 576,
+      "name": "E. Salvio",
+      "photo": "https://media.api-sports.io/football/players/576.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "7.065000",
+      "points": 44,
+      "position": "Midfielder"
+    },
+    {
+      "id": 5921,
+      "name": "A. Solari",
+      "photo": "https://media.api-sports.io/football/players/5921.png",
+      "team": "Atlas",
+      "rating": "6.713636",
+      "points": 13,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6209,
+      "name": "T. Belmonte",
+      "photo": "https://media.api-sports.io/football/players/6209.png",
+      "team": "Toluca",
+      "rating": "6.944827",
+      "points": 13,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35529,
+      "name": "J. Damm",
+      "photo": "https://media.api-sports.io/football/players/35529.png",
+      "team": "Atletico San Luis",
+      "rating": "6.668000",
+      "points": 12,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35550,
+      "name": "M. Meza",
+      "photo": "https://media.api-sports.io/football/players/35550.png",
+      "team": "Monterrey",
+      "rating": "6.991891",
+      "points": 43,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35720,
+      "name": "F. Mancuello",
+      "photo": "https://media.api-sports.io/football/players/35720.png",
+      "team": "Puebla",
+      "rating": "7.633333",
+      "points": 9,
+      "position": "Midfielder"
+    },
+    {
+      "id": 289592,
+      "name": "K. Castaño",
+      "photo": "https://media.api-sports.io/football/players/289592.png",
+      "team": "Cruz Azul",
+      "rating": "6.715384",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35786,
+      "name": "A. Preciado",
+      "photo": "https://media.api-sports.io/football/players/35786.png",
+      "team": "Club Queretaro",
+      "rating": "6.233333",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35788,
+      "name": "U. Rivas",
+      "photo": "https://media.api-sports.io/football/players/35788.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.879487",
+      "points": 31,
+      "position": "Midfielder"
+    },
+    {
+      "id": 46744,
+      "name": "L. Suárez",
+      "photo": "https://media.api-sports.io/football/players/46744.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "7.170588",
+      "points": 23,
+      "position": "Midfielder"
+    },
+    {
+      "id": 123435,
+      "name": "J. Caicedo",
+      "photo": "https://media.api-sports.io/football/players/123435.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.942307",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 304382,
+      "name": "M. Río",
+      "photo": "https://media.api-sports.io/football/players/304382.png",
+      "team": "Club Queretaro",
+      "rating": "6.340000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 307513,
+      "name": "P. Quispe",
+      "photo": "https://media.api-sports.io/football/players/307513.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "7.111764",
+      "points": 5,
+      "position": "Midfielder"
+    },
+    {
+      "id": 325817,
+      "name": "S. Trigos",
+      "photo": "https://media.api-sports.io/football/players/325817.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.661904",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 341970,
+      "name": "J. Ruvalcaba",
+      "photo": "https://media.api-sports.io/football/players/341970.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.766666",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 373294,
+      "name": "R. López",
+      "photo": "https://media.api-sports.io/football/players/373294.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.680000",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 1573,
+      "name": "A. Guardado",
+      "photo": "https://media.api-sports.io/football/players/1573.png",
+      "team": "Leon",
+      "rating": "6.800000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35887,
+      "name": "C. Cisneros",
+      "photo": "https://media.api-sports.io/football/players/35887.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.633333",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36083,
+      "name": "D. Ramírez",
+      "photo": "https://media.api-sports.io/football/players/36083.png",
+      "team": "Leon",
+      "rating": "6.739285",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36142,
+      "name": "S. Reyes",
+      "photo": "https://media.api-sports.io/football/players/36142.png",
+      "team": "Club America",
+      "rating": "6.810000",
+      "points": 23,
+      "position": "Midfielder"
+    },
+    {
+      "id": 265907,
+      "name": "E. Guerra",
+      "photo": "https://media.api-sports.io/football/players/265907.png",
+      "team": "Leon",
+      "rating": "6.809090",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 302956,
+      "name": "H. Uribe",
+      "photo": "https://media.api-sports.io/football/players/302956.png",
+      "team": "Leon",
+      "rating": "6.016666",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 403453,
+      "name": "S. Fierro",
+      "photo": "https://media.api-sports.io/football/players/403453.png",
+      "team": "Tigres UANL",
+      "rating": "6.554545",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 404431,
+      "name": "S. Santos",
+      "photo": "https://media.api-sports.io/football/players/404431.png",
+      "team": "Leon",
+      "rating": "6.730769",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6441,
+      "name": "J. Paradela",
+      "photo": "https://media.api-sports.io/football/players/6441.png",
+      "team": "Necaxa",
+      "rating": "7.335294",
+      "points": 35,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35496,
+      "name": "J. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/35496.png",
+      "team": "Leon",
+      "rating": "6.744827",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35782,
+      "name": "D. de Buen",
+      "photo": "https://media.api-sports.io/football/players/35782.png",
+      "team": "Puebla",
+      "rating": "6.966666",
+      "points": 27,
+      "position": "Midfielder"
+    },
+    {
+      "id": 141154,
+      "name": "A. Andrade",
+      "photo": "https://media.api-sports.io/football/players/141154.png",
+      "team": "Necaxa",
+      "rating": "6.761904",
+      "points": 13,
+      "position": "Midfielder"
+    },
+    {
+      "id": 189568,
+      "name": "P. Pérez",
+      "photo": "https://media.api-sports.io/football/players/189568.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.770833",
+      "points": 9,
+      "position": "Midfielder"
+    },
+    {
+      "id": 350603,
+      "name": "D. Gómez",
+      "photo": "https://media.api-sports.io/football/players/350603.png",
+      "team": "Necaxa",
+      "rating": "6.770833",
+      "points": 14,
+      "position": "Midfielder"
+    },
+    {
+      "id": 378974,
+      "name": "R. Cortéz",
+      "photo": "https://media.api-sports.io/football/players/378974.png",
+      "team": "Necaxa",
+      "rating": "6.566666",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6579,
+      "name": "J. Brunetta",
+      "photo": "https://media.api-sports.io/football/players/6579.png",
+      "team": "Tigres UANL",
+      "rating": "8.255555",
+      "points": 69,
+      "position": "Midfielder"
+    },
+    {
+      "id": 28337,
+      "name": "F. Gorriarán",
+      "photo": "https://media.api-sports.io/football/players/28337.png",
+      "team": "Tigres UANL",
+      "rating": "6.982926",
+      "points": 20,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35518,
+      "name": "J. Aquino",
+      "photo": "https://media.api-sports.io/football/players/35518.png",
+      "team": "Tigres UANL",
+      "rating": "7.079411",
+      "points": 8,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35521,
+      "name": "Rafael Carioca",
+      "photo": "https://media.api-sports.io/football/players/35521.png",
+      "team": "Tigres UANL",
+      "rating": "7.044736",
+      "points": 16,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35590,
+      "name": "S. Córdova",
+      "photo": "https://media.api-sports.io/football/players/35590.png",
+      "team": "Tigres UANL",
+      "rating": "6.785294",
+      "points": 43,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35855,
+      "name": "J. Vigón",
+      "photo": "https://media.api-sports.io/football/players/35855.png",
+      "team": "Tigres UANL",
+      "rating": "6.755000",
+      "points": 19,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36010,
+      "name": "R. Fulgencio",
+      "photo": "https://media.api-sports.io/football/players/36010.png",
+      "team": "Atlas",
+      "rating": "6.940000",
+      "points": 8,
+      "position": "Midfielder"
+    },
+    {
+      "id": 195225,
+      "name": "E. Pizzuto",
+      "photo": "https://media.api-sports.io/football/players/195225.png",
+      "team": "Tigres UANL",
+      "rating": "6.450000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 284061,
+      "name": "M. Flores",
+      "photo": "https://media.api-sports.io/football/players/284061.png",
+      "team": "Tigres UANL",
+      "rating": "6.940000",
+      "points": 33,
+      "position": "Midfielder"
+    },
+    {
+      "id": 308855,
+      "name": "C. Jiménez",
+      "photo": "https://media.api-sports.io/football/players/308855.png",
+      "team": "Cruz Azul",
+      "rating": "6.300000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 428067,
+      "name": "A. Morales",
+      "photo": "https://media.api-sports.io/football/players/428067.png",
+      "team": "Cruz Azul",
+      "rating": "6.314285",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2888,
+      "name": "C. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/2888.png",
+      "team": "Cruz Azul",
+      "rating": "7.130555",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6438,
+      "name": "L. Faravelli",
+      "photo": "https://media.api-sports.io/football/players/6438.png",
+      "team": "Cruz Azul",
+      "rating": "6.882608",
+      "points": 12,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35573,
+      "name": "A. Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/35573.png",
+      "team": "Cruz Azul",
+      "rating": "6.719354",
+      "points": 11,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35694,
+      "name": "I. Rivero",
+      "photo": "https://media.api-sports.io/football/players/35694.png",
+      "team": "Cruz Azul",
+      "rating": "7.070270",
+      "points": 21,
+      "position": "Midfielder"
+    },
+    {
+      "id": 266345,
+      "name": "É. Lira",
+      "photo": "https://media.api-sports.io/football/players/266345.png",
+      "team": "Cruz Azul",
+      "rating": "6.754285",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 357997,
+      "name": "A. Montaño",
+      "photo": "https://media.api-sports.io/football/players/357997.png",
+      "team": "Mazatlán",
+      "rating": "7.057692",
+      "points": 25,
+      "position": "Midfielder"
+    },
+    {
+      "id": 750,
+      "name": "Álvaro Fidalgo",
+      "photo": "https://media.api-sports.io/football/players/750.png",
+      "team": "Club America",
+      "rating": "7.402439",
+      "points": 27,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2561,
+      "name": "D. Valdés",
+      "photo": "https://media.api-sports.io/football/players/2561.png",
+      "team": "Club America",
+      "rating": "7.470270",
+      "points": 77,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2880,
+      "name": "J. dos Santos",
+      "photo": "https://media.api-sports.io/football/players/2880.png",
+      "team": "Club America",
+      "rating": "7.116666",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35878,
+      "name": "A. Cervantes",
+      "photo": "https://media.api-sports.io/football/players/35878.png",
+      "team": "Santos Laguna",
+      "rating": "6.797222",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36093,
+      "name": "É. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/36093.png",
+      "team": "Pachuca",
+      "rating": "7.393750",
+      "points": 54,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51618,
+      "name": "B. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/51618.png",
+      "team": "Club America",
+      "rating": "6.816666",
+      "points": 35,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6471,
+      "name": "G. Carabajal",
+      "photo": "https://media.api-sports.io/football/players/6471.png",
+      "team": "Puebla",
+      "rating": "6.826666",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 44435,
+      "name": "C. Baeza",
+      "photo": "https://media.api-sports.io/football/players/44435.png",
+      "team": "Toluca",
+      "rating": "6.918750",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 199539,
+      "name": "V. Poggi",
+      "photo": "https://media.api-sports.io/football/players/199539.png",
+      "team": "Necaxa",
+      "rating": "6.766666",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35663,
+      "name": "E. Orona",
+      "photo": "https://media.api-sports.io/football/players/35663.png",
+      "team": "Puebla",
+      "rating": "6.570588",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35754,
+      "name": "P. González",
+      "photo": "https://media.api-sports.io/football/players/35754.png",
+      "team": "Puebla",
+      "rating": "6.948484",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35793,
+      "name": "B. Garnica",
+      "photo": "https://media.api-sports.io/football/players/35793.png",
+      "team": "Necaxa",
+      "rating": "7.138888",
+      "points": 28,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36169,
+      "name": "F. Arce",
+      "photo": "https://media.api-sports.io/football/players/36169.png",
+      "team": "Necaxa",
+      "rating": "6.858620",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51640,
+      "name": "F. Waller",
+      "photo": "https://media.api-sports.io/football/players/51640.png",
+      "team": "Puebla",
+      "rating": "6.450000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 157905,
+      "name": "Á. Robles",
+      "photo": "https://media.api-sports.io/football/players/157905.png",
+      "team": "Puebla",
+      "rating": "6.355555",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 269414,
+      "name": "J. González",
+      "photo": "https://media.api-sports.io/football/players/269414.png",
+      "team": "Santos Laguna",
+      "rating": "6.477777",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 333856,
+      "name": "A. Herrera",
+      "photo": "https://media.api-sports.io/football/players/333856.png",
+      "team": "Puebla",
+      "rating": "7.060000",
+      "points": 15,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2579,
+      "name": "J. Intriago",
+      "photo": "https://media.api-sports.io/football/players/2579.png",
+      "team": "Mazatlán",
+      "rating": "6.846428",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35883,
+      "name": "A. Torres",
+      "photo": "https://media.api-sports.io/football/players/35883.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.687500",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35943,
+      "name": "R. Meraz",
+      "photo": "https://media.api-sports.io/football/players/35943.png",
+      "team": "Mazatlán",
+      "rating": "6.800000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35972,
+      "name": "J. Sierra",
+      "photo": "https://media.api-sports.io/football/players/35972.png",
+      "team": "Club Queretaro",
+      "rating": "6.764516",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 46855,
+      "name": "Y. Bárcenas",
+      "photo": "https://media.api-sports.io/football/players/46855.png",
+      "team": "Mazatlán",
+      "rating": "7.052173",
+      "points": 29,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35783,
+      "name": "B. Lozano",
+      "photo": "https://media.api-sports.io/football/players/35783.png",
+      "team": "Atlas",
+      "rating": "7.300000",
+      "points": 5,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35850,
+      "name": "J. Márquez",
+      "photo": "https://media.api-sports.io/football/players/35850.png",
+      "team": "Atlas",
+      "rating": "6.860000",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35856,
+      "name": "É. Zaldívar",
+      "photo": "https://media.api-sports.io/football/players/35856.png",
+      "team": "Atlas",
+      "rating": "6.723809",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35949,
+      "name": "A. Rocha",
+      "photo": "https://media.api-sports.io/football/players/35949.png",
+      "team": "Atlas",
+      "rating": "6.862068",
+      "points": 18,
+      "position": "Midfielder"
+    },
+    {
+      "id": 68193,
+      "name": "M. García",
+      "photo": "https://media.api-sports.io/football/players/68193.png",
+      "team": "Atlas",
+      "rating": "6.918518",
+      "points": 10,
+      "position": "Midfielder"
+    },
+    {
+      "id": 271081,
+      "name": "A. Bass",
+      "photo": "https://media.api-sports.io/football/players/271081.png",
+      "team": "Atlas",
+      "rating": "6.910000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 428468,
+      "name": "V. RÃ­os",
+      "photo": "https://media.api-sports.io/football/players/428468.png",
+      "team": "Atlas",
+      "rating": "6.825000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 465286,
+      "name": "Jesús Serrato",
+      "photo": "https://media.api-sports.io/football/players/465286.png",
+      "team": "Atlas",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 13404,
+      "name": "C. Rivera",
+      "photo": "https://media.api-sports.io/football/players/13404.png",
+      "team": "Club Tijuana",
+      "rating": "7.275000",
+      "points": 28,
+      "position": "Midfielder"
+    },
+    {
+      "id": 46862,
+      "name": "Borja Sánchez",
+      "photo": "https://media.api-sports.io/football/players/46862.png",
+      "team": "Leon",
+      "rating": "6.855555",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2563,
+      "name": "J. Meneses",
+      "photo": "https://media.api-sports.io/football/players/2563.png",
+      "team": "Toluca",
+      "rating": "7.138235",
+      "points": 53,
+      "position": "Midfielder"
+    },
+    {
+      "id": 10393,
+      "name": "Rodrigo Dourado",
+      "photo": "https://media.api-sports.io/football/players/10393.png",
+      "team": "Atletico San Luis",
+      "rating": "6.997297",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 11448,
+      "name": "B. Galdames",
+      "photo": "https://media.api-sports.io/football/players/11448.png",
+      "team": "Atletico San Luis",
+      "rating": "6.868750",
+      "points": 14,
+      "position": "Midfielder"
+    },
+    {
+      "id": 162891,
+      "name": "J. Sanabria",
+      "photo": "https://media.api-sports.io/football/players/162891.png",
+      "team": "Atletico San Luis",
+      "rating": "7.121052",
+      "points": 25,
+      "position": "Midfielder"
+    },
+    {
+      "id": 234,
+      "name": "É. Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/234.png",
+      "team": "Guadalajara Chivas",
+      "rating": "7.038235",
+      "points": 11,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2871,
+      "name": "V. Guzmán",
+      "photo": "https://media.api-sports.io/football/players/2871.png",
+      "team": "Guadalajara Chivas",
+      "rating": "7.018750",
+      "points": 40,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2885,
+      "name": "I. Brizuela",
+      "photo": "https://media.api-sports.io/football/players/2885.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.750000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35623,
+      "name": "R. González",
+      "photo": "https://media.api-sports.io/football/players/35623.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.793103",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35877,
+      "name": "F. Beltrán",
+      "photo": "https://media.api-sports.io/football/players/35877.png",
+      "team": "Guadalajara Chivas",
+      "rating": "7.110000",
+      "points": 26,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35970,
+      "name": "L. Romo",
+      "photo": "https://media.api-sports.io/football/players/35970.png",
+      "team": "Monterrey",
+      "rating": "7.087878",
+      "points": 19,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6581,
+      "name": "F. Lértora",
+      "photo": "https://media.api-sports.io/football/players/6581.png",
+      "team": "Club Queretaro",
+      "rating": "7.038235",
+      "points": 15,
+      "position": "Midfielder"
+    },
+    {
+      "id": 16662,
+      "name": "J. Perlaza",
+      "photo": "https://media.api-sports.io/football/players/16662.png",
+      "team": "Club Queretaro",
+      "rating": "6.825000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36170,
+      "name": "E. Armenta",
+      "photo": "https://media.api-sports.io/football/players/36170.png",
+      "team": "Club Tijuana",
+      "rating": "6.528000",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 50768,
+      "name": "L. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/50768.png",
+      "team": "Club Tijuana",
+      "rating": "6.953571",
+      "points": 28,
+      "position": "Midfielder"
+    },
+    {
+      "id": 50932,
+      "name": "J. Colmán",
+      "photo": "https://media.api-sports.io/football/players/50932.png",
+      "team": "Mazatlán",
+      "rating": "7.119230",
+      "points": 45,
+      "position": "Midfielder"
+    },
+    {
+      "id": 127235,
+      "name": "M. García",
+      "photo": "https://media.api-sports.io/football/players/127235.png",
+      "team": "Club Queretaro",
+      "rating": "6.550000",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 268386,
+      "name": "Á. Zapata",
+      "photo": "https://media.api-sports.io/football/players/268386.png",
+      "team": "FC Juarez",
+      "rating": "6.771428",
+      "points": 8,
+      "position": "Midfielder"
+    },
+    {
+      "id": 295607,
+      "name": "F. González",
+      "photo": "https://media.api-sports.io/football/players/295607.png",
+      "team": "Tigres UANL",
+      "rating": "6.800000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 445609,
+      "name": "A. Perez",
+      "photo": "https://media.api-sports.io/football/players/445609.png",
+      "team": "Club Queretaro",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 313023,
+      "name": "W. Madrid",
+      "photo": "https://media.api-sports.io/football/players/313023.png",
+      "team": "Necaxa",
+      "rating": "6.500000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 416908,
+      "name": "C. Galicia",
+      "photo": "https://media.api-sports.io/football/players/416908.png",
+      "team": "Club Tijuana",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35546,
+      "name": "A. González",
+      "photo": "https://media.api-sports.io/football/players/35546.png",
+      "team": "Monterrey",
+      "rating": "6.988461",
+      "points": 28,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35879,
+      "name": "J. López",
+      "photo": "https://media.api-sports.io/football/players/35879.png",
+      "team": "Pachuca",
+      "rating": "6.912500",
+      "points": 11,
+      "position": "Midfielder"
+    },
+    {
+      "id": 128167,
+      "name": "P. Pedraza",
+      "photo": "https://media.api-sports.io/football/players/128167.png",
+      "team": "Pachuca",
+      "rating": "6.722222",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 332164,
+      "name": "Alán Ernesto Bautista Gutiérrez",
+      "photo": "https://media.api-sports.io/football/players/332164.png",
+      "team": "Pachuca",
+      "rating": "6.868421",
+      "points": 29,
+      "position": "Midfielder"
+    },
+    {
+      "id": 371227,
+      "name": "J. Saldívar",
+      "photo": "https://media.api-sports.io/football/players/371227.png",
+      "team": "Pachuca",
+      "rating": "6.900000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 424400,
+      "name": "E. Montiel",
+      "photo": "https://media.api-sports.io/football/players/424400.png",
+      "team": "Pachuca",
+      "rating": "6.995652",
+      "points": 8,
+      "position": "Midfielder"
+    },
+    {
+      "id": 426211,
+      "name": "A. Domínguez",
+      "photo": "https://media.api-sports.io/football/players/426211.png",
+      "team": "Pachuca",
+      "rating": "6.855000",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 428999,
+      "name": "Owen de Jesús González Ojeda",
+      "photo": "https://media.api-sports.io/football/players/428999.png",
+      "team": "Pachuca",
+      "rating": "6.625000",
+      "points": 5,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35488,
+      "name": "P. Aquino",
+      "photo": "https://media.api-sports.io/football/players/35488.png",
+      "team": "Santos Laguna",
+      "rating": "6.976000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35549,
+      "name": "J. Martínez",
+      "photo": "https://media.api-sports.io/football/players/35549.png",
+      "team": "Monterrey",
+      "rating": "6.828571",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35572,
+      "name": "M. Domínguez",
+      "photo": "https://media.api-sports.io/football/players/35572.png",
+      "team": "Club Queretaro",
+      "rating": "6.860000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35657,
+      "name": "T. Figueroa",
+      "photo": "https://media.api-sports.io/football/players/35657.png",
+      "team": "Toluca",
+      "rating": "6.460000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36019,
+      "name": "R. Prieto",
+      "photo": "https://media.api-sports.io/football/players/36019.png",
+      "team": "Santos Laguna",
+      "rating": "6.712500",
+      "points": 2,
+      "position": "Midfielder"
+    },
+    {
+      "id": 127214,
+      "name": "D. Medina",
+      "photo": "https://media.api-sports.io/football/players/127214.png",
+      "team": "Santos Laguna",
+      "rating": "6.648484",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 127226,
+      "name": "A. López",
+      "photo": "https://media.api-sports.io/football/players/127226.png",
+      "team": "Santos Laguna",
+      "rating": "6.727586",
+      "points": 7,
+      "position": "Midfielder"
+    },
+    {
+      "id": 289464,
+      "name": "R. Sordo",
+      "photo": "https://media.api-sports.io/football/players/289464.png",
+      "team": "Santos Laguna",
+      "rating": "6.720000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 454037,
+      "name": "L. Espinoza",
+      "photo": "https://media.api-sports.io/football/players/454037.png",
+      "team": "Santos Laguna",
+      "rating": "6.500000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 460817,
+      "name": "Luis Gómez",
+      "photo": "https://media.api-sports.io/football/players/460817.png",
+      "team": "Santos Laguna",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 461409,
+      "name": "G. Muñoz",
+      "photo": "https://media.api-sports.io/football/players/461409.png",
+      "team": "Santos Laguna",
+      "rating": "6.900000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35976,
+      "name": "J. Güémez",
+      "photo": "https://media.api-sports.io/football/players/35976.png",
+      "team": "Atletico San Luis",
+      "rating": "7.028947",
+      "points": 14,
+      "position": "Midfielder"
+    },
+    {
+      "id": 136509,
+      "name": "S. Naveda",
+      "photo": "https://media.api-sports.io/football/players/136509.png",
+      "team": "Club America",
+      "rating": "6.592857",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 195704,
+      "name": "J. Carrillo",
+      "photo": "https://media.api-sports.io/football/players/195704.png",
+      "team": "Santos Laguna",
+      "rating": "7.246666",
+      "points": 14,
+      "position": "Midfielder"
+    },
+    {
+      "id": 308930,
+      "name": "S. Mariscal",
+      "photo": "https://media.api-sports.io/football/players/308930.png",
+      "team": "Santos Laguna",
+      "rating": "6.766666",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6407,
+      "name": "M. Castro",
+      "photo": "https://media.api-sports.io/football/players/6407.png",
+      "team": "FC Juarez",
+      "rating": "6.913333",
+      "points": 18,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35547,
+      "name": "J. Gónzalez",
+      "photo": "https://media.api-sports.io/football/players/35547.png",
+      "team": "Monterrey",
+      "rating": "6.726666",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35577,
+      "name": "J. Salas",
+      "photo": "https://media.api-sports.io/football/players/35577.png",
+      "team": "FC Juarez",
+      "rating": "6.646153",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35884,
+      "name": "D. Villalpando",
+      "photo": "https://media.api-sports.io/football/players/35884.png",
+      "team": "FC Juarez",
+      "rating": "7.372727",
+      "points": 15,
+      "position": "Midfielder"
+    },
+    {
+      "id": 359835,
+      "name": "D. García",
+      "photo": "https://media.api-sports.io/football/players/359835.png",
+      "team": "FC Juarez",
+      "rating": "6.718518",
+      "points": 5,
+      "position": "Midfielder"
+    },
+    {
+      "id": 424693,
+      "name": "J. Carmona",
+      "photo": "https://media.api-sports.io/football/players/424693.png",
+      "team": "FC Juarez",
+      "rating": "6.450000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35687,
+      "name": "J. Angulo",
+      "photo": "https://media.api-sports.io/football/players/35687.png",
+      "team": "Toluca",
+      "rating": "7.650000",
+      "points": 26,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35981,
+      "name": "M. Ruiz",
+      "photo": "https://media.api-sports.io/football/players/35981.png",
+      "team": "Toluca",
+      "rating": "7.139393",
+      "points": 14,
+      "position": "Midfielder"
+    },
+    {
+      "id": 409886,
+      "name": "V. Arteaga",
+      "photo": "https://media.api-sports.io/football/players/409886.png",
+      "team": "Toluca",
+      "rating": "6.640000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 389,
+      "name": "J. Corona",
+      "photo": "https://media.api-sports.io/football/players/389.png",
+      "team": "Monterrey",
+      "rating": "6.866666",
+      "points": 12,
+      "position": "Midfielder"
+    },
+    {
+      "id": 1570,
+      "name": "Sergio Canales",
+      "photo": "https://media.api-sports.io/football/players/1570.png",
+      "team": "Monterrey",
+      "rating": "7.276000",
+      "points": 66,
+      "position": "Midfielder"
+    },
+    {
+      "id": 6369,
+      "name": "J. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/6369.png",
+      "team": "Monterrey",
+      "rating": "7.184210",
+      "points": 15,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35648,
+      "name": "É. Aguirre",
+      "photo": "https://media.api-sports.io/football/players/35648.png",
+      "team": "Monterrey",
+      "rating": "7.065000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35974,
+      "name": "J. Cortizo",
+      "photo": "https://media.api-sports.io/football/players/35974.png",
+      "team": "Monterrey",
+      "rating": "7.120689",
+      "points": 28,
+      "position": "Midfielder"
+    },
+    {
+      "id": 167014,
+      "name": "F. Ambríz",
+      "photo": "https://media.api-sports.io/football/players/167014.png",
+      "team": "Leon",
+      "rating": "6.936363",
+      "points": 13,
+      "position": "Midfielder"
+    },
+    {
+      "id": 265676,
+      "name": "T. Leone",
+      "photo": "https://media.api-sports.io/football/players/265676.png",
+      "team": "Monterrey",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 300885,
+      "name": "N. Deossa",
+      "photo": "https://media.api-sports.io/football/players/300885.png",
+      "team": "Pachuca",
+      "rating": "7.235000",
+      "points": 29,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2471,
+      "name": "D. Blanco",
+      "photo": "https://media.api-sports.io/football/players/2471.png",
+      "team": "Club Tijuana",
+      "rating": "6.848000",
+      "points": 12,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35696,
+      "name": "I. Tona",
+      "photo": "https://media.api-sports.io/football/players/35696.png",
+      "team": "Club Tijuana",
+      "rating": "6.730769",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35716,
+      "name": "K. Castañeda",
+      "photo": "https://media.api-sports.io/football/players/35716.png",
+      "team": "Club Tijuana",
+      "rating": "7.048275",
+      "points": 19,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36045,
+      "name": "F. Madrigal",
+      "photo": "https://media.api-sports.io/football/players/36045.png",
+      "team": "Club Tijuana",
+      "rating": "6.778571",
+      "points": 22,
+      "position": "Midfielder"
+    },
+    {
+      "id": 36182,
+      "name": "F. Contreras",
+      "photo": "https://media.api-sports.io/football/players/36182.png",
+      "team": "Club Tijuana",
+      "rating": "6.767857",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51062,
+      "name": "J. Corona",
+      "photo": "https://media.api-sports.io/football/players/51062.png",
+      "team": "Club Tijuana",
+      "rating": "6.842857",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51068,
+      "name": "E. Álvarez",
+      "photo": "https://media.api-sports.io/football/players/51068.png",
+      "team": "Club Tijuana",
+      "rating": "6.944444",
+      "points": 29,
+      "position": "Midfielder"
+    },
+    {
+      "id": 2451,
+      "name": "J. Murillo",
+      "photo": "https://media.api-sports.io/football/players/2451.png",
+      "team": "Atlas",
+      "rating": "6.800000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 13469,
+      "name": "J. Zapata",
+      "photo": "https://media.api-sports.io/football/players/13469.png",
+      "team": "Atlas",
+      "rating": "6.943478",
+      "points": 12,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35815,
+      "name": "Ó. Macías",
+      "photo": "https://media.api-sports.io/football/players/35815.png",
+      "team": "Atletico San Luis",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51776,
+      "name": "M. Araújo",
+      "photo": "https://media.api-sports.io/football/players/51776.png",
+      "team": "Toluca",
+      "rating": "6.888235",
+      "points": 20,
+      "position": "Midfielder"
+    },
+    {
+      "id": 87100,
+      "name": "S. Salles-Lamonge",
+      "photo": "https://media.api-sports.io/football/players/87100.png",
+      "team": "Atletico San Luis",
+      "rating": "6.986206",
+      "points": 18,
+      "position": "Midfielder"
+    },
+    {
+      "id": 271852,
+      "name": "A. Álvarez",
+      "photo": "https://media.api-sports.io/football/players/271852.png",
+      "team": "Necaxa",
+      "rating": "6.900000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 325815,
+      "name": "S. Pérez Bouquet",
+      "photo": "https://media.api-sports.io/football/players/325815.png",
+      "team": "FC Juarez",
+      "rating": "6.600000",
+      "points": 5,
+      "position": "Midfielder"
+    },
+    {
+      "id": 408775,
+      "name": "A. Moreno",
+      "photo": "https://media.api-sports.io/football/players/408775.png",
+      "team": "Necaxa",
+      "rating": "6.050000",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 5795,
+      "name": "M. Klimowicz",
+      "photo": "https://media.api-sports.io/football/players/5795.png",
+      "team": "Atletico San Luis",
+      "rating": "6.710714",
+      "points": 1,
+      "position": "Midfielder"
+    },
+    {
+      "id": 8454,
+      "name": "O. Govea",
+      "photo": "https://media.api-sports.io/football/players/8454.png",
+      "team": "Monterrey",
+      "rating": "6.848484",
+      "points": 8,
+      "position": "Midfielder"
+    },
+    {
+      "id": 35841,
+      "name": "D. Aguilar",
+      "photo": "https://media.api-sports.io/football/players/35841.png",
+      "team": "Puebla",
+      "rating": "6.566666",
+      "points": 4,
+      "position": "Midfielder"
+    },
+    {
+      "id": 321510,
+      "name": "J. Villal",
+      "photo": "https://media.api-sports.io/football/players/321510.png",
+      "team": "Atletico San Luis",
+      "rating": "6.477777",
+      "points": 3,
+      "position": "Midfielder"
+    },
+    {
+      "id": 13397,
+      "name": "A. Colorado",
+      "photo": "https://media.api-sports.io/football/players/13397.png",
+      "team": "Necaxa",
+      "rating": "6.618750",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 13714,
+      "name": "D. Mantilla",
+      "photo": "https://media.api-sports.io/football/players/13714.png",
+      "team": "Necaxa",
+      "rating": "6.342857",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 51559,
+      "name": "A. Medina",
+      "photo": "https://media.api-sports.io/football/players/51559.png",
+      "team": "Leon",
+      "rating": "6.864285",
+      "points": 10,
+      "position": "Midfielder"
+    },
+    {
+      "id": 70473,
+      "name": "R. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/70473.png",
+      "team": "Club America",
+      "rating": "6.938461",
+      "points": 25,
+      "position": "Midfielder"
+    },
+    {
+      "id": 278340,
+      "name": "V. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/278340.png",
+      "team": "Pachuca",
+      "rating": "7.060000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 324754,
+      "name": "V. López",
+      "photo": "https://media.api-sports.io/football/players/324754.png",
+      "team": "Monterrey",
+      "rating": "6.846153",
+      "points": 18,
+      "position": "Midfielder"
+    },
+    {
+      "id": 341969,
+      "name": "H. Jurado",
+      "photo": "https://media.api-sports.io/football/players/341969.png",
+      "team": "Necaxa",
+      "rating": "6.677777",
+      "points": 17,
+      "position": "Midfielder"
+    },
+    {
+      "id": 445419,
+      "name": "Cesar Garza Cantu",
+      "photo": "https://media.api-sports.io/football/players/445419.png",
+      "team": "Monterrey",
+      "rating": "6.800000",
+      "points": 6,
+      "position": "Midfielder"
+    },
+    {
+      "id": 10100,
+      "name": "L. Romero",
+      "photo": "https://media.api-sports.io/football/players/10100.png",
+      "team": "Leon",
+      "rating": "6.900000",
+      "points": 0,
+      "position": "Midfielder"
+    },
+    {
+      "id": 59070,
+      "name": "A. Martínez",
+      "photo": "https://media.api-sports.io/football/players/59070.png",
+      "team": "Club Tijuana",
+      "rating": "6.764705",
+      "points": 11,
+      "position": "Midfielder"
+    }
+  ],
+  "Attacker": [
+    {
+      "id": 424692,
+      "name": "J. Cantú",
+      "photo": "https://media.api-sports.io/football/players/424692.png",
+      "team": "Club America",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35985,
+      "name": "Camilo Sanvezzo",
+      "photo": "https://media.api-sports.io/football/players/35985.png",
+      "team": "Club Queretaro",
+      "rating": "6.841666",
+      "points": 6,
+      "position": "Attacker"
+    },
+    {
+      "id": 35998,
+      "name": "D. Chávez",
+      "photo": "https://media.api-sports.io/football/players/35998.png",
+      "team": "FC Juarez",
+      "rating": "6.747368",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 35988,
+      "name": "A. Loba",
+      "photo": "https://media.api-sports.io/football/players/35988.png",
+      "team": "Club Tijuana",
+      "rating": "7.040000",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 36188,
+      "name": "R. Rubín",
+      "photo": "https://media.api-sports.io/football/players/36188.png",
+      "team": "Club Queretaro",
+      "rating": "6.566666",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 437332,
+      "name": "Á. Jordán",
+      "photo": "https://media.api-sports.io/football/players/437332.png",
+      "team": "Monterrey",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 179509,
+      "name": "E. García",
+      "photo": "https://media.api-sports.io/football/players/179509.png",
+      "team": "Puebla",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 195856,
+      "name": "R. Martínez",
+      "photo": "https://media.api-sports.io/football/players/195856.png",
+      "team": "Club America",
+      "rating": "6.450000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 12887,
+      "name": "H. Preciado",
+      "photo": "https://media.api-sports.io/football/players/12887.png",
+      "team": "Santos Laguna",
+      "rating": "7.236000",
+      "points": 66,
+      "position": "Attacker"
+    },
+    {
+      "id": 36054,
+      "name": "J. Castro",
+      "photo": "https://media.api-sports.io/football/players/36054.png",
+      "team": "Atletico San Luis",
+      "rating": "6.577272",
+      "points": 7,
+      "position": "Attacker"
+    },
+    {
+      "id": 454036,
+      "name": "G. García",
+      "photo": "https://media.api-sports.io/football/players/454036.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 454038,
+      "name": "S. Aguayo",
+      "photo": "https://media.api-sports.io/football/players/454038.png",
+      "team": "Pachuca",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 466150,
+      "name": "S. Álvarez",
+      "photo": "https://media.api-sports.io/football/players/466150.png",
+      "team": "Atlas",
+      "rating": "6.600000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35634,
+      "name": "M. Barragán",
+      "photo": "https://media.api-sports.io/football/players/35634.png",
+      "team": "Puebla",
+      "rating": "6.589655",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 35785,
+      "name": "A. Ocejo",
+      "photo": "https://media.api-sports.io/football/players/35785.png",
+      "team": "Santos Laguna",
+      "rating": "6.572727",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 35792,
+      "name": "J. Furch",
+      "photo": "https://media.api-sports.io/football/players/35792.png",
+      "team": "Atlas",
+      "rating": "6.750000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 125607,
+      "name": "J. Gamboa",
+      "photo": "https://media.api-sports.io/football/players/125607.png",
+      "team": "Toluca",
+      "rating": "6.633333",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 2586,
+      "name": "Á. Mena",
+      "photo": "https://media.api-sports.io/football/players/2586.png",
+      "team": "Leon",
+      "rating": "7.390625",
+      "points": 43,
+      "position": "Attacker"
+    },
+    {
+      "id": 16570,
+      "name": "J. Rojas",
+      "photo": "https://media.api-sports.io/football/players/16570.png",
+      "team": "Monterrey",
+      "rating": "6.791666",
+      "points": 8,
+      "position": "Attacker"
+    },
+    {
+      "id": 35574,
+      "name": "E. Hernández",
+      "photo": "https://media.api-sports.io/football/players/35574.png",
+      "team": "Leon",
+      "rating": "6.907142",
+      "points": 16,
+      "position": "Attacker"
+    },
+    {
+      "id": 35958,
+      "name": "M. Sansores",
+      "photo": "https://media.api-sports.io/football/players/35958.png",
+      "team": "Puebla",
+      "rating": "6.700000",
+      "points": 13,
+      "position": "Attacker"
+    },
+    {
+      "id": 36517,
+      "name": "A. García",
+      "photo": "https://media.api-sports.io/football/players/36517.png",
+      "team": "Club Queretaro",
+      "rating": "6.650000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 365979,
+      "name": "L. Prieto",
+      "photo": "https://media.api-sports.io/football/players/365979.png",
+      "team": "Tigres UANL",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 36173,
+      "name": "A. Escoto",
+      "photo": "https://media.api-sports.io/football/players/36173.png",
+      "team": "FC Juarez",
+      "rating": "6.733333",
+      "points": 12,
+      "position": "Attacker"
+    },
+    {
+      "id": 382283,
+      "name": "S. de los Ríos",
+      "photo": "https://media.api-sports.io/football/players/382283.png",
+      "team": "Club America",
+      "rating": "6.300000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 9723,
+      "name": "F. Batista",
+      "photo": "https://media.api-sports.io/football/players/9723.png",
+      "team": "Club Queretaro",
+      "rating": "7.006666",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 10402,
+      "name": "N. López",
+      "photo": "https://media.api-sports.io/football/players/10402.png",
+      "team": "Leon",
+      "rating": "7.003448",
+      "points": 24,
+      "position": "Attacker"
+    },
+    {
+      "id": 13406,
+      "name": "K. Velasco",
+      "photo": "https://media.api-sports.io/football/players/13406.png",
+      "team": "Puebla",
+      "rating": "6.838235",
+      "points": 16,
+      "position": "Attacker"
+    },
+    {
+      "id": 35760,
+      "name": "C. Tabó",
+      "photo": "https://media.api-sports.io/football/players/35760.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.800000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 47497,
+      "name": "S. Plaza",
+      "photo": "https://media.api-sports.io/football/players/47497.png",
+      "team": "Mazatlán",
+      "rating": "6.250000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 52058,
+      "name": "M. Silvera",
+      "photo": "https://media.api-sports.io/football/players/52058.png",
+      "team": "Necaxa",
+      "rating": "6.566666",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 154851,
+      "name": "E. Montejano",
+      "photo": "https://media.api-sports.io/football/players/154851.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.250000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 5284,
+      "name": "J. Torres",
+      "photo": "https://media.api-sports.io/football/players/5284.png",
+      "team": "Club Queretaro",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 6129,
+      "name": "A. Lotti",
+      "photo": "https://media.api-sports.io/football/players/6129.png",
+      "team": "Cruz Azul",
+      "rating": "6.766666",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 6392,
+      "name": "A. Urzi",
+      "photo": "https://media.api-sports.io/football/players/6392.png",
+      "team": "FC Juarez",
+      "rating": "6.654545",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 35715,
+      "name": "A. Canelo",
+      "photo": "https://media.api-sports.io/football/players/35715.png",
+      "team": "Club Tijuana",
+      "rating": "6.733333",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 46889,
+      "name": "Aitor García",
+      "photo": "https://media.api-sports.io/football/players/46889.png",
+      "team": "FC Juarez",
+      "rating": "6.996875",
+      "points": 31,
+      "position": "Attacker"
+    },
+    {
+      "id": 407365,
+      "name": "S. Carrillo",
+      "photo": "https://media.api-sports.io/football/players/407365.png",
+      "team": "Santos Laguna",
+      "rating": "6.700000",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 2518,
+      "name": "C. González",
+      "photo": "https://media.api-sports.io/football/players/2518.png",
+      "team": "Club Tijuana",
+      "rating": "7.221212",
+      "points": 58,
+      "position": "Attacker"
+    },
+    {
+      "id": 341971,
+      "name": "J. Hernández",
+      "photo": "https://media.api-sports.io/football/players/341971.png",
+      "team": "Pachuca",
+      "rating": "6.680000",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 35643,
+      "name": "R. Monreal",
+      "photo": "https://media.api-sports.io/football/players/35643.png",
+      "team": "Necaxa",
+      "rating": "6.877777",
+      "points": 39,
+      "position": "Attacker"
+    },
+    {
+      "id": 59565,
+      "name": "D. Cambindo",
+      "photo": "https://media.api-sports.io/football/players/59565.png",
+      "team": "Necaxa",
+      "rating": "6.806250",
+      "points": 37,
+      "position": "Attacker"
+    },
+    {
+      "id": 35530,
+      "name": "A. Gignac",
+      "photo": "https://media.api-sports.io/football/players/35530.png",
+      "team": "Tigres UANL",
+      "rating": "7.132258",
+      "points": 80,
+      "position": "Attacker"
+    },
+    {
+      "id": 35860,
+      "name": "O. Herrera",
+      "photo": "https://media.api-sports.io/football/players/35860.png",
+      "team": "Tigres UANL",
+      "rating": "6.808823",
+      "points": 37,
+      "position": "Attacker"
+    },
+    {
+      "id": 36059,
+      "name": "N. Ibáñez",
+      "photo": "https://media.api-sports.io/football/players/36059.png",
+      "team": "Tigres UANL",
+      "rating": "6.957894",
+      "points": 62,
+      "position": "Attacker"
+    },
+    {
+      "id": 51069,
+      "name": "U. Antuna",
+      "photo": "https://media.api-sports.io/football/players/51069.png",
+      "team": "Cruz Azul",
+      "rating": "7.359459",
+      "points": 71,
+      "position": "Attacker"
+    },
+    {
+      "id": 456581,
+      "name": "D. Sánchez",
+      "photo": "https://media.api-sports.io/football/players/456581.png",
+      "team": "Tigres UANL",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 12406,
+      "name": "C. Rotondi",
+      "photo": "https://media.api-sports.io/football/players/12406.png",
+      "team": "Cruz Azul",
+      "rating": "7.060526",
+      "points": 27,
+      "position": "Attacker"
+    },
+    {
+      "id": 35645,
+      "name": "Á. Sepúlveda",
+      "photo": "https://media.api-sports.io/football/players/35645.png",
+      "team": "Cruz Azul",
+      "rating": "6.978787",
+      "points": 49,
+      "position": "Attacker"
+    },
+    {
+      "id": 51616,
+      "name": "G. Fernández",
+      "photo": "https://media.api-sports.io/football/players/51616.png",
+      "team": "Cruz Azul",
+      "rating": "6.950000",
+      "points": 8,
+      "position": "Attacker"
+    },
+    {
+      "id": 428068,
+      "name": "B. Gamboa",
+      "photo": "https://media.api-sports.io/football/players/428068.png",
+      "team": "Cruz Azul",
+      "rating": "6.466666",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 449316,
+      "name": "M. Levy",
+      "photo": "https://media.api-sports.io/football/players/449316.png",
+      "team": "Cruz Azul",
+      "rating": "6.425000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 16482,
+      "name": "R. Aguirre",
+      "photo": "https://media.api-sports.io/football/players/16482.png",
+      "team": "Monterrey",
+      "rating": "6.660000",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 25358,
+      "name": "J. Dilrosun",
+      "photo": "https://media.api-sports.io/football/players/25358.png",
+      "team": "Club America",
+      "rating": "6.980000",
+      "points": 13,
+      "position": "Attacker"
+    },
+    {
+      "id": 426550,
+      "name": "P. Salas",
+      "photo": "https://media.api-sports.io/football/players/426550.png",
+      "team": "Club America",
+      "rating": "6.366666",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35603,
+      "name": "H. Martín",
+      "photo": "https://media.api-sports.io/football/players/35603.png",
+      "team": "Club America",
+      "rating": "7.197222",
+      "points": 93,
+      "position": "Attacker"
+    },
+    {
+      "id": 35668,
+      "name": "V. Dávila",
+      "photo": "https://media.api-sports.io/football/players/35668.png",
+      "team": "Leon",
+      "rating": "7.066666",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 35885,
+      "name": "A. Zendejas",
+      "photo": "https://media.api-sports.io/football/players/35885.png",
+      "team": "Club America",
+      "rating": "7.161904",
+      "points": 50,
+      "position": "Attacker"
+    },
+    {
+      "id": 6191,
+      "name": "N. Cordero",
+      "photo": "https://media.api-sports.io/football/players/6191.png",
+      "team": "Club Queretaro",
+      "rating": "6.678947",
+      "points": 7,
+      "position": "Attacker"
+    },
+    {
+      "id": 10066,
+      "name": "Gustavo Ferrareis",
+      "photo": "https://media.api-sports.io/football/players/10066.png",
+      "team": "Puebla",
+      "rating": "6.711764",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 10149,
+      "name": "B. Romero",
+      "photo": "https://media.api-sports.io/football/players/10149.png",
+      "team": "Club Tijuana",
+      "rating": "6.533333",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35531,
+      "name": "L. Quiñones",
+      "photo": "https://media.api-sports.io/football/players/35531.png",
+      "team": "Tigres UANL",
+      "rating": "7.000000",
+      "points": 23,
+      "position": "Attacker"
+    },
+    {
+      "id": 35552,
+      "name": "R. Funes Mori",
+      "photo": "https://media.api-sports.io/football/players/35552.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.935294",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 35641,
+      "name": "R. Marín",
+      "photo": "https://media.api-sports.io/football/players/35641.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.894444",
+      "points": 25,
+      "position": "Attacker"
+    },
+    {
+      "id": 35766,
+      "name": "L. Cavallini",
+      "photo": "https://media.api-sports.io/football/players/35766.png",
+      "team": "Puebla",
+      "rating": "6.762500",
+      "points": 10,
+      "position": "Attacker"
+    },
+    {
+      "id": 36088,
+      "name": "G. Martínez",
+      "photo": "https://media.api-sports.io/football/players/36088.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "7.444444",
+      "points": 27,
+      "position": "Attacker"
+    },
+    {
+      "id": 47424,
+      "name": "M. Santos",
+      "photo": "https://media.api-sports.io/football/players/47424.png",
+      "team": "FC Juarez",
+      "rating": "6.652173",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 237098,
+      "name": "A. Ávila",
+      "photo": "https://media.api-sports.io/football/players/237098.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.460000",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 428056,
+      "name": "Samuel Andani González Naranjo",
+      "photo": "https://media.api-sports.io/football/players/428056.png",
+      "team": "Puebla",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 428074,
+      "name": "Santiago López López",
+      "photo": "https://media.api-sports.io/football/players/428074.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.200000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 92712,
+      "name": "L. García",
+      "photo": "https://media.api-sports.io/football/players/92712.png",
+      "team": "Puebla",
+      "rating": "6.600000",
+      "points": 7,
+      "position": "Attacker"
+    },
+    {
+      "id": 16402,
+      "name": "L. Amarilla",
+      "photo": "https://media.api-sports.io/football/players/16402.png",
+      "team": "Mazatlán",
+      "rating": "6.950000",
+      "points": 46,
+      "position": "Attacker"
+    },
+    {
+      "id": 35589,
+      "name": "N. Benedetti",
+      "photo": "https://media.api-sports.io/football/players/35589.png",
+      "team": "Mazatlán",
+      "rating": "6.911111",
+      "points": 16,
+      "position": "Attacker"
+    },
+    {
+      "id": 372587,
+      "name": "R. Camacho",
+      "photo": "https://media.api-sports.io/football/players/372587.png",
+      "team": "Mazatlán",
+      "rating": "6.600000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 403700,
+      "name": "O. Moreno",
+      "photo": "https://media.api-sports.io/football/players/403700.png",
+      "team": "Mazatlán",
+      "rating": "6.575000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35789,
+      "name": "E. Aguirre",
+      "photo": "https://media.api-sports.io/football/players/35789.png",
+      "team": "Atlas",
+      "rating": "6.830769",
+      "points": 33,
+      "position": "Attacker"
+    },
+    {
+      "id": 51096,
+      "name": "M. Manotas",
+      "photo": "https://media.api-sports.io/football/players/51096.png",
+      "team": "Atlas",
+      "rating": "6.511111",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 51841,
+      "name": "G. del Prete",
+      "photo": "https://media.api-sports.io/football/players/51841.png",
+      "team": "Mazatlán",
+      "rating": "7.120000",
+      "points": 16,
+      "position": "Attacker"
+    },
+    {
+      "id": 387349,
+      "name": "J. Guzmán",
+      "photo": "https://media.api-sports.io/football/players/387349.png",
+      "team": "Atlas",
+      "rating": "6.688235",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 405883,
+      "name": "I. Larios",
+      "photo": "https://media.api-sports.io/football/players/405883.png",
+      "team": "Atlas",
+      "rating": "6.700000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 16590,
+      "name": "J. Caicedo",
+      "photo": "https://media.api-sports.io/football/players/16590.png",
+      "team": "Atlas",
+      "rating": "6.720000",
+      "points": 20,
+      "position": "Attacker"
+    },
+    {
+      "id": 47369,
+      "name": "Paulino",
+      "photo": "https://media.api-sports.io/football/players/47369.png",
+      "team": "Pachuca",
+      "rating": "6.566666",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 51530,
+      "name": "F. Viñas",
+      "photo": "https://media.api-sports.io/football/players/51530.png",
+      "team": "Leon",
+      "rating": "7.384848",
+      "points": 72,
+      "position": "Attacker"
+    },
+    {
+      "id": 153454,
+      "name": "Moisés",
+      "photo": "https://media.api-sports.io/football/players/153454.png",
+      "team": "Cruz Azul",
+      "rating": "6.682352",
+      "points": 8,
+      "position": "Attacker"
+    },
+    {
+      "id": 2616,
+      "name": "J. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/2616.png",
+      "team": "Club America",
+      "rating": "6.940909",
+      "points": 39,
+      "position": "Attacker"
+    },
+    {
+      "id": 50893,
+      "name": "B. Vázquez",
+      "photo": "https://media.api-sports.io/football/players/50893.png",
+      "team": "Monterrey",
+      "rating": "6.984210",
+      "points": 24,
+      "position": "Attacker"
+    },
+    {
+      "id": 51186,
+      "name": "C. Cowell",
+      "photo": "https://media.api-sports.io/football/players/51186.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.677777",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 92590,
+      "name": "D. Ríos",
+      "photo": "https://media.api-sports.io/football/players/92590.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.440000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 291713,
+      "name": "A. González",
+      "photo": "https://media.api-sports.io/football/players/291713.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.566666",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 414207,
+      "name": "Y. Padilla",
+      "photo": "https://media.api-sports.io/football/players/414207.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.572000",
+      "points": 14,
+      "position": "Attacker"
+    },
+    {
+      "id": 2879,
+      "name": "R. Alvarado",
+      "photo": "https://media.api-sports.io/football/players/2879.png",
+      "team": "Guadalajara Chivas",
+      "rating": "7.366666",
+      "points": 58,
+      "position": "Attacker"
+    },
+    {
+      "id": 2886,
+      "name": "J. Hernández",
+      "photo": "https://media.api-sports.io/football/players/2886.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.711111",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 35721,
+      "name": "A. Medina",
+      "photo": "https://media.api-sports.io/football/players/35721.png",
+      "team": "Mazatlán",
+      "rating": "6.564000",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 35888,
+      "name": "R. Cisneros",
+      "photo": "https://media.api-sports.io/football/players/35888.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.486666",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 35730,
+      "name": "B. Rubio",
+      "photo": "https://media.api-sports.io/football/players/35730.png",
+      "team": "Mazatlán",
+      "rating": "6.700000",
+      "points": 4,
+      "position": "Attacker"
+    },
+    {
+      "id": 35926,
+      "name": "P. Barrera",
+      "photo": "https://media.api-sports.io/football/players/35926.png",
+      "team": "Club Queretaro",
+      "rating": "7.077142",
+      "points": 56,
+      "position": "Attacker"
+    },
+    {
+      "id": 2461,
+      "name": "S. Rondón",
+      "photo": "https://media.api-sports.io/football/players/2461.png",
+      "team": "Pachuca",
+      "rating": "7.000000",
+      "points": 44,
+      "position": "Attacker"
+    },
+    {
+      "id": 2723,
+      "name": "O. Idrissi",
+      "photo": "https://media.api-sports.io/football/players/2723.png",
+      "team": "Pachuca",
+      "rating": "7.230769",
+      "points": 43,
+      "position": "Attacker"
+    },
+    {
+      "id": 237062,
+      "name": "I. Luna",
+      "photo": "https://media.api-sports.io/football/players/237062.png",
+      "team": "Pachuca",
+      "rating": "6.820000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 324697,
+      "name": "J. Brigido",
+      "photo": "https://media.api-sports.io/football/players/324697.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.755555",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 371226,
+      "name": "M. Rodríguez",
+      "photo": "https://media.api-sports.io/football/players/371226.png",
+      "team": "Pachuca",
+      "rating": "6.858823",
+      "points": 10,
+      "position": "Attacker"
+    },
+    {
+      "id": 428072,
+      "name": "Daniel Vázquez Contreras",
+      "photo": "https://media.api-sports.io/football/players/428072.png",
+      "team": "Club Tijuana",
+      "rating": "6.900000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35992,
+      "name": "P. Yrizar",
+      "photo": "https://media.api-sports.io/football/players/35992.png",
+      "team": "Club Queretaro",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 128166,
+      "name": "I. Hernández",
+      "photo": "https://media.api-sports.io/football/players/128166.png",
+      "team": "Club America",
+      "rating": "6.470000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 35503,
+      "name": "J. Macías",
+      "photo": "https://media.api-sports.io/football/players/35503.png",
+      "team": "Guadalajara Chivas",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 94561,
+      "name": "C. Trejo",
+      "photo": "https://media.api-sports.io/football/players/94561.png",
+      "team": "Atlas",
+      "rating": "6.527777",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 212841,
+      "name": "S. Muñóz",
+      "photo": "https://media.api-sports.io/football/players/212841.png",
+      "team": "Santos Laguna",
+      "rating": "6.695833",
+      "points": 9,
+      "position": "Attacker"
+    },
+    {
+      "id": 281743,
+      "name": "F. Fagúndez",
+      "photo": "https://media.api-sports.io/football/players/281743.png",
+      "team": "Santos Laguna",
+      "rating": "6.709090",
+      "points": 6,
+      "position": "Attacker"
+    },
+    {
+      "id": 449314,
+      "name": "Tahiel Adrián Jiménez Sánchez",
+      "photo": "https://media.api-sports.io/football/players/449314.png",
+      "team": "Santos Laguna",
+      "rating": "6.500000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 35556,
+      "name": "Á. Zaldívar",
+      "photo": "https://media.api-sports.io/football/players/35556.png",
+      "team": "FC Juarez",
+      "rating": "6.327272",
+      "points": 13,
+      "position": "Attacker"
+    },
+    {
+      "id": 51213,
+      "name": "S. Saucedo",
+      "photo": "https://media.api-sports.io/football/players/51213.png",
+      "team": "FC Juarez",
+      "rating": "6.829411",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 372143,
+      "name": "C. López",
+      "photo": "https://media.api-sports.io/football/players/372143.png",
+      "team": "Necaxa",
+      "rating": "6.566666",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 424691,
+      "name": "C. Sosa",
+      "photo": "https://media.api-sports.io/football/players/424691.png",
+      "team": "FC Juarez",
+      "rating": "6.500000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 6254,
+      "name": "D. Valoyes",
+      "photo": "https://media.api-sports.io/football/players/6254.png",
+      "team": "FC Juarez",
+      "rating": "7.275000",
+      "points": 10,
+      "position": "Attacker"
+    },
+    {
+      "id": 35554,
+      "name": "A. Hurtado",
+      "photo": "https://media.api-sports.io/football/players/35554.png",
+      "team": "FC Juarez",
+      "rating": "7.128571",
+      "points": 38,
+      "position": "Attacker"
+    },
+    {
+      "id": 35864,
+      "name": "J. Torres",
+      "photo": "https://media.api-sports.io/football/players/35864.png",
+      "team": "FC Juarez",
+      "rating": "6.780000",
+      "points": 3,
+      "position": "Attacker"
+    },
+    {
+      "id": 36187,
+      "name": "I. López",
+      "photo": "https://media.api-sports.io/football/players/36187.png",
+      "team": "Toluca",
+      "rating": "6.848571",
+      "points": 20,
+      "position": "Attacker"
+    },
+    {
+      "id": 95446,
+      "name": "R. Morales",
+      "photo": "https://media.api-sports.io/football/players/95446.png",
+      "team": "Toluca",
+      "rating": "6.803846",
+      "points": 19,
+      "position": "Attacker"
+    },
+    {
+      "id": 2889,
+      "name": "A. Vega",
+      "photo": "https://media.api-sports.io/football/players/2889.png",
+      "team": "Toluca",
+      "rating": "6.800000",
+      "points": 21,
+      "position": "Attacker"
+    },
+    {
+      "id": 6485,
+      "name": "G. Berterame",
+      "photo": "https://media.api-sports.io/football/players/6485.png",
+      "team": "Monterrey",
+      "rating": "7.103225",
+      "points": 49,
+      "position": "Attacker"
+    },
+    {
+      "id": 35669,
+      "name": "R. de la Rosa",
+      "photo": "https://media.api-sports.io/football/players/35669.png",
+      "team": "Pachuca",
+      "rating": "6.762500",
+      "points": 8,
+      "position": "Attacker"
+    },
+    {
+      "id": 94559,
+      "name": "J. Alvarado",
+      "photo": "https://media.api-sports.io/football/players/94559.png",
+      "team": "Leon",
+      "rating": "6.850000",
+      "points": 24,
+      "position": "Attacker"
+    },
+    {
+      "id": 286663,
+      "name": "I. Violante",
+      "photo": "https://media.api-sports.io/football/players/286663.png",
+      "team": "Toluca",
+      "rating": "6.533333",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 325270,
+      "name": "J. Domínguez",
+      "photo": "https://media.api-sports.io/football/players/325270.png",
+      "team": "Toluca",
+      "rating": "6.958064",
+      "points": 44,
+      "position": "Attacker"
+    },
+    {
+      "id": 407366,
+      "name": "Joaquin Alejandro Moxica Chapa",
+      "photo": "https://media.api-sports.io/football/players/407366.png",
+      "team": "Monterrey",
+      "rating": "6.700000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 127298,
+      "name": "R. Zúñiga",
+      "photo": "https://media.api-sports.io/football/players/127298.png",
+      "team": "Club Tijuana",
+      "rating": "6.933333",
+      "points": 14,
+      "position": "Attacker"
+    },
+    {
+      "id": 413060,
+      "name": "R. Árciga",
+      "photo": "https://media.api-sports.io/football/players/413060.png",
+      "team": "Mazatlán",
+      "rating": "6.790000",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 39294,
+      "name": "F. Boli",
+      "photo": "https://media.api-sports.io/football/players/39294.png",
+      "team": "Atletico San Luis",
+      "rating": "6.891666",
+      "points": 21,
+      "position": "Attacker"
+    },
+    {
+      "id": 278345,
+      "name": "Vitinho",
+      "photo": "https://media.api-sports.io/football/players/278345.png",
+      "team": "Atletico San Luis",
+      "rating": "6.926470",
+      "points": 41,
+      "position": "Attacker"
+    },
+    {
+      "id": 322070,
+      "name": "Yan Phillipe",
+      "photo": "https://media.api-sports.io/football/players/322070.png",
+      "team": "Atletico San Luis",
+      "rating": "6.866666",
+      "points": 7,
+      "position": "Attacker"
+    },
+    {
+      "id": 6246,
+      "name": "S. Sosa",
+      "photo": "https://media.api-sports.io/football/players/6246.png",
+      "team": "Club Queretaro",
+      "rating": "6.714285",
+      "points": 11,
+      "position": "Attacker"
+    },
+    {
+      "id": 11765,
+      "name": "E. Bello",
+      "photo": "https://media.api-sports.io/football/players/11765.png",
+      "team": "Mazatlán",
+      "rating": "6.770833",
+      "points": 16,
+      "position": "Attacker"
+    },
+    {
+      "id": 12404,
+      "name": "J. Montecinos",
+      "photo": "https://media.api-sports.io/football/players/12404.png",
+      "team": "Club Queretaro",
+      "rating": "6.533333",
+      "points": 0,
+      "position": "Attacker"
+    },
+    {
+      "id": 16265,
+      "name": "L. Di Yorio",
+      "photo": "https://media.api-sports.io/football/players/16265.png",
+      "team": "Pachuca",
+      "rating": "6.980000",
+      "points": 8,
+      "position": "Attacker"
+    },
+    {
+      "id": 19307,
+      "name": "Léo Bonatini",
+      "photo": "https://media.api-sports.io/football/players/19307.png",
+      "team": "Atletico San Luis",
+      "rating": "6.706451",
+      "points": 40,
+      "position": "Attacker"
+    },
+    {
+      "id": 36111,
+      "name": "C. Huerta",
+      "photo": "https://media.api-sports.io/football/players/36111.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "7.135135",
+      "points": 65,
+      "position": "Attacker"
+    },
+    {
+      "id": 50043,
+      "name": "B. Samudio",
+      "photo": "https://media.api-sports.io/football/players/50043.png",
+      "team": "Necaxa",
+      "rating": "6.759090",
+      "points": 18,
+      "position": "Attacker"
+    },
+    {
+      "id": 6528,
+      "name": "D. Vergara",
+      "photo": "https://media.api-sports.io/football/players/6528.png",
+      "team": "Santos Laguna",
+      "rating": "6.648275",
+      "points": 14,
+      "position": "Attacker"
+    },
+    {
+      "id": 35575,
+      "name": "Édgar Méndez",
+      "photo": "https://media.api-sports.io/football/players/35575.png",
+      "team": "Necaxa",
+      "rating": "6.681250",
+      "points": 26,
+      "position": "Attacker"
+    },
+    {
+      "id": 35751,
+      "name": "O. Fernández",
+      "photo": "https://media.api-sports.io/football/players/35751.png",
+      "team": "Leon",
+      "rating": "6.770588",
+      "points": 10,
+      "position": "Attacker"
+    },
+    {
+      "id": 35790,
+      "name": "J. Correa",
+      "photo": "https://media.api-sports.io/football/players/35790.png",
+      "team": "Santos Laguna",
+      "rating": "6.721428",
+      "points": 5,
+      "position": "Attacker"
+    },
+    {
+      "id": 64134,
+      "name": "M. Hinestroza",
+      "photo": "https://media.api-sports.io/football/players/64134.png",
+      "team": "Pachuca",
+      "rating": "6.838461",
+      "points": 7,
+      "position": "Attacker"
+    },
+    {
+      "id": 95234,
+      "name": "F. Ovelar",
+      "photo": "https://media.api-sports.io/football/players/95234.png",
+      "team": "Pachuca",
+      "rating": "6.250000",
+      "points": 1,
+      "position": "Attacker"
+    },
+    {
+      "id": 9329,
+      "name": "Pedro Raul",
+      "photo": "https://media.api-sports.io/football/players/9329.png",
+      "team": "Toluca",
+      "rating": "6.740000",
+      "points": 8,
+      "position": "Attacker"
+    },
+    {
+      "id": 13409,
+      "name": "J. Dinenno",
+      "photo": "https://media.api-sports.io/football/players/13409.png",
+      "team": "U.N.A.M. - Pumas",
+      "rating": "6.820000",
+      "points": 23,
+      "position": "Attacker"
+    },
+    {
+      "id": 35532,
+      "name": "J. Quiñones",
+      "photo": "https://media.api-sports.io/football/players/35532.png",
+      "team": "Club America",
+      "rating": "7.302439",
+      "points": 88,
+      "position": "Attacker"
+    }
+  ]
+}

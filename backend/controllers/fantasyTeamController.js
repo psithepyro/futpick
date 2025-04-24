@@ -23,10 +23,10 @@ exports.createFantasyTeam = async (req, res) => {
   }
 
   if (
-    count.Goalkeeper !== 2 ||
-    count.Defender !== 5 ||
-    count.Midfielder !== 5 ||
-    count.Attacker !== 3 ||
+    count.Goalkeeper !== 1 ||
+    count.Defender !== 4 ||
+    count.Midfielder !== 4 ||
+    count.Attacker !== 2 ||
     reserveCount !== 4
   ) {
     console.log("Counts:", count, "Reserves:", reserveCount);
@@ -71,7 +71,10 @@ exports.getUserTeam = async (req, res) => {
     const teamId = teamResult.rows[0].id;
 
     const playersResult = await pool.query(
-      `SELECT player_id, position FROM fantasy_team_players WHERE team_id = $1`,
+      `SELECT ftp.player_id, ftp.position, ftp.is_reserve, p.name, p.photo, p.rating, p.points
+       FROM fantasy_team_players ftp
+       JOIN players p ON ftp.player_id = p.id
+       WHERE ftp.team_id = $1`,
       [teamId]
     );
 
@@ -116,10 +119,10 @@ exports.updateFantasyTeam = async (req, res) => {
   }
 
   if (
-    counts.Goalkeeper !== 2 ||
-    counts.Defender !== 5 ||
-    counts.Midfielder !== 5 ||
-    counts.Attacker !== 3 ||
+    counts.Goalkeeper !== 1 ||
+    counts.Defender !== 4 ||
+    counts.Midfielder !== 4 ||
+    counts.Attacker !== 2 ||
     reserveCount !== 4
   ) {
     return res.status(400).json({ message: "Invalid team composition" });
