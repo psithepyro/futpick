@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="teampts.css" />
     <link rel="stylesheet" href="header-temp.css" />
     <link rel="icon" type="image/x-icon" href="images/futpicks-logo.png" />
-    <script src="https://kit.fontawesome.com/d1f065b276.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/d1f065b276.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
     <header>FütPick's Liga MX Fantasy Football</header>
     <ul id="navlist">
@@ -42,12 +45,14 @@
     <h3 id="user-info" style="color: lightgreen; text-align: center"></h3>
     <nav id="pointHeader">
       <div id="pointStyling">
-        <p id="averagePoints">54</p>  
+        <p id="averagePoints">54</p>
         <button id="pointText">Average</button>
       </div>
       <div id="pointStyling">
-        <p id="totalPointsCount">0</p> 
-        <button id="userPoints">Total Points <i class="arrow right"></i></button>
+        <p id="totalPointsCount">0</p>
+        <button id="userPoints">
+          Total Points <i class="arrow right"></i>
+        </button>
       </div>
       <div id="pointStyling">
         <p id="highestPoints">100</p>
@@ -392,17 +397,17 @@
       function clearPlayer(card) {
         const playerId = card.getAttribute("data-player-id");
         if (playerId) {
-            selectedPlayerIds.delete(parseInt(playerId));
-            card.removeAttribute("data-player-id");
-            card.querySelector("img").src = "images/temp_jersey.webp";
-            card.querySelector(".player-name").textContent = "Click to pick";
-            card.querySelector("h2 b").textContent = "0 pts";
-            hasUnsavedChanges = true;
-            saveButton.classList.add("active");
-            saveButton.disabled = false;
+          selectedPlayerIds.delete(parseInt(playerId));
+          card.removeAttribute("data-player-id");
+          card.querySelector("img").src = "images/temp_jersey.webp";
+          card.querySelector(".player-name").textContent = "Click to pick";
+          card.querySelector("h2 b").textContent = "0 pts";
+          hasUnsavedChanges = true;
+          saveButton.classList.add("active");
+          saveButton.disabled = false;
 
-            // Recalculate total points
-            calculateTotalPoints();
+          // Recalculate total points
+          calculateTotalPoints();
         }
       }
 
@@ -448,6 +453,8 @@
         let headers = { "Content-Type": "application/json" };
         if (token) headers["Authorization"] = `Bearer ${token}`;
 
+        let teamId;
+
         try {
           const response = await fetch("/api/football/my-team", {
             credentials: "include",
@@ -468,6 +475,7 @@
           method,
           headers,
           credentials: "include",
+          body: JSON.stringify(teamId ? { teamId, players } : { players }),
           body: JSON.stringify(teamId ? { teamId, players } : { players }),
         });
 
@@ -578,7 +586,8 @@
         const allCards = document.querySelectorAll(".player_card");
         allCards.forEach((card) => {
           const pointsText = card.querySelector("h2 b")?.textContent || "0 pts";
-          const numericPoints = parseInt(pointsText.replace(" pts", ""), 10) || 0;
+          const numericPoints =
+            parseInt(pointsText.replace(" pts", ""), 10) || 0;
           totalPoints += numericPoints;
         });
 
