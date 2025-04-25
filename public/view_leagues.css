@@ -6,6 +6,7 @@ div.fantasy_container {
     width: 100%;
     height: auto;
     position: fixed;
+    z-index: 50;
 }
 
 div.fantasy_league{
@@ -37,4 +38,29 @@ div.league-table table tr th, div.league-table table tr td {
     font-family: Arial;
     color: white;
     font-size: 14px;
+}
+
+button#leave-league-btn{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+div#league-actions {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px auto;
+    padding-top: 500px;
+    padding-bottom: 25px;
+    border-radius: 10px;
 }

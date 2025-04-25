@@ -5,7 +5,11 @@
     <title>FütiPicks - League Overview</title>
     <link rel="stylesheet" href="view_leagues.css">
     <link rel="stylesheet" href="header-temp.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/futpicks-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/d1f065b276.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 
 <body> 
@@ -73,6 +77,12 @@
             </div>
         </div>
     </div>
+    <nav>
+        <div id ="league-actions">
+            <button id="leave-league-btn" class="leave-league">Leave League</button>
+        </div>
+    </nav>
+
 
     <script>
         document.getElementById("leave-league-btn").addEventListener("click", async () => {
@@ -99,6 +109,6 @@
                 alert("An error occurred while trying to leave the league.");
             }
         });
-    </script>>
+    </script>
 </body>
 </html>
