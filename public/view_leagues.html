@@ -109,6 +109,29 @@
                 alert("An error occurred while trying to leave the league.");
             }
         });
+
+        // Function to extract query parameters from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the league name from the URL
+        const leagueName = getQueryParam("leagueName");
+
+        // Update the page title and header dynamically
+        if (leagueName) {
+            document.title = `FütiPicks - ${leagueName}`;
+            const header = document.querySelector("header");
+            if (header) {
+                header.textContent = `FütiPick's ${leagueName}`;
+            }
+
+            const leagueTitle = document.querySelector(".fantasy_league h1");
+            if (leagueTitle) {
+                leagueTitle.textContent = leagueName;
+            }
+        }
     </script>
 </body>
 </html>

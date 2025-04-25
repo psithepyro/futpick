@@ -317,7 +317,7 @@ nav#user-nav div#user-info {
 }
 
 .save-container button {
-  background-color: #9333ea; /* Purple */
+  background: linear-gradient(to right, #0f8a5f, #66b2ff);
   color: white;
   font-size: 18px;
   font-weight: bold;
