@@ -13,7 +13,11 @@
 </head>
 
 <body> 
-    <header>FütiPick's Liga MX Fantasy Football</header>
+    <div class="league-header">
+        <header>FütiPick's Liga MX Fantasy Football</header>
+    </div>
+
+
     <ul id="navlist">
         <li id="profile"><a href="account.html"></a></li>
         <li id="home"><a href="homepage.html"></a></li>
@@ -36,6 +40,9 @@
     <div class="fantasy_container">
         <div class="fantasy_league">
             <h1>CSUF League</h1>
+            <div class="league-image-container">
+                <img id="league-image" src="" alt="League Image" style="display: none; max-width: 100%; height: auto;" />
+            </div>
             <div class="league-table">
                 <table>
                     <tr>
@@ -116,8 +123,9 @@
             return urlParams.get(param);
         }
 
-        // Get the league name from the URL
+        // Get the league name and image from the URL
         const leagueName = getQueryParam("leagueName");
+        const leagueImage = getQueryParam("leagueImage");
 
         // Update the page title and header dynamically
         if (leagueName) {
@@ -131,6 +139,13 @@
             if (leagueTitle) {
                 leagueTitle.textContent = leagueName;
             }
+        }
+
+        // Update the league image dynamically
+        if (leagueImage) {
+            const imgElement = document.getElementById("league-image");
+            imgElement.src = leagueImage;
+            imgElement.style.display = "block"; // Show the image
         }
     </script>
 </body>
