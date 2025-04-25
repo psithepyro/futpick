@@ -44,7 +44,7 @@
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-  width: fit-content;
+  min-width: fit-content;
 }
 
 .gk_column,

@@ -20,7 +20,6 @@
         <button><a href="fixtures.html">Fixtures</a></button>
         <button class="active"><a href="teampts.html">Points</a></button>
         <button><a href="teampick.html">Pick Team</a></button>
-        <button><a href="transpick.html">Transfers</a></button>
         <button><a href="player_stats.html">Player Stats</a></button>
     </nav>
 
@@ -35,15 +34,15 @@
 
     <nav id="pointHeader">
         <div id="pointStyling">
-            <p id="pointCount">46</p>
+            <p id="averagePoints">54</p>  
             <button id="pointText">Average</button>
         </div>
         <div id="pointStyling">
-            <p id="pointCount">54</p>
+            <p id="totalPointsCount">0</p> 
             <button id="userPoints">Total Points <i class="arrow right"></i></button>
         </div>
         <div id="pointStyling">
-            <p id="pointCount">134</p>
+            <p id="highestPoints">100</p>
             <button id="highPoints">Highest <i class="arrow right"></i></button>
         </div>
     </nav>
@@ -59,118 +58,140 @@
     </nav>
 
     <div class="team_container">
-        <div class="row"> 
+        <div class="row">
             <div class="gk_column">
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 2 pts </b></h2>
-                            <p> Goalkeeper 1</p>
+                <div class="player_card" id="gk1" data-position="Goalkeeper">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Goalkeeper 1</p>
                     </div>
-                    </button>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="def_column">
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 5 pts </b></h2>
-                            <p> Defender 1</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 2 pts </b></h2>
-                            <p> Defender 2</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 2 pts </b></h2>
-                            <p> Defender 3</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 0 pts </b></h2>
-                            <p> Defender 4</p>
+                <div class="player_card" id="df1" data-position="Defender">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Defender 1</p>
                     </div>
-                    </button>
+                </div>
+                <div class="player_card" id="df2" data-position="Defender">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Defender 2</p>
+                    </div>
+                </div>
+                <div class="player_card" id="df3" data-position="Defender">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container" data-position="Defender">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Defender 3</p>
+                    </div>
+                </div>
+                <div class="player_card" id="df4" data-position="Defender">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Defender 4</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="mid_column">
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 18 pts </b></h2>
-                            <p> Midfielder 1</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 1 pts </b></h2>
-                            <p> Midfielder 2</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 0 pts </b></h2>
-                            <p> Midfielder 3</p>
+                <div class="player_card" id="mf1" data-position="Midfielder">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Midfielder 1</p>
                     </div>
-                    </button>
                 </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 4 pts </b></h2>
-                            <p> Midfielder 4</p>
+                <div class="player_card" id="mf2" data-position="Midfielder">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Midfielder 2</p>
                     </div>
-                    </button>
+                </div>
+                <div class="player_card" id="mf3" data-position="Midfielder">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Midfielder 3</p>
+                    </div>
+                </div>
+                <div class="player_card" id="mf4" data-position="Midfielder">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Midfielder 4</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="fwd_column">
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 8 pts </b></h2>
-                            <p> Forward 1</p>
-                        </div>
-                    </button>
+                <div class="player_card" id="fw1" data-position="Attacker">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Forward 1</p>
+                    </div>
                 </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 8 pts </b></h2>
-                            <p> Forward 2</p>
-                        </div>
-                    </button>
+                <div class="player_card" id="fw2" data-position="Attacker">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Forward 2</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,41 +199,49 @@
     <div class="reserves_container">
         <div class="row">
             <div class="res_column">
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 0 pts </b></h2>
-                            <p> Reserve 1</p>
-                        </div>
-                    </button>
+                <div class="player_card" id="res1" data-position="Any">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Reserve 1</p>
+                    </div>
                 </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 0 pts </b></h2>
-                            <p> Reserve 2</p>
-                        </div>
-                    </button>
+                <div class="player_card" id="res2" data-position="Any">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Reserve 2</p>
+                    </div>
                 </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 0 pts </b></h2>
-                            <p> Reserve 3</p>
-                        </div>
-                    </button>
+                <div class="player_card" id="res3" data-position="Any">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Reserve 3</p>
+                    </div>
                 </div>
-                <div class="player_card">
-                    <button>
-                        <img src="images/temp_jersey.webp" alt="Jersey" style="width: 70%;"/>
-                        <div class="player_container">
-                            <h2><b> 0 pts </b></h2>
-                            <p> Reserve 4</p>
-                        </div>
-                    </button>
+                <div class="player_card" id="res4" data-position="Any">
+                    <img
+                        src="images/temp_jersey.webp"
+                        alt="Jersey"
+                        style="width: 70%"
+                    />
+                    <div class="player_container">
+                        <h2><b> 0 pts </b></h2>
+                        <p class="player-name">Reserve 4</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,162 +263,131 @@
             </dl>
         </div>
     </div>
-    <!-- <script src="token.js"></script>
+    <script src="token.js"></script>
     <script>
-        let allPlayers = []; //list of fetched players
-        let currentIndex = 0; //index of the next player to display
-        let currentPage = 1; // current page from API-football
-        let totalPages = 1; // total pages
-        let currentQuery = ""; // current search query
-        const PLAYERS_PER_LOAD = 20; // 20 players per load
+        const selectedPlayerIds = new Set();
+        let dataLookup = {};
 
-        //fetch players from API endpoint
-        async function fetchPlayers() {
-        const token = localStorage.getItem("token");
-        let headers = { "Content-Type": "application/json" };
+        // Fetch and display the saved team (read-only)
+        function loadSavedTeam() {
+            fetch("/api/football/my-team", { credentials: "include" })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (!data.players) return;
 
-        //If token exists, attach to request
-        if (token) {
-        headers["Authorization"] = `Bearer ${token}`;
+                    data.players.forEach((p) => {
+                        dataLookup[p.player_id] = {
+                            id: p.player_id,
+                            name: p.name,
+                            position: p.position,
+                            photo: p.photo,
+                            points: p.points,
+                            rating: p.rating,
+                            team: p.team || "Unknown",
+                        };
+
+                        const slotId = getSlotId(p);
+                        if (!slotId) {
+                            console.warn(
+                                "No slot found for:",
+                                p.name,
+                                "Position:",
+                                p.position
+                            );
+                            return;
+                        }
+
+                        const card = document.getElementById(slotId);
+                        const img = card.querySelector("img");
+                        const nameP = card.querySelector(".player-name");
+                        const pointDisplay = card.querySelector("h2 b");
+
+                        if (img) img.src = p.photo || "images/temp_jersey.webp";
+                        if (nameP) nameP.textContent = p.name;
+                        if (pointDisplay)
+                            pointDisplay.textContent = `${p.points || 0} pts`;
+
+                        card.setAttribute("data-player-id", p.player_id);
+                        selectedPlayerIds.add(p.player_id);
+                    });
+
+                    // Recalculate total points
+                    calculateTotalPoints();
+                })
+                .catch((err) => {
+                    console.error("Failed to load team:", err);
+                });
         }
 
-        console.log(`Fetching page ${currentPage} from the server...`);
+    // Calculate total points for header
+    function calculateTotalPoints() {
+        let totalPoints = 0;
 
-        try {
-        //fetch players to with page #
-        const response = await fetch(
-            `http://localhost:3000/api/football/players?page=${currentPage}`,
-            {
-            method: "GET",
-            headers: headers,
+        const allCards = document.querySelectorAll(".player_card");
+        allCards.forEach((card) => {
+            const pointsText = card.querySelector("h2 b")?.textContent || "0 pts";
+            const numericPoints = parseInt(pointsText.replace(" pts", ""), 10) || 0;
+            totalPoints += numericPoints;
+        });
+
+        // Update the total points display
+        const totalPointsElement = document.getElementById("totalPointsCount");
+        if (totalPointsElement) {
+            totalPointsElement.textContent = totalPoints;
+        }
+
+        // Update the highest points if totalPoints exceed 100
+        const highestPointsElement = document.getElementById("highestPoints");
+        if (highestPointsElement && totalPoints > 100) {
+            highestPointsElement.textContent = totalPoints;
+        }
+
+        const gameweekPointsElement = document.querySelector(".user-points p:nth-child(5)");
+        if (gameweekPointsElement) {
+            gameweekPointsElement.textContent = `Gameweek Points: ${totalPoints}`;
+        }
+    }
+
+    // Disable interactivity on player cards
+    function disableCardInteractivity() {
+        document.querySelectorAll(".player_card").forEach((card) => {
+            card.style.cursor = "default"; // Change cursor to default
+            card.onclick = null; // Remove click functionality
+            card.oncontextmenu = (e) => e.preventDefault(); // Disable right-click
+        });
+    }
+
+    // Initializes event listeners and loads saved team on page load
+    window.onload = () => {
+        loadSavedTeam();
+        disableCardInteractivity();
+    };
+
+    // Gets the ID of the next empty slot for the player's position
+    function getSlotId(p) {
+        if (p.is_reserve) {
+            for (let i = 1; i <= 4; i++) {
+                const card = document.getElementById(`res${i}`);
+                if (card && !card.getAttribute("data-player-id")) return card.id;
             }
-        );
-
-        const data = await response.json();
-        console.log("Fetched Players:", data);
-
-        //if response includes paging info, update totalPages
-        if (data.paging && data.paging.total) {
-            totalPages = data.paging.total;
+            return "";
         }
 
-        //main list of players from data.response
-        const playerArray = data.response || [];
-        if (response.ok && playerArray.length > 0) {
-            //append new fetched players to array
-            allPlayers.push(...playerArray);
+        const map = {
+            Goalkeeper: "gk",
+            Defender: "df",
+            Midfielder: "mf",
+            Attacker: "fw",
+        };
 
-            //if first page, display from scratch
-            if (currentPage === 1) {
-            displayPlayers(); // starts from index=0
-            } else {
-            // if players already displayed, load next players
-            loadNextPlayers();
-            }
-        } else {
-            // If no players or an error
-            if (allPlayers.length === 0) {
-            document.getElementById("player-table-body").innerHTML = `
-            <tr><td colspan="5">No players available or unauthorized</td></tr>
-        `;
-            }
+        const base = map[p.position];
+        for (let i = 1; i <= 5; i++) {
+            const card = document.getElementById(`${base}${i}`);
+            if (card && !card.getAttribute("data-player-id"))
+                return `${base}${i}`;
         }
-        } catch (error) {
-        alert("Error");
-        console.error("Error fetching players:", error);
-        document.getElementById("player-table-body").innerHTML = `
-        <tr><td colspan="5">Error loading players</td></tr>
-    `;
-        }
+        return "";
     }
-
-    function displayPlayers() {
-        // Reset the table and index
-        currentIndex = 0;
-        document.getElementById("player-table-body").innerHTML = "";
-
-        // load first chunk
-        loadNextPlayers();
-
-        // Attach the infinite scroll only once
-        window.addEventListener("scroll", handleScroll);
-    }
-
-    //load next batch of players
-    function loadNextPlayers() {
-        const tbody = document.getElementById("player-table-body");
-        // Render up to 20 more from allPlayers
-        const endIndex = Math.min(
-        currentIndex + PLAYERS_PER_LOAD,
-        allPlayers.length
-        );
-
-        for (let i = currentIndex; i < endIndex; i++) {
-        const p = allPlayers[i];
-        const firstname = p.player?.firstname || "Unknown";
-        const lastname = p.player?.lastname || "Unknown";
-        const position = p.statistics?.[0]?.games?.position || "Unknown";
-        const nationality = p.player?.nationality || "Unknown";
-        const photo = p.player?.photo || "";
-        const league = p.statistics?.[0]?.team?.name || "Unknown";
-
-        // Build row with photo + name, position, nationality
-        const row = document.createElement("tr");
-        row.innerHTML = `
-        <td style="display: flex; align-items: center;">
-        <img
-            src="${photo}"
-            alt="${firstname} ${lastname}"
-            width="40"
-            height="40"
-            style="border-radius: 50%; object-fit: cover; margin-right: 10px;"
-        />
-        <span>${firstname} ${lastname}</span>
-        </td>
-        <td>${position}</td>
-        <td>${nationality}</td>
-        <td>${league}</td>
-    `;
-        tbody.appendChild(row);
-        }
-
-        currentIndex = endIndex;
-    }
-
-    //infinite scroll handler
-    function handleScroll() {
-        //if the user is near the bottom and there are more players to display
-        const nearBottom =
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 100;
-
-        // 1)load more from currently fetched players
-        if (nearBottom && currentIndex < allPlayers.length) {
-        loadNextPlayers();
-        }
-        //2) if all fetched players shown, but theres another page, fetch more
-        else if (
-        nearBottom &&
-        currentPage < totalPages &&
-        currentIndex >= allPlayers.length
-        ) {
-        currentPage++;
-        fetchPlayers(); // This will add the next 20 players to allPlayers
-        }
-    }
-
-    // On page load, fetch the first page
-    window.addEventListener("DOMContentLoaded", () => {
-        currentPage = 1;
-        fetchPlayers();
-    });
-
-    // handle points made by players from scoring goals, assisting, etc.
-    function handlePlayerPoints() {
-        
-
-    }
-    
-    </script> -->
+</script>
 </body>
 </html>
