@@ -27,10 +27,41 @@ async function insertPlayers() {
     // Insert each player into the players table
     for (const p of players) {
       await pool.query(
-        `INSERT INTO players (id, name, photo, team, rating, points, position)
-         VALUES ($1, $2, $3, $4, $5, $6, $7)
-         ON CONFLICT (id) DO NOTHING`, // Skip duplicates
-        [p.id, p.name, p.photo, p.team, p.rating, p.points, p.position]
+        `INSERT INTO players (
+     id, name, firstname, lastname, photo, team, team_logo,
+     rating, points, position, goals, assists, saves, nationality
+   )
+   VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+         ON CONFLICT (id) DO UPDATE SET
+           name = EXCLUDED.name,
+           firstname = EXCLUDED.firstname,
+           lastname = EXCLUDED.lastname,
+           photo = EXCLUDED.photo,
+           team = EXCLUDED.team,
+           team_logo = EXCLUDED.team_logo,
+           rating = EXCLUDED.rating,
+           points = EXCLUDED.points,
+           position = EXCLUDED.position,
+           goals = EXCLUDED.goals,
+           assists = EXCLUDED.assists,
+           saves = EXCLUDED.saves,
+           nationality = EXCLUDED.nationality`,
+        [
+          p.id,
+          p.name,
+          p.firstname || "",
+          p.lastname || "",
+          p.photo,
+          p.team,
+          p.team_logo || "",
+          p.rating,
+          p.points,
+          p.position,
+          p.goals || 0,
+          p.assists || 0,
+          p.saves || 0,
+          p.nationality || "Unknown",
+        ]
       );
     }
   }

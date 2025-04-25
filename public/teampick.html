@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>FütPicks</title>
+    <title>FütPicks - Team Picker</title>
     <link rel="stylesheet" href="teampts.css" />
     <link rel="stylesheet" href="header-temp.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="icon" type="image/x-icon" href="images/futpicks-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/d1f065b276.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>FütPick's Liga MX Fantasy Football</header>
     <ul id="navlist">
+      <li id="profile"><a href="account.html"></a></li>
+      <li id="home"><a href="homepage.html"></a></li>
       <li id="profile"><a href="account.html"></a></li>
       <li id="home"><a href="homepage.html"></a></li>
     </ul>
@@ -42,17 +45,20 @@
     />
     <h3 id="user-info" style="color: lightgreen; text-align: center"></h3>
 
+    <h3 id="user-info" style="color: lightgreen; text-align: center"></h3>
     <nav id="pointHeader">
       <div id="pointStyling">
-        <p id="averagePoints">46</p> 
+        <p id="averagePoints">54</p>
         <button id="pointText">Average</button>
       </div>
       <div id="pointStyling">
-        <p id="totalPointsCount">54</p>
-        <button id="userPoints">Total Points <i class="arrow right"></i></button>
+        <p id="totalPointsCount">0</p>
+        <button id="userPoints">
+          Total Points <i class="arrow right"></i>
+        </button>
       </div>
       <div id="pointStyling">
-        <p id="highestPoints">134</p>
+        <p id="highestPoints">100</p>
         <button id="highPoints">Highest <i class="arrow right"></i></button>
       </div>
     </nav>
@@ -394,17 +400,17 @@
       function clearPlayer(card) {
         const playerId = card.getAttribute("data-player-id");
         if (playerId) {
-            selectedPlayerIds.delete(parseInt(playerId));
-            card.removeAttribute("data-player-id");
-            card.querySelector("img").src = "images/temp_jersey.webp";
-            card.querySelector(".player-name").textContent = "Click to pick";
-            card.querySelector("h2 b").textContent = "0 pts";
-            hasUnsavedChanges = true;
-            saveButton.classList.add("active");
-            saveButton.disabled = false;
+          selectedPlayerIds.delete(parseInt(playerId));
+          card.removeAttribute("data-player-id");
+          card.querySelector("img").src = "images/temp_jersey.webp";
+          card.querySelector(".player-name").textContent = "Click to pick";
+          card.querySelector("h2 b").textContent = "0 pts";
+          hasUnsavedChanges = true;
+          saveButton.classList.add("active");
+          saveButton.disabled = false;
 
-            // Recalculate total points
-            calculateTotalPoints();
+          // Recalculate total points
+          calculateTotalPoints();
         }
       }
 
@@ -552,6 +558,9 @@
 
             // Recalculate total points
             calculateTotalPoints();
+
+            // Recalculate total points
+            calculateTotalPoints();
           })
           .catch((err) => {
             console.error("Failed to load team:", err);
@@ -580,7 +589,8 @@
         const allCards = document.querySelectorAll(".player_card");
         allCards.forEach((card) => {
           const pointsText = card.querySelector("h2 b")?.textContent || "0 pts";
-          const numericPoints = parseInt(pointsText.replace(" pts", ""), 10) || 0;
+          const numericPoints =
+            parseInt(pointsText.replace(" pts", ""), 10) || 0;
           totalPoints += numericPoints;
         });
 
@@ -588,6 +598,12 @@
         const totalPointsElement = document.getElementById("totalPointsCount");
         if (totalPointsElement) {
           totalPointsElement.textContent = totalPoints;
+        }
+
+        // Update the highest points if totalPoints exceed 100
+        const highestPointsElement = document.getElementById("highestPoints");
+        if (highestPointsElement && totalPoints > 100) {
+          highestPointsElement.textContent = totalPoints;
         }
       }
     </script>

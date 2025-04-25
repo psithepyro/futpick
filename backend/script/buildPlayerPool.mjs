@@ -94,11 +94,18 @@ for (let page = 1; page <= 40; page++) {
     grouped[position].push({
       id: p.player.id,
       name: p.player.name,
+      firstname: p.player.firstname || "",
+      lastname: p.player.lastname || "",
       photo: p.player.photo,
+      nationality: p.player.nationality || "Unknown",
       team: stats.team.name,
+      team_logo: stats.team.logo,
       rating: stats.games.rating,
       points: calculatePoints(stats, position),
       position,
+      goals: stats.goals?.total || 0,
+      assists: stats.goals?.assists || 0,
+      saves: stats.goals?.saves || 0,
     });
 
     console.log(`Added: ${p.player.name} (${position})`);

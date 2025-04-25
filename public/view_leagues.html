@@ -19,7 +19,6 @@
         <button><a href="fixtures.html">Fixtures</a></button>
         <button><a href="teampts.html">Points</a></button>
         <button><a href="teampick.html">Pick Team</a></button>
-        <button><a href="transpick.html">Transfers</a></button>
         <button><a href="player_stats.html">Player Stats</a></button>
     </nav>
 
@@ -74,5 +73,32 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("leave-league-btn").addEventListener("click", async () => {
+            const leagueId = "csuf-league"; // Replace with the actual league ID
+            const confirmation = confirm("Are you sure you want to leave this league?");
+            if (!confirmation) return;
+
+            try {
+                const res = await fetch(`/api/leagues/${leagueId}`, {
+                    method: "DELETE",
+                    credentials: "include",
+                });
+
+                if (res.ok) {
+                    alert("You have successfully left the league.");
+                    // Redirect to homepage or update the UI
+                    window.location.href = "homepage.html";
+                } else {
+                    const error = await res.json();
+                    alert(`Failed to leave the league: ${error.message}`);
+                }
+            } catch (err) {
+                console.error("Error leaving league:", err);
+                alert("An error occurred while trying to leave the league.");
+            }
+        });
+    </script>>
 </body>
 </html>

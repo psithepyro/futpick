@@ -86,6 +86,30 @@
   </div>
 
     <script src="token.js"></script>
-    <!-- include token.js for fetching JWT token from localStorage-->
+    <script>
+      async function loadLeagues() {
+        try {
+            const res = await fetch("/api/leagues", { credentials: "include" });
+            const leagues = await res.json();
+
+            const container = document.getElementById("leagues-container");
+            container.innerHTML = ""; // Clear existing content
+
+            leagues.forEach((league) => {
+                const figure = document.createElement("figure");
+                figure.innerHTML = `
+                    <img src="${league.logo || 'images/default-league.png'}" alt="${league.name} LOGO" style="width: 20%" />
+                    <figcaption><a href="view_leagues.html?leagueId=${league.id}">${league.name} →</a></figcaption>
+                    <figcaption>Rank: ${league.rank}</figcaption>
+                `;
+                container.appendChild(figure);
+            });
+          } catch (err) {
+            console.error("Failed to load leagues:", err);
+          }
+      }
+    // Load leagues on page load
+    window.onload = loadLeagues;
+    </script>
   </body>
 </html>
