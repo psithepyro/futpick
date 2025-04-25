@@ -84,302 +84,86 @@
 
     <script src="token.js"></script>
     <script>
-      let allPlayers = []; //list of fetched players
-      let currentIndex = 0; //index of the next player to display
-      let currentPage = 1; // current page from API-football
-      let totalPages = 1; // total pages
-      let currentQuery = ""; // current search query
-      const PLAYERS_PER_LOAD = 20; // 20 players per load
+      let allPlayers = [];
 
-      //fetch players from pool
       async function fetchPlayers() {
-        const token = localStorage.getItem("token");
-        let headers = { "Content-Type": "application/json" };
-
-        //If token exists, attach to request
-        if (token) {
-          headers["Authorization"] = `Bearer ${token}`;
-        }
-
-        console.log(`Fetching page ${currentPage} from the server...`);
-
         try {
-          //fetch players to with page #
-          const response = await fetch(
-            `http://localhost:3000/api/football/players?page=${currentPage}`,
-            {
-              method: "GET",
-              headers: headers,
-            }
-          );
-
-          const data = await response.json();
-          console.log("Fetched Players:", data);
-
-          //if response includes paging info, update totalPages
-          if (data.paging && data.paging.total) {
-            totalPages = data.paging.total;
-          }
-
-          //main list of players from data.response
-          const playerArray = data.response || [];
-          if (response.ok && playerArray.length > 0) {
-            //append new fetched players to array
-            allPlayers.push(...playerArray);
-
-            //if first page, display from scratch
-            if (currentPage === 1) {
-              displayPlayers(); // starts from index=0
-            } else {
-              // if players already displayed, load next players
-              loadNextPlayers();
-            }
-          } else {
-            // If no players or an error
-            if (allPlayers.length === 0) {
-              document.getElementById("player-table-body").innerHTML = `
-            <tr><td colspan="5">No players available or unauthorized</td></tr>
-          `;
-            }
-          }
+          const res = await fetch("/data/fantasyPlayerPool.json");
+          const data = await res.json();
+          allPlayers = Object.values(data).flat();
+          displayPlayers(allPlayers); // default to all
         } catch (error) {
-          alert("Error");
-          console.error("Error fetching players:", error);
+          console.error("Error loading player data:", error);
           document.getElementById("player-table-body").innerHTML = `
-        <tr><td colspan="5">Error loading players</td></tr>
-      `;
+            <tr><td colspan="7">Error loading players</td></tr>
+          `;
         }
       }
 
-      async function fetchTopScorers() {
-        const token = localStorage.getItem("token");
-        let headers = { "Content-Type": "application/json" };
-
-        //If token exists, attach to request
-        if (token) {
-          headers["Authorization"] = `Bearer ${token}`;
-        }
-
-        try {
-          const response = await fetch(
-            `http://localhost:3000/api/football/players/topscorers`,
-            {
-              method: "GET",
-              headers: headers,
-            }
-          );
-
-          const data = await response.json();
-          console.log("Fetched Top Scorers:", data);
-
-          const topscorerArray = data.response || [];
-          if (response.ok && topscorerArray.length > 0) {
-            allPlayers.push(...topscorerArray);
-
-            if (currentPage === 1) {
-              displayTopPlayers(topscorerArray, "goals"); // starts from index=0
-            } else {
-              loadNextPlayers();
-            }
-          } else {
-            // If no top scorers or an error
-            if (allPlayers.length === 0) {
-              document.getElementById("player-table-body").innerHTML = `
-            <tr><td colspan="5">No top scorers available or unauthorized</td></tr>
-          `;
-            }
-          }
-        } catch (error) {
-          alert("Error fetching top scorers");
-          console.error("Error fetching top scorers:", error);
-          document.getElementById("player-table-body").innerHTML = `
-        <tr><td colspan="5">Error loading top scorers</td></tr>
-      `;
-        }
-      }
-
-      async function fetchTopAssisters() {
-        const token = localStorage.getItem("token");
-        let headers = { "Content-Type": "application/json" };
-
-        //If token exists, attach to request
-        if (token) {
-          headers["Authorization"] = `Bearer ${token}`;
-        }
-
-        try {
-          const response = await fetch(
-            `http://localhost:3000/api/football/players/topassists`,
-            {
-              method: "GET",
-              headers: headers,
-            }
-          );
-
-          const data = await response.json();
-          console.log("Fetched Top Assisters:", data);
-
-          const topassisterArray = data.response || [];
-          if (response.ok && topassisterArray.length > 0) {
-            allPlayers.push(...topassisterArray);
-
-            if (currentPage === 1) {
-              displayTopPlayers(topassisterArray, "assists"); // starts from index=0
-            } else {
-              loadNextPlayers();
-            }
-          } else {
-            // If no top assisters or an error
-            if (allPlayers.length === 0) {
-              document.getElementById("player-table-body").innerHTML = `
-            <tr><td colspan="5">No top assisters available or unauthorized</td></tr>
-          `;
-            }
-          }
-        } catch (error) {
-          alert("Error fetching top assisters");
-          console.error("Error fetching top assisters:", error);
-          document.getElementById("player-table-body").innerHTML = `
-        <tr><td colspan="5">Error loading top assisters</td></tr>
-      `;
-        }
-      }
-
-      function displayTopPlayers(players, statKey) {
+      // Display any list of players
+      function displayPlayers(players) {
         const tbody = document.getElementById("player-table-body");
-        tbody.innerHTML = ""; // Clear the table
+        tbody.innerHTML = "";
 
         players.forEach((p) => {
-          const firstname = p.player?.firstname || "Unknown";
-          const lastname = p.player?.lastname || "Unknown";
-          const position = p.statistics?.[0]?.games?.position || "Unknown";
-          const nationality = p.player?.nationality || "Unknown";
-          const photo = p.player?.photo || "";
-          const team = p.statistics?.[0]?.team?.name || "Unknown";
-          const statValue = p.statistics?.[0]?.goals?.[statKey] || 0;
-
           const row = document.createElement("tr");
           row.innerHTML = `
             <td style="display: flex; align-items: center;">
               <img
-                src="${photo}"
-                alt="${firstname} ${lastname}"
+                src="${p.photo}"
+                alt="${p.name}"
                 width="40"
                 height="40"
                 style="border-radius: 50%; object-fit: cover; margin-right: 10px;"
               />
-              <span>${firstname} ${lastname}</span>
+             <span>${p.firstname} ${p.lastname}</span>
+
             </td>
-            <td>${position}</td>
-            <td>${nationality}</td>
-            <td>${team}</td>
-            <td>${statKey === "goals" ? statValue : 0}</td>
-            <td>${statKey === "assists" ? statValue : 0}</td>
-            <td>${statKey === "saves" ? statValue : 0}</td>
+            <td>${p.position}</td>
+            <td>${p.nationality}</td>
+            <td>
+  <img src="${p.team_logo}" alt="${p.team}" width="20" height="20" style="vertical-align: middle; margin-right: 6px;" />
+  <span>${p.team}</span>
+</td>
+            <td>${p.goals}</td>
+            <td>${p.assists}</td>
+            <td>${p.saves}</td>
           `;
           tbody.appendChild(row);
         });
       }
 
-      // Handle dropdown selection
-      document.getElementById("player-list-dropdown").addEventListener("change", (event) => {
-        const value = event.target.value;
-        if (value === "all") {
-          displayPlayers();
-        } else if (value === "top-scorers") {
-          fetchTopScorers();
-        } else if (value === "top-assisters") {
-          fetchTopAssisters();
-        }
-      });
-
-      function displayPlayers() {
-        // Reset the table and index
-        currentIndex = 0;
-        document.getElementById("player-table-body").innerHTML = "";
-
-        // load first chunk
-        loadNextPlayers();
-
-        // Attach the infinite scroll only once
-        window.addEventListener("scroll", handleScroll);
+      // Sort by goals descending
+      function displayTopScorers() {
+        const topScorers = [...allPlayers]
+          .sort((a, b) => b.goals - a.goals)
+          .slice(0, 100);
+        displayPlayers(topScorers);
       }
 
-      //load next batch of players
-      function loadNextPlayers() {
-        const tbody = document.getElementById("player-table-body");
-        // Render up to 20 more from allPlayers
-        const endIndex = Math.min(
-          currentIndex + PLAYERS_PER_LOAD,
-          allPlayers.length
-        );
-
-        for (let i = currentIndex; i < endIndex; i++) {
-          const p = allPlayers[i];
-          const playerId = p.player?.id || "Unknown";
-          const firstname = p.player?.firstname || "Unknown";
-          const lastname = p.player?.lastname || "Unknown";
-          const position = p.statistics?.[0]?.games?.position || "Unknown";
-          const nationality = p.player?.nationality || "Unknown";
-          const photo = p.player?.photo || "";
-          const team = p.statistics?.[0]?.team?.name || "Unknown";
-          const goals = p.statistics?.[0]?.goals?.total || 0;
-          const assists = p.statistics?.[0]?.goals?.assists || 0;
-          const saves = p.statistics?.[0]?.goals?.saves || 0;
-
-          // Build row with photo + name, position, nationality
-          const row = document.createElement("tr");
-          row.innerHTML = `
-        <td style="display: flex; align-items: center;">
-          <img
-            src="${photo}"
-            alt="${firstname} ${lastname}"
-            width="40"
-            height="40"
-            style="border-radius: 50%; object-fit: cover; margin-right: 10px;"
-          />
-          <span>${firstname} ${lastname} ${playerId}</span>
-        </td>
-        <td>${position}</td>
-        <td>${nationality}</td>
-        <td>${team}</td>
-        <td>${goals}</td>
-        <td>${assists}</td>
-        <td>${saves}</td>
-      `;
-          tbody.appendChild(row);
-        }
-
-        currentIndex = endIndex;
+      // Sort by assists descending
+      function displayTopAssisters() {
+        const topAssisters = [...allPlayers]
+          .sort((a, b) => b.assists - a.assists)
+          .slice(0, 100);
+        displayPlayers(topAssisters);
       }
 
-      //infinite scroll handler
-      function handleScroll() {
-        //if the user is near the bottom and there are more players to display
-        const nearBottom =
-          window.innerHeight + window.scrollY >=
-          document.body.offsetHeight - 100;
+      // Dropdown change logic
+      document
+        .getElementById("player-list-dropdown")
+        .addEventListener("change", (event) => {
+          const value = event.target.value;
+          if (value === "top-scorers") {
+            displayTopScorers();
+          } else if (value === "top-assisters") {
+            displayTopAssisters();
+          } else {
+            displayPlayers(allPlayers);
+          }
+        });
 
-        // 1)load more from currently fetched players
-        if (nearBottom && currentIndex < allPlayers.length) {
-          loadNextPlayers();
-        }
-        //2) if all fetched players shown, but theres another page, fetch more
-        else if (
-          nearBottom &&
-          currentPage < totalPages &&
-          currentIndex >= allPlayers.length
-        ) {
-          currentPage++;
-          fetchPlayers(); // This will add the next 20 players to allPlayers
-        }
-      }
-
-      // On page load, fetch the first page
-      window.addEventListener("DOMContentLoaded", () => {
-        currentPage = 1;
-        fetchPlayers();
-      });
+      window.addEventListener("DOMContentLoaded", fetchPlayers);
     </script>
   </body>
 </html>

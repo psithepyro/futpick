@@ -449,21 +449,29 @@
         let headers = { "Content-Type": "application/json" };
         if (token) headers["Authorization"] = `Bearer ${token}`;
 
-        const response = await fetch("/api/football/my-team", {
-          credentials: "include",
-        });
-        const data = await response.json();
+        let teamId;
 
-        if (!data.teamId) {
-          alert("No existing team found.");
-          return;
+        try {
+          const response = await fetch("/api/football/my-team", {
+            credentials: "include",
+          });
+          const data = await response.json();
+          teamId = data.teamId;
+        } catch (err) {
+          console.warn("No existing team found. Creating new one...");
         }
 
-        const res = await fetch("/api/football/update-team", {
-          method: "PUT",
+        let endpoint = teamId
+          ? "/api/football/update-team"
+          : "/api/football/create-team";
+
+        let method = teamId ? "PUT" : "POST";
+
+        const res = await fetch(endpoint, {
+          method,
           headers,
           credentials: "include",
-          body: JSON.stringify({ teamId: data.teamId, players }),
+          body: JSON.stringify(teamId ? { teamId, players } : { players }),
         });
 
         const result = await res.json();
