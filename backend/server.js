@@ -4,7 +4,7 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const passport = require("passport");
 require("dotenv").config();
-//const path = require("path");
+const path = require("path");
 //const authenticateUser = require("./middlewares/jwtMiddleware");
 
 // Import routes
@@ -12,11 +12,20 @@ const authRoutes = require("./routes/auth");
 const jwtAuthRoutes = require("./routes/jwtAuth");
 const googleAuthRoutes = require("./routes/googleAuth");
 const footballRoutes = require("./routes/football");
+const leagueRoutes = require("./routes/league");
 
 //create express application
 const app = express();
 //static files from public directory
-app.use(express.static(__dirname + "/../public"));
+//app.use(express.static(__dirname + "../public"));
+app.use(express.static(path.join(__dirname, "../public")));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/login.html"));
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "../public/login.html");
+});
 
 // Middlewares
 app.use(express.json());
@@ -50,6 +59,9 @@ app.use("/auth", googleAuthRoutes);
 
 // route for football API
 app.use("/api/football", footballRoutes);
+
+// route for football API
+app.use("/api/league", leagueRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 3000;
