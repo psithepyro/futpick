@@ -12,7 +12,6 @@ const authRoutes = require("./routes/auth");
 const jwtAuthRoutes = require("./routes/jwtAuth");
 const googleAuthRoutes = require("./routes/googleAuth");
 const footballRoutes = require("./routes/football");
-const leagueRoutes = require("./routes/league");
 
 //create express application
 const app = express();
@@ -59,9 +58,6 @@ app.use("/auth", googleAuthRoutes);
 
 // route for football API
 app.use("/api/football", footballRoutes);
-
-// route for football API
-app.use("/api/league", leagueRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 3000;
