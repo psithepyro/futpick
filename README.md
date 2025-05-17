@@ -37,7 +37,7 @@ Then install the project dependencies by running:
 npm install
 ```
 
-This will install all required Node.js packages for the backend and frontend (if applicable).
+This will install all required Node.js packages for the backend and frontend.
 
 ---
 
