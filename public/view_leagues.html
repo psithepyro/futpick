@@ -129,12 +129,6 @@
 
         // Update the page title and header dynamically
         if (leagueName) {
-            document.title = `FütiPicks - ${leagueName}`;
-            const header = document.querySelector("header");
-            if (header) {
-                header.textContent = `FütiPick's ${leagueName}`;
-            }
-
             const leagueTitle = document.querySelector(".fantasy_league h1");
             if (leagueTitle) {
                 leagueTitle.textContent = leagueName;

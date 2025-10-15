@@ -205,6 +205,7 @@ nav#user-nav div#user-info {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .modal.hidden {
@@ -260,7 +261,7 @@ nav#user-nav div#user-info {
 }
 
 #player-list li {
-  background-color: #1e1e1e;
+  background-color: #0f8a5f;
   color: white;
   margin: 10px 0;
   border-radius: 8px;
